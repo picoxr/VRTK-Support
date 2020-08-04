@@ -1,4 +1,4 @@
-# Integrated VRTK
+# VRTK Support
 
 ## Unity Versions
 
