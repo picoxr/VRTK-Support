@@ -1,0 +1,2848 @@
+ScriptsOnlyBuild:
+  usedScripts:
+    Assembly-CSharp.dll:
+    - Pvr_Controller
+    - Pvr_ControllerManager
+    - Pvr_UnitySDKEye
+    - Pvr_UnitySDKEyeManager
+    - Pvr_UnitySDKFPS
+    - Pvr_UnitySDKHeadTrack
+    - Pvr_UnitySDKManager
+    - Pvr_UnitySDKPlatformSetting
+    - Pvr_UnitySDKProjectSetting
+    - VRTK.Controllables.ArtificialBased.VRTK_ArtificialPusher
+    - VRTK.Controllables.ArtificialBased.VRTK_ArtificialRotator
+    - VRTK.Controllables.ArtificialBased.VRTK_ArtificialSlider
+    - VRTK.Controllables.PhysicsBased.VRTK_PhysicsPusher
+    - VRTK.Controllables.PhysicsBased.VRTK_PhysicsRotator
+    - VRTK.Controllables.PhysicsBased.VRTK_PhysicsSlider
+    - VRTK.Examples.BeamRotator
+    - VRTK.Examples.ControllableReactor
+    - VRTK.Examples.FireExtinguisher_Base
+    - VRTK.Examples.FireExtinguisher_Sprayer
+    - VRTK.Examples.GunShoot
+    - VRTK.Examples.InteractableLamp
+    - VRTK.Examples.InteractableWhirlyGig
+    - VRTK.Examples.ScaleOnUse
+    - VRTK.Examples.SnapDropZoneToggle
+    - VRTK.Examples.ToggleCustomHands
+    - VRTK.Examples.TogglePointerInteraction
+    - VRTK.Examples.Utilities.VRTKExample_FixSetup
+    - VRTK.Examples.Utilities.VRTKExample_SceneSwitcher
+    - VRTK.GrabAttachMechanics.VRTK_ChildOfControllerGrabAttach
+    - VRTK.GrabAttachMechanics.VRTK_ControlAnimationGrabAttach
+    - VRTK.GrabAttachMechanics.VRTK_CustomJointGrabAttach
+    - VRTK.GrabAttachMechanics.VRTK_FixedJointGrabAttach
+    - VRTK.GrabAttachMechanics.VRTK_MoveTransformGrabAttach
+    - VRTK.GrabAttachMechanics.VRTK_SpringJointGrabAttach
+    - VRTK.GrabAttachMechanics.VRTK_TrackObjectGrabAttach
+    - VRTK.Highlighters.VRTK_MaterialColorSwapHighlighter
+    - VRTK.Highlighters.VRTK_OutlineObjectCopyHighlighter
+    - VRTK.SDK_ControllerSim
+    - VRTK.SDK_InputSimulator
+    - VRTK.SDK_PicoCameraRig
+    - VRTK.SDK_PicoHeadsetTracker
+    - VRTK.SDK_UnityCameraRig
+    - VRTK.SDK_UnityControllerTracker
+    - VRTK.SDK_UnityHeadsetTracker
+    - VRTK.SecondaryControllerGrabActions.VRTK_AxisScaleGrabAction
+    - VRTK.SecondaryControllerGrabActions.VRTK_ControlDirectionGrabAction
+    - VRTK.SecondaryControllerGrabActions.VRTK_SwapControllerGrabAction
+    - VRTK.VRTK_AvatarHandController
+    - VRTK.VRTK_BasicTeleport
+    - VRTK.VRTK_ControllerEvents
+    - VRTK.VRTK_ControllerRigidbodyActivator
+    - VRTK.VRTK_DestinationPoint
+    - VRTK.VRTK_HeadsetControllerAware
+    - VRTK.VRTK_HeightAdjustTeleport
+    - VRTK.VRTK_InteractGrab
+    - VRTK.VRTK_InteractHaptics
+    - VRTK.VRTK_InteractNearTouch
+    - VRTK.VRTK_InteractObjectAppearance
+    - VRTK.VRTK_InteractObjectHighlighter
+    - VRTK.VRTK_InteractTouch
+    - VRTK.VRTK_InteractUse
+    - VRTK.VRTK_InteractableObject
+    - VRTK.VRTK_Logger
+    - VRTK.VRTK_Pointer
+    - VRTK.VRTK_PolicyList
+    - VRTK.VRTK_SDKManager
+    - VRTK.VRTK_SDKSetup
+    - VRTK.VRTK_SDKSetupSwitcher
+    - VRTK.VRTK_SDKTransformModify
+    - VRTK.VRTK_SnapDropZone
+    - VRTK.VRTK_StraightPointerRenderer
+    - VRTK.VRTK_TransformFollow
+    - VRTK.VRTK_UIPointer
+    - VRTK.VRTK_VelocityEstimator
+    - VRTK.WindowsMR_Camera
+    - VRTK.WindowsMR_ControllerManager
+    - VRTK.WindowsMR_TrackedObject
+    Unity.Rider.Editor.dll:
+    - Packages.Rider.Editor.UnitTesting.CallbackData
+    UnityEditor.TestRunner.dll:
+    - UnityEditor.TestTools.TestRunner.Api.CallbacksHolder
+    - UnityEditor.TestTools.TestRunner.TestListCacheData
+    - UnityEditor.TestTools.TestRunner.TestRun.TestJobDataHolder
+    UnityEngine.UI.dll:
+    - UnityEngine.EventSystems.EventSystem
+    - UnityEngine.EventSystems.StandaloneInputModule
+    - UnityEngine.UI.Button
+    - UnityEngine.UI.CanvasScaler
+    - UnityEngine.UI.GraphicRaycaster
+    - UnityEngine.UI.HorizontalLayoutGroup
+    - UnityEngine.UI.Image
+    - UnityEngine.UI.LayoutElement
+    - UnityEngine.UI.Text
+    - UnityEngine.UI.VerticalLayoutGroup
+  sceneClasses:
+    Assets/VRTK/Examples/[005 - Interactions] InteractableObjects.unity:
+    - Class: 1
+      Script: {instanceID: 0}
+    - Class: 4
+      Script: {instanceID: 0}
+    - Class: 20
+      Script: {instanceID: 0}
+    - Class: 21
+      Script: {instanceID: 0}
+    - Class: 23
+      Script: {instanceID: 0}
+    - Class: 28
+      Script: {instanceID: 0}
+    - Class: 33
+      Script: {instanceID: 0}
+    - Class: 43
+      Script: {instanceID: 0}
+    - Class: 48
+      Script: {instanceID: 0}
+    - Class: 54
+      Script: {instanceID: 0}
+    - Class: 59
+      Script: {instanceID: 0}
+    - Class: 65
+      Script: {instanceID: 0}
+    - Class: 74
+      Script: {instanceID: 0}
+    - Class: 81
+      Script: {instanceID: 0}
+    - Class: 82
+      Script: {instanceID: 0}
+    - Class: 89
+      Script: {instanceID: 0}
+    - Class: 90
+      Script: {instanceID: 0}
+    - Class: 91
+      Script: {instanceID: 0}
+    - Class: 95
+      Script: {instanceID: 0}
+    - Class: 104
+      Script: {instanceID: 0}
+    - Class: 108
+      Script: {instanceID: 0}
+    - Class: 111
+      Script: {instanceID: 0}
+    - Class: 114
+      Script: {instanceID: 0}
+    - Class: 114
+      Script: {instanceID: 11208}
+    - Class: 114
+      Script: {instanceID: 11212}
+    - Class: 114
+      Script: {instanceID: 11222}
+    - Class: 114
+      Script: {instanceID: 11228}
+    - Class: 114
+      Script: {instanceID: 11306}
+    - Class: 114
+      Script: {instanceID: 11332}
+    - Class: 114
+      Script: {instanceID: 11348}
+    - Class: 114
+      Script: {instanceID: 11358}
+    - Class: 114
+      Script: {instanceID: 11378}
+    - Class: 114
+      Script: {instanceID: 11384}
+    - Class: 114
+      Script: {instanceID: 11404}
+    - Class: 114
+      Script: {instanceID: 11466}
+    - Class: 114
+      Script: {instanceID: 11492}
+    - Class: 114
+      Script: {instanceID: 11526}
+    - Class: 114
+      Script: {instanceID: 11552}
+    - Class: 114
+      Script: {instanceID: 11594}
+    - Class: 114
+      Script: {instanceID: 11612}
+    - Class: 114
+      Script: {instanceID: 11646}
+    - Class: 114
+      Script: {instanceID: 11688}
+    - Class: 114
+      Script: {instanceID: 11692}
+    - Class: 114
+      Script: {instanceID: 11776}
+    - Class: 114
+      Script: {instanceID: 11800}
+    - Class: 114
+      Script: {instanceID: 11892}
+    - Class: 114
+      Script: {instanceID: 11976}
+    - Class: 114
+      Script: {instanceID: 11984}
+    - Class: 114
+      Script: {instanceID: 11998}
+    - Class: 114
+      Script: {instanceID: 12044}
+    - Class: 114
+      Script: {instanceID: 12054}
+    - Class: 114
+      Script: {instanceID: 12064}
+    - Class: 114
+      Script: {instanceID: 12082}
+    - Class: 114
+      Script: {instanceID: 12118}
+    - Class: 114
+      Script: {instanceID: 12150}
+    - Class: 114
+      Script: {instanceID: 12160}
+    - Class: 114
+      Script: {instanceID: 12210}
+    - Class: 114
+      Script: {instanceID: 12212}
+    - Class: 114
+      Script: {instanceID: 12244}
+    - Class: 114
+      Script: {instanceID: 12290}
+    - Class: 114
+      Script: {instanceID: 12328}
+    - Class: 114
+      Script: {instanceID: 12386}
+    - Class: 114
+      Script: {instanceID: 12410}
+    - Class: 114
+      Script: {instanceID: 12412}
+    - Class: 114
+      Script: {instanceID: 12418}
+    - Class: 114
+      Script: {instanceID: 12452}
+    - Class: 114
+      Script: {instanceID: 12454}
+    - Class: 114
+      Script: {instanceID: 12476}
+    - Class: 114
+      Script: {instanceID: 12490}
+    - Class: 114
+      Script: {instanceID: 12504}
+    - Class: 114
+      Script: {instanceID: 12542}
+    - Class: 114
+      Script: {instanceID: 12566}
+    - Class: 114
+      Script: {instanceID: 12600}
+    - Class: 114
+      Script: {instanceID: 12610}
+    - Class: 114
+      Script: {instanceID: 12618}
+    - Class: 114
+      Script: {instanceID: 12620}
+    - Class: 114
+      Script: {instanceID: 12656}
+    - Class: 114
+      Script: {instanceID: 12660}
+    - Class: 114
+      Script: {instanceID: 12680}
+    - Class: 114
+      Script: {instanceID: 12764}
+    - Class: 114
+      Script: {instanceID: 12792}
+    - Class: 114
+      Script: {instanceID: 12850}
+    - Class: 114
+      Script: {instanceID: 12856}
+    - Class: 114
+      Script: {instanceID: 12930}
+    - Class: 114
+      Script: {instanceID: 12952}
+    - Class: 114
+      Script: {instanceID: 13010}
+    - Class: 114
+      Script: {instanceID: 13020}
+    - Class: 114
+      Script: {instanceID: 13034}
+    - Class: 114
+      Script: {instanceID: 13040}
+    - Class: 114
+      Script: {instanceID: 13060}
+    - Class: 114
+      Script: {instanceID: 13074}
+    - Class: 114
+      Script: {instanceID: 13082}
+    - Class: 114
+      Script: {instanceID: 13086}
+    - Class: 114
+      Script: {instanceID: 13222}
+    - Class: 114
+      Script: {instanceID: 13284}
+    - Class: 114
+      Script: {instanceID: 13330}
+    - Class: 114
+      Script: {instanceID: 13338}
+    - Class: 114
+      Script: {instanceID: 13382}
+    - Class: 114
+      Script: {instanceID: 13406}
+    - Class: 114
+      Script: {instanceID: 13464}
+    - Class: 114
+      Script: {instanceID: 13482}
+    - Class: 114
+      Script: {instanceID: 13592}
+    - Class: 114
+      Script: {instanceID: 13766}
+    - Class: 114
+      Script: {instanceID: 13774}
+    - Class: 114
+      Script: {instanceID: 13788}
+    - Class: 114
+      Script: {instanceID: 13810}
+    - Class: 114
+      Script: {instanceID: 13838}
+    - Class: 114
+      Script: {instanceID: 13862}
+    - Class: 114
+      Script: {instanceID: 13916}
+    - Class: 115
+      Script: {instanceID: 0}
+    - Class: 124
+      Script: {instanceID: 0}
+    - Class: 128
+      Script: {instanceID: 0}
+    - Class: 135
+      Script: {instanceID: 0}
+    - Class: 136
+      Script: {instanceID: 0}
+    - Class: 137
+      Script: {instanceID: 0}
+    - Class: 138
+      Script: {instanceID: 0}
+    - Class: 144
+      Script: {instanceID: 0}
+    - Class: 145
+      Script: {instanceID: 0}
+    - Class: 157
+      Script: {instanceID: 0}
+    - Class: 196
+      Script: {instanceID: 0}
+    - Class: 198
+      Script: {instanceID: 0}
+    - Class: 199
+      Script: {instanceID: 0}
+    - Class: 213
+      Script: {instanceID: 0}
+    - Class: 222
+      Script: {instanceID: 0}
+    - Class: 223
+      Script: {instanceID: 0}
+    - Class: 224
+      Script: {instanceID: 0}
+    - Class: 258
+      Script: {instanceID: 0}
+  scriptHashData:
+  - hash:
+      serializedVersion: 2
+      Hash: 27fb4366520d54a89b0a509371bcf6cb
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: VRTK.UnityEventHelper
+    className: VRTK_SDKSetup_UnityEvents
+  - hash:
+      serializedVersion: 2
+      Hash: 527b04c36d3ecdb60eb3485821e1e9b6
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: VRTK.Examples.Utilities
+    className: VRTKExample_SceneSwitcher
+  - hash:
+      serializedVersion: 2
+      Hash: 4bc4346a71a8df53a6b106f68ef3a190
+    assemblyName: UnityEngine.UI.dll
+    namespaceName: UnityEngine.UI
+    className: CanvasScaler
+  - hash:
+      serializedVersion: 2
+      Hash: d541737b35571c3fb03216cb49c89e20
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: VRTK.GrabAttachMechanics
+    className: VRTK_FixedJointGrabAttach
+  - hash:
+      serializedVersion: 2
+      Hash: fe75571e467010336798f5c0f3e05ea7
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: VRTK.Examples
+    className: RC_Car
+  - hash:
+      serializedVersion: 2
+      Hash: 32f7b451f08dbedc0cb29b7d550e5664
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: VRTK
+    className: VRTK_InteractHaptics
+  - hash:
+      serializedVersion: 2
+      Hash: 3c08375166df118bd1801438fc36b92f
+    assemblyName: Unity.TextMeshPro.dll
+    namespaceName: TMPro
+    className: TMP_SelectionCaret
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: VRTK.Examples.PanelMenu
+    className: PanelMenuUIGrid
+  - hash:
+      serializedVersion: 2
+      Hash: aa9b10011f4c9cad242c482fa2eeb065
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: VRTK.Examples.Tests
+    className: VRTK_ControllerReference_Setup
+  - hash:
+      serializedVersion: 2
+      Hash: 95c8456adadbbb84b0a4d960e1e55274
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: VRTK.GrabAttachMechanics
+    className: VRTK_RotatorTrackGrabAttach
+  - hash:
+      serializedVersion: 2
+      Hash: 87ff43d2baf3385cba327d8f803a4ebb
+    assemblyName: Unity.Timeline.dll
+    namespaceName: UnityEngine.Timeline
+    className: AudioPlayableAsset
+  - hash:
+      serializedVersion: 2
+      Hash: 626925ef558787b2d85c809198164d19
+    assemblyName: Unity.TextMeshPro.dll
+    namespaceName: TMPro
+    className: TMP_Dropdown
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: Callback
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: VRTK
+    className: SDK_SteamVRBoundaries
+  - hash:
+      serializedVersion: 2
+      Hash: 8b3b04c19d2311ce27f4937df71ef25a
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: VRTK.UnityEventHelper
+    className: VRTK_InteractObjectHighlighter_UnityEvents
+  - hash:
+      serializedVersion: 2
+      Hash: d0d292693a1a531afe3ed8bf74412e35
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: VRTK
+    className: VRTK_AvatarHandController
+  - hash:
+      serializedVersion: 2
+      Hash: 2afaeca5a60004e9a702b6b4bbc066fc
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: VRTK.UnityEventHelper
+    className: VRTK_InteractHaptics_UnityEvents
+  - hash:
+      serializedVersion: 2
+      Hash: eedcefbe7c2e7a43057641738ec53c54
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: Pvr_UnitySDKHeadTrack
+  - hash:
+      serializedVersion: 2
+      Hash: 90ac7c017443220a3a327283d9cdc9f1
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: VRTK
+    className: VRTK_TrackedController
+  - hash:
+      serializedVersion: 2
+      Hash: 55eb197fbec0277a093b584be9b30145
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: VRTK.Examples
+    className: HandLift
+  - hash:
+      serializedVersion: 2
+      Hash: 6283697ded5fd7271a9e1c5523b6d32c
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: VRTK.Highlighters
+    className: VRTK_OutlineObjectCopyHighlighter
+  - hash:
+      serializedVersion: 2
+      Hash: 296bb1905039def2933cec1dc95f2b5c
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: VRTK
+    className: VRTK_BodyPhysics
+  - hash:
+      serializedVersion: 2
+      Hash: c549f6d02b2f5176f68243fef11977cf
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: VRTK
+    className: VRTK_CustomRaycast
+  - hash:
+      serializedVersion: 2
+      Hash: 8f6aecb1120676ee23a898ec09bf4e80
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: VRTK.Highlighters
+    className: VRTK_MaterialPropertyBlockColorSwapHighlighter
+  - hash:
+      serializedVersion: 2
+      Hash: 63be2d2cd3e2c31c00304179316be1d2
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: VRTK
+    className: VRTK_InteractUse
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: VRTK
+    className: SDK_SteamVRSystem
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: VRTK
+    className: SDK_OculusSystem
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: VRTK
+    className: SDK_OculusBoundaries
+  - hash:
+      serializedVersion: 2
+      Hash: 6051e1b4170802b3b290ad99e087593a
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: VRTK.Controllables.ArtificialBased
+    className: VRTK_ArtificialPusher
+  - hash:
+      serializedVersion: 2
+      Hash: e7a73f5f78ba6445195ec23b74a1ce2d
+    assemblyName: Unity.TextMeshPro.dll
+    namespaceName: TMPro
+    className: TMP_ScrollbarEventHandler
+  - hash:
+      serializedVersion: 2
+      Hash: 13907fcddb5700d05607dc532c783807
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: VRTK.Examples
+    className: ScaleOnUse
+  - hash:
+      serializedVersion: 2
+      Hash: 30a0ee9e270483d2cf02bd4c3ed35080
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: VRTK.Examples
+    className: Openable_Door
+  - hash:
+      serializedVersion: 2
+      Hash: f1ce079704f5dae60dbfc5afaf6cc699
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: VRTK
+    className: VRTK_HeadsetCollisionFade
+  - hash:
+      serializedVersion: 2
+      Hash: e963bd99eef174ea300f591e38dfa8f6
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: VRTK
+    className: VRTK_SDKSetup
+  - hash:
+      serializedVersion: 2
+      Hash: a080ce3572d2a449b6e8f2f0eb0f80ec
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: VRTK
+    className: VRTK_Knob
+  - hash:
+      serializedVersion: 2
+      Hash: c3d3430df9e3ea95e3e3d587961390fb
+    assemblyName: Unity.Timeline.dll
+    namespaceName: UnityEngine.Timeline
+    className: GroupTrack
+  - hash:
+      serializedVersion: 2
+      Hash: 93bd9aacd28a0c03a56b3065420402f2
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: VRTK.Examples
+    className: VRTKExample_ControllerEventsDelegateListeners
+  - hash:
+      serializedVersion: 2
+      Hash: 8e1c0cd52c7ef0a95b25813ac9d7a950
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: Pvr_UICanvas
+  - hash:
+      serializedVersion: 2
+      Hash: 2beab95f47a00f09b9bc09919a1ea355
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: VRTK
+    className: VRTK_PointerDirectionIndicator
+  - hash:
+      serializedVersion: 2
+      Hash: a5781dc71a671b1ad2b38de19f24b71f
+    assemblyName: Unity.Timeline.dll
+    namespaceName: UnityEngine.Timeline
+    className: ActivationTrack
+  - hash:
+      serializedVersion: 2
+      Hash: 15f6b91aa3a2fabb72bb768daf136ff5
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: VRTK
+    className: VRTK_Slider
+  - hash:
+      serializedVersion: 2
+      Hash: c7110dea1342965bb01085b3fc23a3f4
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: VRTK.Examples
+    className: PanelMenuSphereSlider
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: VRTK
+    className: VRTK_TunnelEffect
+  - hash:
+      serializedVersion: 2
+      Hash: 72712369a7c681ad84fc255a5ec0b333
+    assemblyName: UnityEngine.UI.dll
+    namespaceName: UnityEngine.UI
+    className: Text
+  - hash:
+      serializedVersion: 2
+      Hash: 499fd23433e68e265d153aa6b95d0047
+    assemblyName: UnityEngine.UI.dll
+    namespaceName: UnityEngine.UI
+    className: Scrollbar
+  - hash:
+      serializedVersion: 2
+      Hash: 8ced7bf596b76066bae3429026b9fa33
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: Pvr_InputModule
+  - hash:
+      serializedVersion: 2
+      Hash: 8af7b66227b73eddb7861d267190a190
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: VRTK.GrabAttachMechanics
+    className: VRTK_ControlAnimationGrabAttach
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: UnityEngine.UI.dll
+    namespaceName: UnityEngine.UI
+    className: PositionAsUV1
+  - hash:
+      serializedVersion: 2
+      Hash: b04d491578e4a8f52fb116ce23fb4c1b
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: VRTK
+    className: VRTK_RoomExtender_PlayAreaGizmo
+  - hash:
+      serializedVersion: 2
+      Hash: abf1930d8126d0b2e00e9449129a0190
+    assemblyName: UnityEngine.UI.dll
+    namespaceName: UnityEngine.EventSystems
+    className: TouchInputModule
+  - hash:
+      serializedVersion: 2
+      Hash: ae6da16a4d30b2ba3f8126d231e5e6fc
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: VRTK
+    className: VRTK_RoomExtender
+  - hash:
+      serializedVersion: 2
+      Hash: 3689ef975d801ffb5c5c23d1222fcb51
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: VRTK.Examples.Utilities
+    className: VRTKExample_ObjectListToggle
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: VRTK
+    className: SDK_WindowsMRBoundaries
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: VRTK
+    className: SDK_XimmerseBoundaries
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: VRTK
+    className: SDK_OculusController
+  - hash:
+      serializedVersion: 2
+      Hash: 8e0313c6f5e2ce35991fec2d64f8eaab
+    assemblyName: UnityEngine.UI.dll
+    namespaceName: UnityEngine.UI
+    className: Image
+  - hash:
+      serializedVersion: 2
+      Hash: b781a773288c3e597253ab74cc02ee9c
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: Pvr_UIPointer
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: UnityEngine.TestRunner.dll
+    namespaceName: UnityEngine.TestTools.TestRunner.Callbacks
+    className: TestResultRendererCallback
+  - hash:
+      serializedVersion: 2
+      Hash: 5db2306e0d63360cf54f182810d642d7
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: VRTK
+    className: VRTK_SDKManager
+  - hash:
+      serializedVersion: 2
+      Hash: d414e52c15bf6d71e00beda3bf535f01
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: VRTK.UnityEventHelper
+    className: VRTK_SnapDropZone_UnityEvents
+  - hash:
+      serializedVersion: 2
+      Hash: 234235b9fb07320d11497e08a726cc56
+    assemblyName: Unity.TextMeshPro.dll
+    namespaceName: TMPro
+    className: TMP_InputField
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: VRTK
+    className: SDK_WindowsMRController
+  - hash:
+      serializedVersion: 2
+      Hash: f2ce50fff2b014695a08ec8100f0249c
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: VRTK.UnityEventHelper
+    className: VRTK_DashTeleport_UnityEvents
+  - hash:
+      serializedVersion: 2
+      Hash: 1ebb0c7a5fb503d2eaaefdbeeeabd99b
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: VRTK
+    className: UICircle
+  - hash:
+      serializedVersion: 2
+      Hash: fe636f2afd9192f3b447639e2930803f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: VRTK.Examples
+    className: ToggleCustomHands
+  - hash:
+      serializedVersion: 2
+      Hash: 7ab0e790220bdca831fdd886b339039d
+    assemblyName: UnityEngine.UI.dll
+    namespaceName: UnityEngine.UI
+    className: GridLayoutGroup
+  - hash:
+      serializedVersion: 2
+      Hash: 849ed1cc34faf38cd0f35aff9ecf2367
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: VRTK.Examples
+    className: Sword
+  - hash:
+      serializedVersion: 2
+      Hash: 9684b730c1ca8a3c2e3fa1652f09faa1
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: VRTK
+    className: VRTK_VelocityEstimator
+  - hash:
+      serializedVersion: 2
+      Hash: 1b10637a619f103a5186a033555baade
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: CPicoSDKSettingAsset
+  - hash:
+      serializedVersion: 2
+      Hash: b0bbcde399be69be08e1ba4807b3de02
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: VRTK
+    className: VRTK_StepMultiplier
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: VRTK
+    className: VRTK_TrackedHeadset
+  - hash:
+      serializedVersion: 2
+      Hash: 1b0ecbe1753e292f5f7eff1cf39cf235
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: VRTK
+    className: VRTK_Button
+  - hash:
+      serializedVersion: 2
+      Hash: 95e6f73e4d0d2001236f218f9d3ebb4e
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: Pvr_UnitySDKSightInputModule
+  - hash:
+      serializedVersion: 2
+      Hash: eb662cc076082a8b58e281539ad6535c
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: Pvr_ControllerManager
+  - hash:
+      serializedVersion: 2
+      Hash: 955fdf0c37f422fc98b048ba32c74efd
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: VRTK
+    className: VRTK_SlideObjectControlAction
+  - hash:
+      serializedVersion: 2
+      Hash: 849ed1cc34faf38cd0f35aff9ecf2367
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: VRTK.Examples
+    className: Lamp
+  - hash:
+      serializedVersion: 2
+      Hash: 612e2da284b720631edc4a7d63f2fef7
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: VRTK
+    className: VRTK_RadialMenuController
+  - hash:
+      serializedVersion: 2
+      Hash: 8aa3d6ccbcb54ee8db6c1229854adaaa
+    assemblyName: UnityEngine.UI.dll
+    namespaceName: UnityEngine.UI
+    className: ContentSizeFitter
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Unity.Timeline.dll
+    namespaceName: UnityEngine.Timeline
+    className: SignalAsset
+  - hash:
+      serializedVersion: 2
+      Hash: 9acfbe638d04302df8035caa26f81eae
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: VRTK.Examples.Archery
+    className: Follow
+  - hash:
+      serializedVersion: 2
+      Hash: 4f03875303977b0819d112d67f667f11
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: VRTK
+    className: VRTK_VRInputModule
+  - hash:
+      serializedVersion: 2
+      Hash: 8bc89c7c1cb1fbcb5c629857f0cd369d
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: VRTK
+    className: VRTK_InteractControllerAppearance
+  - hash:
+      serializedVersion: 2
+      Hash: e99b59d3d87620206fef3b90f41ae69c
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: VRTK
+    className: VRTK_TransformFollow
+  - hash:
+      serializedVersion: 2
+      Hash: f4aa71874fa6842165ecfe50e340afef
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: VRTK.UnityEventHelper
+    className: VRTK_HeadsetControllerAware_UnityEvents
+  - hash:
+      serializedVersion: 2
+      Hash: 0dbc3be398b4869a5c8d0d8481ee402c
+    assemblyName: UnityEngine.UI.dll
+    namespaceName: UnityEngine.UI
+    className: LayoutElement
+  - hash:
+      serializedVersion: 2
+      Hash: 18c222bef9ae745ce69ddde9b74337ca
+    assemblyName: UnityEngine.UI.dll
+    namespaceName: UnityEngine.EventSystems
+    className: PhysicsRaycaster
+  - hash:
+      serializedVersion: 2
+      Hash: 5fe6d1da4996c77e45536c084289274d
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: VRTK
+    className: VRTK_DashTeleport
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: VRTK.Examples
+    className: ButtonReactor
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: VRTK
+    className: SDK_UnityHeadset
+  - hash:
+      serializedVersion: 2
+      Hash: 90a6e3c14cedc6f75c8c4c90dbc4dd3a
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: VRTK.UnityEventHelper
+    className: VRTK_SlingshotJump_UnityEvents
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: VRTK
+    className: SDK_DaydreamController
+  - hash:
+      serializedVersion: 2
+      Hash: 16ffd04db91eec9429896ecbe78f9642
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: VRTK
+    className: VRTK_SDKObjectAlias
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: VRTK
+    className: SDK_HyperealVRSystem
+  - hash:
+      serializedVersion: 2
+      Hash: facc35fa902babb4621827dbdf4d2077
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: VRTK.Examples
+    className: Controller_Menu
+  - hash:
+      serializedVersion: 2
+      Hash: 4c535cd2d1518505902f96d9b156cb1a
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: VRTK
+    className: VRTK_Lever
+  - hash:
+      serializedVersion: 2
+      Hash: 8df8356a9641d927e1af5213bf77c8b7
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: VRTK.GrabAttachMechanics
+    className: VRTK_RotateTransformGrabAttach
+  - hash:
+      serializedVersion: 2
+      Hash: 5794ad80f9692ed826fa1d8f5a59c5c2
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: VRTK
+    className: VRTK_PositionRewind
+  - hash:
+      serializedVersion: 2
+      Hash: 1ecdb7d3007e8ff142ab403073d240c2
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: VRTK
+    className: VRTK_PlayerObject
+  - hash:
+      serializedVersion: 2
+      Hash: 6afc47b88c342c4580c583e24f50bead
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: VRTK.Examples
+    className: VRTK_ControllerPointerEvents_ListenerExample
+  - hash:
+      serializedVersion: 2
+      Hash: 7c9536b4d4fd2b693b8e4f8bd9a4039f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: VRTK
+    className: VRTK_HeadsetCollision
+  - hash:
+      serializedVersion: 2
+      Hash: bd3cf68c8964d3c66d1c43f4f98508c9
+    assemblyName: Unity.Timeline.dll
+    namespaceName: UnityEngine.Timeline
+    className: AnimationTrack
+  - hash:
+      serializedVersion: 2
+      Hash: 0c82046177957abcd363bdf69efe2ff5
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: VRTK.SecondaryControllerGrabActions
+    className: VRTK_ControlDirectionGrabAction
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: VRTK
+    className: SDK_SimSystem
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: VRTK
+    className: VRTK_PanelMenuItemController
+  - hash:
+      serializedVersion: 2
+      Hash: cf9f5cf2c3145a37ac07f00e50e460f9
+    assemblyName: UnityEngine.UI.dll
+    namespaceName: UnityEngine.UI
+    className: AspectRatioFitter
+  - hash:
+      serializedVersion: 2
+      Hash: b9456ba332110dfdade418a3dedc8d76
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: VRTK
+    className: VRTK_ControllerRigidbodyActivator
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: VRTK.Examples
+    className: UI_Keyboard
+  - hash:
+      serializedVersion: 2
+      Hash: 5ae3084f11cce4001680c05deed3fe9d
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: VRTK.Examples
+    className: Controller_Hand
+  - hash:
+      serializedVersion: 2
+      Hash: 4e3722bd3ca0e64446125030adbbf15b
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: VRTK
+    className: VRTK_TeleportDisableOnHeadsetCollision
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: UnityEngine.UI.dll
+    namespaceName: UnityEngine.UI
+    className: RectMask2D
+  - hash:
+      serializedVersion: 2
+      Hash: 2681d218210071b9b54a5f056c444ca4
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: VRTK.UnityEventHelper
+    className: VRTK_InteractableObject_UnityEvents
+  - hash:
+      serializedVersion: 2
+      Hash: 094d20f6466f7edadb29f824da3010f7
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: VRTK.UnityEventHelper
+    className: VRTK_ObjectTooltip_UnityEvents
+  - hash:
+      serializedVersion: 2
+      Hash: 4e9333594897a1fb8b136ad2eae996c7
+    assemblyName: Unity.TextMeshPro.dll
+    namespaceName: TMPro
+    className: TMP_SubMeshUI
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: VRTK
+    className: VRTK_ScreenFade
+  - hash:
+      serializedVersion: 2
+      Hash: fef6830ed12cb3b5561e4851ec569f37
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: VRTK
+    className: VRTK_FramesPerSecondViewer
+  - hash:
+      serializedVersion: 2
+      Hash: cf0604cabce0825f0a941a89a3f410e2
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: VRTK
+    className: VRTK_SDKTransformModify
+  - hash:
+      serializedVersion: 2
+      Hash: 5ab533713adae59372fb3e10a585c186
+    assemblyName: Unity.Timeline.dll
+    namespaceName: UnityEngine.Timeline
+    className: AnimationPlayableAsset
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: VRTK.Examples.PanelMenu
+    className: PanelMenuDemoSphere
+  - hash:
+      serializedVersion: 2
+      Hash: 10a0603ee988fd2878f67bd244953e21
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: VRTK.Examples
+    className: PanelMenuSaucerGrid
+  - hash:
+      serializedVersion: 2
+      Hash: 63e76a414b33483c4e8f6fa0573ec153
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: VRTK.Examples.Old
+    className: FireExtinguisher_Sprayer
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: VRTK.Examples
+    className: UI_Interactions
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: Pvr_ToolTips
+  - hash:
+      serializedVersion: 2
+      Hash: aba7b2852ef61d175dd9602e7723d5e5
+    assemblyName: UnityEngine.UI.dll
+    namespaceName: UnityEngine.UI
+    className: Mask
+  - hash:
+      serializedVersion: 2
+      Hash: d9e5d15f791f38cd2ecd9967563f1834
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: VRTK
+    className: VRTK_SpringLever
+  - hash:
+      serializedVersion: 2
+      Hash: 07d3ae139060c3c464cbb775f8b9ee37
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: VRTK
+    className: VRTK_HeightAdjustTeleport
+  - hash:
+      serializedVersion: 2
+      Hash: caa533b001ae39b864ba8425019e2268
+    assemblyName: UnityEngine.UI.dll
+    namespaceName: UnityEngine.UI
+    className: Shadow
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: VRTK
+    className: SDK_FallbackHeadset
+  - hash:
+      serializedVersion: 2
+      Hash: f1a3482efd242f39964f4a46ee6ee2b0
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: VRTK
+    className: VRTK_InteractGrab
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: VRTK
+    className: SDK_PicoSystem
+  - hash:
+      serializedVersion: 2
+      Hash: 0a3cfadd66a365399ab94e244e65bc90
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: VRTK
+    className: VRTK_ControllerEvents
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: VRTK.Examples
+    className: VRTK_ControllerInteract_ListenerExample
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: VRTK
+    className: SDK_SimBoundaries
+  - hash:
+      serializedVersion: 2
+      Hash: 5dd838637aa48900ba911229ec3bfd86
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: VRTK
+    className: VRTK_InteractObjectAppearance
+  - hash:
+      serializedVersion: 2
+      Hash: d162b3e8364fb14f75fd212cdc6d5263
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: VRTK.UnityEventHelper
+    className: VRTK_ControllerTooltips_UnityEvents
+  - hash:
+      serializedVersion: 2
+      Hash: d24a63cc00e0636fa74fd2e0b3b243ae
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: VRTK.Examples
+    className: SnapDropZoneToggle
+  - hash:
+      serializedVersion: 2
+      Hash: 8f6aecb1120676ee23a898ec09bf4e80
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: VRTK.Highlighters
+    className: VRTK_MaterialColorSwapHighlighter
+  - hash:
+      serializedVersion: 2
+      Hash: ff11bbfc2b1f10e9da61a8259aefdd24
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: Pvr_GazeInputModuleCrosshair
+  - hash:
+      serializedVersion: 2
+      Hash: 78ede13b32718572028a056a2a5d4f7b
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: VRTK.UnityEventHelper
+    className: VRTK_InteractGrab_UnityEvents
+  - hash:
+      serializedVersion: 2
+      Hash: cc4274b586df3c02688bac01b88bd16c
+    assemblyName: UnityEngine.UI.dll
+    namespaceName: UnityEngine.EventSystems
+    className: EventSystem
+  - hash:
+      serializedVersion: 2
+      Hash: 440cd2a54f417079583d815a4ef1c574
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: VRTK
+    className: VRTK_TunnelOverlay
+  - hash:
+      serializedVersion: 2
+      Hash: 0fb27be807aa299702f28ad0bcad1f46
+    assemblyName: Unity.Timeline.dll
+    namespaceName: UnityEngine.Timeline
+    className: ControlPlayableAsset
+  - hash:
+      serializedVersion: 2
+      Hash: dbf27924312d07ad8170edfc59222480
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: VRTK.UnityEventHelper
+    className: VRTK_PlayAreaCursor_UnityEvents
+  - hash:
+      serializedVersion: 2
+      Hash: 19e9ae6d35a2fe2b22ee980cb1c001c2
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: VRTK.Examples
+    className: OptionsMenu
+  - hash:
+      serializedVersion: 2
+      Hash: 96c4f721270b9fcfd4aaa14010b28949
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: VRTK.Examples.Old
+    className: FireExtinguisher_Base
+  - hash:
+      serializedVersion: 2
+      Hash: 29f72df1058c54c6627ba55a10ebd05c
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: VRTK.Controllables.PhysicsBased
+    className: VRTK_PhysicsSlider
+  - hash:
+      serializedVersion: 2
+      Hash: b8a5e8091ab0b8861d2add371082c5e0
+    assemblyName: Unity.TextMeshPro.dll
+    namespaceName: TMPro
+    className: TMP_SpriteAsset
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: VRTK
+    className: SDK_SimController
+  - hash:
+      serializedVersion: 2
+      Hash: c3d3430df9e3ea95e3e3d587961390fb
+    assemblyName: Unity.Timeline.dll
+    namespaceName: UnityEngine.Timeline
+    className: ControlTrack
+  - hash:
+      serializedVersion: 2
+      Hash: 849ed1cc34faf38cd0f35aff9ecf2367
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: VRTK
+    className: VRTK_InteractableObject
+  - hash:
+      serializedVersion: 2
+      Hash: 8dc90e648ac06f43bdd31ac9fa8f4579
+    assemblyName: UnityEngine.UI.dll
+    namespaceName: UnityEngine.UI
+    className: Selectable
+  - hash:
+      serializedVersion: 2
+      Hash: 9ae94122033ccabd48aa6c9a90b7efb4
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: VRTK.UnityEventHelper
+    className: VRTK_RotateTransformGrabAttach_UnityEvents
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: VRTK
+    className: SDK_PicoHeadsetTracker
+  - hash:
+      serializedVersion: 2
+      Hash: 574b7b6210627139442c6e9135bbe91e
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: VRTK.Examples
+    className: VRTKExample_PointerObjectHighlighterActivator
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: VRTK
+    className: SDK_PicoHeadset
+  - hash:
+      serializedVersion: 2
+      Hash: c893711e8d5f87691b43bb17a6ab2266
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: VRTK.Examples
+    className: InteractableWhirlyGig
+  - hash:
+      serializedVersion: 2
+      Hash: 95c8456adadbbb84b0a4d960e1e55274
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: VRTK.GrabAttachMechanics
+    className: VRTK_TrackObjectGrabAttach
+  - hash:
+      serializedVersion: 2
+      Hash: abd9531b9aec007dfeabdc522f923a02
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: HighlightAtGaze
+  - hash:
+      serializedVersion: 2
+      Hash: 361f525e9e51617cb0ac071fa16bd4e6
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: VRTK.Examples
+    className: ElevatorControl
+  - hash:
+      serializedVersion: 2
+      Hash: 44f906b81081de8390b14bd1ecf04915
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: Pvr_TouchVisual
+  - hash:
+      serializedVersion: 2
+      Hash: d11b581041e47ec58323f6d6fe6263ff
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: VRTK
+    className: VRTK_ControllerTrackedCollider
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: VRTK
+    className: SDK_XimmerseSystem
+  - hash:
+      serializedVersion: 2
+      Hash: fed491d2c4c1eb34ce164857cce2ca65
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: VRTK.GrabAttachMechanics
+    className: VRTK_MoveTransformGrabAttach
+  - hash:
+      serializedVersion: 2
+      Hash: 8e1c0cd52c7ef0a95b25813ac9d7a950
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: VRTK
+    className: VRTK_UICanvas
+  - hash:
+      serializedVersion: 2
+      Hash: 0136a2b5f1289ef9389994d51992633a
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: Pvr_GazeInputModule
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: VRTK
+    className: VRTK_CollisionTracker
+  - hash:
+      serializedVersion: 2
+      Hash: 86dd1a65dc79c9e67f704bb083137280
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: VRTK.Examples
+    className: AutoRotation
+  - hash:
+      serializedVersion: 2
+      Hash: 14ec2b96187cba620b3f589a67f57df0
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: DemoController
+  - hash:
+      serializedVersion: 2
+      Hash: e7c470fc53072faef9059fb81c573abb
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: VRTK
+    className: SDK_UnityCameraRig
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: VRTK
+    className: SDK_DaydreamHeadset
+  - hash:
+      serializedVersion: 2
+      Hash: 849ed1cc34faf38cd0f35aff9ecf2367
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: VRTK.Examples
+    className: Whirlygig
+  - hash:
+      serializedVersion: 2
+      Hash: 88e2d582b2e64e1b05a52d8ff1ff91b0
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: VRTK
+    className: VRTK_SlingshotJump
+  - hash:
+      serializedVersion: 2
+      Hash: 1f7b0c721efb0508ffca74be965cc006
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: VRTK
+    className: SDK_PicoControllerTracker
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: VRTK.Examples
+    className: SnapDropZoneGroup_Switcher
+  - hash:
+      serializedVersion: 2
+      Hash: 3aedf24aefa7ca101eccb24493738ee5
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: Pvr_UnitySDKManager
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: InputManager
+  - hash:
+      serializedVersion: 2
+      Hash: b3ab2106268377ffe25dd18ac23dca28
+    assemblyName: Unity.TextMeshPro.dll
+    namespaceName: TMPro
+    className: TMP_Asset
+  - hash:
+      serializedVersion: 2
+      Hash: b5c71bed93f1af3836a6dde2e11f3b07
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: VRTK.UnityEventHelper
+    className: VRTK_ObjectAutoGrab_UnityEvents
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: VRTK
+    className: SDK_SteamVRHeadset
+  - hash:
+      serializedVersion: 2
+      Hash: f43f3bad7e18bfb32397a8e6e02fe239
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: VRTK
+    className: VRTK_ObjectAutoGrab
+  - hash:
+      serializedVersion: 2
+      Hash: b291bbafaa094350383c23c22ed1e504
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: VRTK
+    className: VRTK_TouchpadControl
+  - hash:
+      serializedVersion: 2
+      Hash: 96daf218f35d04e6cd7beeb8f7f738f3
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: MoveBlock
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: VRTK.Examples
+    className: Sphere_Spawner
+  - hash:
+      serializedVersion: 2
+      Hash: d4020bafcd3ccbb5601a6e6c8ac78be0
+    assemblyName: UnityEngine.UI.dll
+    namespaceName: UnityEngine.UI
+    className: ScrollRect
+  - hash:
+      serializedVersion: 2
+      Hash: 70ea999451fc0c48e32c5e23466e9f53
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: VRTK.Examples
+    className: Zipline
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: VRTK
+    className: VRTK_CurveGenerator
+  - hash:
+      serializedVersion: 2
+      Hash: 58cacc8ebad62d79403eb65dba53e48f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: VRTK
+    className: SDK_InputSimulator
+  - hash:
+      serializedVersion: 2
+      Hash: d9e228934c6959c227105684ce38a75c
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: VRTK
+    className: VRTK_ConsoleViewer
+  - hash:
+      serializedVersion: 2
+      Hash: fe6861b3aa11fee285fbc78ddf45bb59
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: VRTK.Examples
+    className: RealGun_SafetySwitch
+  - hash:
+      serializedVersion: 2
+      Hash: 9a928a0a30712853550f37684dd1a59a
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: VRTK
+    className: VRTK_Drawer
+  - hash:
+      serializedVersion: 2
+      Hash: ae83e830e7a90c0aff918c4c2e520825
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: VRTK
+    className: VRTK_UIGraphicRaycaster
+  - hash:
+      serializedVersion: 2
+      Hash: 67e8f24c94146d45ea3fefe3cb7df2f1
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: VRTK.Examples
+    className: VRTK_ControllerAppearance_Example
+  - hash:
+      serializedVersion: 2
+      Hash: c3d3430df9e3ea95e3e3d587961390fb
+    assemblyName: Unity.Timeline.dll
+    namespaceName: UnityEngine.Timeline
+    className: SignalTrack
+  - hash:
+      serializedVersion: 2
+      Hash: c382ba210fa209ac4e2322eedfa43d7d
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: Pvr_UnitySDKProjectSetting
+  - hash:
+      serializedVersion: 2
+      Hash: e7c470fc53072faef9059fb81c573abb
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: VRTK
+    className: SDK_PicoCameraRig
+  - hash:
+      serializedVersion: 2
+      Hash: 4c9839a8faa47c05b6503e5c86cb9696
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: VRTK.UnityEventHelper
+    className: VRTK_Pointer_UnityEvents
+  - hash:
+      serializedVersion: 2
+      Hash: 3a234c0b1d5e5460641849228e3f4786
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: VRTK
+    className: VRTK_InteractNearTouch
+  - hash:
+      serializedVersion: 2
+      Hash: 4f210988ae6c9d3dc042fd0f49a9468b
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: VRTK.UnityEventHelper
+    className: VRTK_Control_UnityEvents
+  - hash:
+      serializedVersion: 2
+      Hash: aa710bff1bbb13dfd53dc51129b86c31
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: VRTK
+    className: VRTK_AdaptiveQuality
+  - hash:
+      serializedVersion: 2
+      Hash: 8b8a722cc45a273176f7956864e490ef
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: VRTK
+    className: VRTK_ButtonControl
+  - hash:
+      serializedVersion: 2
+      Hash: 7ad39f5932f76a1bf92faca3372a91cb
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: VRTK.Examples.Utilities
+    className: SceneLoader
+  - hash:
+      serializedVersion: 2
+      Hash: 865e814fa1fa9ee6e4da69657a179488
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: VRTK.Examples
+    className: Menu_Color_Changer
+  - hash:
+      serializedVersion: 2
+      Hash: 3f2179d35fc428e71acabded9ae7fb62
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: VRTK.GrabAttachMechanics
+    className: VRTK_ChildOfControllerGrabAttach
+  - hash:
+      serializedVersion: 2
+      Hash: 55ec53fe81daef7b100086227f2c9eb1
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: VRTK
+    className: VRTK_SnapDropZone
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: VRTK
+    className: SDK_UnityController
+  - hash:
+      serializedVersion: 2
+      Hash: c16d8d93147724c5e9c47cb3f943a549
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: CLoadingAsset
+  - hash:
+      serializedVersion: 2
+      Hash: 30786448b8aba9998d2407d65d7a0ebf
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: VRTK.Examples
+    className: InteractableLamp
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: VRTK
+    className: SDK_OculusHeadset
+  - hash:
+      serializedVersion: 2
+      Hash: ffbe8cdc55b8e5431621a76ea308012c
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: VRTK.GrabAttachMechanics
+    className: VRTK_CustomJointGrabAttach
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: LoadingRatation
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Unity.TextMeshPro.dll
+    namespaceName: TMPro
+    className: TMP_SpriteAnimator
+  - hash:
+      serializedVersion: 2
+      Hash: b255c1f159a5a8a1c7c5859928317bea
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: VRTK
+    className: VRTK_IgnoreInteractTouchColliders
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: VRTK.SecondaryControllerGrabActions
+    className: VRTK_SwapControllerGrabAction
+  - hash:
+      serializedVersion: 2
+      Hash: 7e648cf6b2e4b5c570ada9ecc3f21267
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: VRTK.UnityEventHelper
+    className: VRTK_InteractControllerAppearance_UnityEvents
+  - hash:
+      serializedVersion: 2
+      Hash: b6db3b95b94ee7330fb32624232075df
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: VRTK.Examples
+    className: RealGun
+  - hash:
+      serializedVersion: 2
+      Hash: 0c1625256631bce48a0ebdd10c446eaa
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: VRTK
+    className: VRTK_DestinationPoint
+  - hash:
+      serializedVersion: 2
+      Hash: 9fe0670e051f5c4f742eaa8f67ce2bd7
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: VRTK
+    className: VRTK_SDKInputOverride
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: UnityEngine.TestRunner.dll
+    namespaceName: UnityEngine.TestTools.TestRunner.Callbacks
+    className: RemoteTestResultSender
+  - hash:
+      serializedVersion: 2
+      Hash: ac93773f9bac168f34bcc2769c36a118
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: Pvr_UnitySDKFPS
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: VRTK.Examples
+    className: ExcludeTeleport
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: Pvr_TouchPadScroll
+  - hash:
+      serializedVersion: 2
+      Hash: 2d7257ca1da94ce7ac2cbd2d8fbc615d
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: VRTK
+    className: VRTK_Simulator
+  - hash:
+      serializedVersion: 2
+      Hash: 7a5af43a30aae408af5364ad363e6f93
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: VRTK.UnityEventHelper
+    className: VRTK_UIDraggableItem_UnityEvents
+  - hash:
+      serializedVersion: 2
+      Hash: e68a2326ee4d3200f81067f6b6e9fb1b
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: VRTK.SecondaryControllerGrabActions
+    className: VRTK_AxisScaleGrabAction
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: VRTK
+    className: SDK_FallbackController
+  - hash:
+      serializedVersion: 2
+      Hash: 1f7b0c721efb0508ffca74be965cc006
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: VRTK
+    className: SDK_UnityControllerTracker
+  - hash:
+      serializedVersion: 2
+      Hash: 1c25d0906578acafd5fe11e3df316bd5
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: VRTK.Examples
+    className: BeamRotator
+  - hash:
+      serializedVersion: 2
+      Hash: 387b9e0d71bb6203bc9bc71ad866a13b
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: VRTK
+    className: VRTK_StraightPointerRenderer
+  - hash:
+      serializedVersion: 2
+      Hash: 4fd8bf02e3089425d3502e26c44ba31a
+    assemblyName: Unity.TextMeshPro.dll
+    namespaceName: TMPro
+    className: TextContainer
+  - hash:
+      serializedVersion: 2
+      Hash: 7b152d8e27734c1306607f1854ccc3e1
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: OverlayExternalSurfaceDemo
+  - hash:
+      serializedVersion: 2
+      Hash: 96c4f721270b9fcfd4aaa14010b28949
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: VRTK.Examples
+    className: FireExtinguisher_Base
+  - hash:
+      serializedVersion: 2
+      Hash: 5f1752ed2092162f016c19510c28a8b9
+    assemblyName: UnityEngine.UI.dll
+    namespaceName: UnityEngine.UI
+    className: Button
+  - hash:
+      serializedVersion: 2
+      Hash: 9ebcc24ed1ba310b9e584458a4dfc43e
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: VRTK
+    className: SDK_ControllerSim
+  - hash:
+      serializedVersion: 2
+      Hash: feb9a5a121d15fa3654d4e50a5233045
+    assemblyName: UnityEngine.UI.dll
+    namespaceName: UnityEngine.UI
+    className: RawImage
+  - hash:
+      serializedVersion: 2
+      Hash: e378c911e594c34e69cdb8ad52d739f5
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: VRTK.Examples.Archery
+    className: ArrowSpawner
+  - hash:
+      serializedVersion: 2
+      Hash: de09e018e22b0cfcca773323fb2b891d
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: VRTK.Examples
+    className: ClimbableHandLift
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: VRTK
+    className: SDK_DaydreamSystem
+  - hash:
+      serializedVersion: 2
+      Hash: 122d08becfd3e4f059a13d16bb9dc603
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: VRTK
+    className: VRTK_ObjectTouchAutoInteract
+  - hash:
+      serializedVersion: 2
+      Hash: 4a1684cd4726ad76bc8a425ddcf872ae
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: VRTK.Examples
+    className: RC_Car_Controller
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: VRTK
+    className: SDK_SimHeadset
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: VRTK
+    className: VRTK_UIDropZone
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: VRTK
+    className: SDK_FallbackSystem
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: VRTK
+    className: VRTK_HeadsetFade
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: VRTK.Examples.PanelMenu
+    className: PanelMenuUISlider
+  - hash:
+      serializedVersion: 2
+      Hash: ce2904edc6565bfa158540cb54a8a0e4
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: VRTK.GrabAttachMechanics
+    className: VRTK_SpringJointGrabAttach
+  - hash:
+      serializedVersion: 2
+      Hash: 82847914533deed076cda6dca4971f2c
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: Pvr_ControllerDemo
+  - hash:
+      serializedVersion: 2
+      Hash: cc4274b586df3c02688bac01b88bd16c
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: VRTK
+    className: VRTK_EventSystem
+  - hash:
+      serializedVersion: 2
+      Hash: 5ad4aa237d47ac2bab17bacb672edf7a
+    assemblyName: UnityEngine.UI.dll
+    namespaceName: UnityEngine.UI
+    className: VerticalLayoutGroup
+  - hash:
+      serializedVersion: 2
+      Hash: d52e9a05e9183a079eb3e3cb7938f75d
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: VRTK
+    className: VRTK_SnapRotateObjectControlAction
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: VRTK
+    className: SDK_DaydreamBoundaries
+  - hash:
+      serializedVersion: 2
+      Hash: 09520e219ea7d92479b3d7145b35e821
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: VRTK.UnityEventHelper
+    className: VRTK_InteractTouch_UnityEvents
+  - hash:
+      serializedVersion: 2
+      Hash: a04fc9cc1592850a3869b722aaa829b8
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: VRTK.Controllables.PhysicsBased
+    className: VRTK_PhysicsPusher
+  - hash:
+      serializedVersion: 2
+      Hash: bfb5eb03b17d7696531918dd565d3cdf
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: VRTK
+    className: VRTK_UIPointer
+  - hash:
+      serializedVersion: 2
+      Hash: 5eafd4ba0d143cc8778ffebf09abe163
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: VRTK.UnityEventHelper
+    className: VRTK_PositionRewind_UnityEvents
+  - hash:
+      serializedVersion: 2
+      Hash: bfd7a24fb42877f9e4230bc1bf7f27df
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: VRTK.GrabAttachMechanics
+    className: VRTK_ClimbableGrabAttach
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: VRTK
+    className: SDK_FallbackBoundaries
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: VRTK.Examples.PanelMenu
+    className: PanelMenuDemoFlyingSaucer
+  - hash:
+      serializedVersion: 2
+      Hash: bae5235830852ca9e7e5952184956503
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: VRTK
+    className: VRTK_TeleportDisableOnControllerObscured
+  - hash:
+      serializedVersion: 2
+      Hash: 783f593b9380cf72d0f7ebfd4a0d4bcd
+    assemblyName: UnityEngine.UI.dll
+    namespaceName: UnityEngine.UI
+    className: InputField
+  - hash:
+      serializedVersion: 2
+      Hash: ed943a7a92b210b2fcabebe6a253fb7c
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: VRTK
+    className: VRTK_IndependentRadialMenuController
+  - hash:
+      serializedVersion: 2
+      Hash: c9a8b80298a116835b51ba1cf9284367
+    assemblyName: Unity.Timeline.dll
+    namespaceName: UnityEngine.Timeline
+    className: SignalReceiver
+  - hash:
+      serializedVersion: 2
+      Hash: 8a5caebf3a44d0795435349cae94f457
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: VRTK.UnityEventHelper
+    className: VRTK_DestinationPoint_UnityEvents
+  - hash:
+      serializedVersion: 2
+      Hash: b810b4154a0409812ad37e054ffe493c
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: VRTK
+    className: VRTK_PolicyList
+  - hash:
+      serializedVersion: 2
+      Hash: 5ad4aa237d47ac2bab17bacb672edf7a
+    assemblyName: UnityEngine.UI.dll
+    namespaceName: UnityEngine.UI
+    className: HorizontalLayoutGroup
+  - hash:
+      serializedVersion: 2
+      Hash: 35a9693c388776aaf487636491a20f11
+    assemblyName: Unity.TextMeshPro.dll
+    namespaceName: TMPro
+    className: TMP_FontAsset
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: VRTK.Examples
+    className: Remote_Beam
+  - hash:
+      serializedVersion: 2
+      Hash: e1300922cc039f41ab46a47f4cb05898
+    assemblyName: Unity.TextMeshPro.dll
+    namespaceName: TMPro
+    className: TMP_Settings
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Unity.Timeline.dll
+    namespaceName: UnityEngine.Timeline
+    className: ActivationPlayableAsset
+  - hash:
+      serializedVersion: 2
+      Hash: 79856b93596b5bf2187f25d488271572
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: VRTK.Examples
+    className: Menu_Object_Spawner
+  - hash:
+      serializedVersion: 2
+      Hash: 18c222bef9ae745ce69ddde9b74337ca
+    assemblyName: UnityEngine.UI.dll
+    namespaceName: UnityEngine.EventSystems
+    className: Physics2DRaycaster
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: VRTK
+    className: SDK_UnitySystem
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: VRTK
+    className: SDK_HyperealVRBoundaries
+  - hash:
+      serializedVersion: 2
+      Hash: fe76076d1282d42f2e77aa2da57ebff4
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: VRTK.Controllables.ArtificialBased
+    className: VRTK_ArtificialSlider
+  - hash:
+      serializedVersion: 2
+      Hash: e68e2c4f3c4a055048102fcfafc79d15
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: Pvr_GazeFuse
+  - hash:
+      serializedVersion: 2
+      Hash: 267e5c2cd1ff5c28fe12adb8740929e1
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: VRTK
+    className: WindowsMR_Camera
+  - hash:
+      serializedVersion: 2
+      Hash: fb9e80516093002ff1025fe6d5b8f35d
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: VRTK.Controllables.ArtificialBased
+    className: VRTK_ArtificialRotator
+  - hash:
+      serializedVersion: 2
+      Hash: f2e2e8d55ce8b01233ca070ccc336ae4
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: Pvr_UnitySDKPlatformSetting
+  - hash:
+      serializedVersion: 2
+      Hash: ae4990023adf79d839fc52b301b85aaf
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: VRTK.UnityEventHelper
+    className: VRTK_UIPointer_UnityEvents
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: VRTK.Examples.Utilities
+    className: SceneChanger
+  - hash:
+      serializedVersion: 2
+      Hash: 6b3292389b1eb5158cde98ecb6c0d22a
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: VRTK
+    className: VRTK_MoveInPlace
+  - hash:
+      serializedVersion: 2
+      Hash: 13162cb54cb6de7c5d193c5cfdc1e904
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: VRTK.Examples
+    className: VRTK_ControllerEvents_ListenerExample
+  - hash:
+      serializedVersion: 2
+      Hash: c2b0dcd1769c62cd174e0c903f533d6d
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: VRTK
+    className: VRTK_InteractTouch
+  - hash:
+      serializedVersion: 2
+      Hash: e0b0e3d2d21f8c88173c7e9ab8496804
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: VRTK
+    className: VRTK_ContentHandler
+  - hash:
+      serializedVersion: 2
+      Hash: c1933cc0a2f4ff6eb13333347497beb3
+    assemblyName: Unity.Timeline.dll
+    namespaceName: UnityEngine.Timeline
+    className: TimelineAsset
+  - hash:
+      serializedVersion: 2
+      Hash: 63e76a414b33483c4e8f6fa0573ec153
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: VRTK.Examples
+    className: FireExtinguisher_Sprayer
+  - hash:
+      serializedVersion: 2
+      Hash: 47cb794794f902efceae9d031d2e39ea
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: VRTK
+    className: VRTK_PlayAreaCursor
+  - hash:
+      serializedVersion: 2
+      Hash: 66d053c01fece362b118fe1376e83b88
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: VRTK.Examples.Utilities
+    className: VRTKExample_FixSetup
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: Pvr_UIDropZone
+  - hash:
+      serializedVersion: 2
+      Hash: 9c67a488c521a6bdcc50931b2c2c5773
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: VRTK
+    className: VRTK_BasicTeleport
+  - hash:
+      serializedVersion: 2
+      Hash: 78ea6f47606a50dcb33e4e950a326d60
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: VRTK
+    className: VRTK_PlayerClimb
+  - hash:
+      serializedVersion: 2
+      Hash: e55ec5d33158cffe4b4f9d22bdc1c1ec
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: VRTK.Examples
+    className: ModelVillage_TeleportLocation
+  - hash:
+      serializedVersion: 2
+      Hash: 13db454f4126cdf0451b797b905dfd82
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: VRTK.UnityEventHelper
+    className: VRTK_InteractObjectAppearance_UnityEvents
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: VRTK
+    className: VRTK_ControllerHaptics
+  - hash:
+      serializedVersion: 2
+      Hash: 92ca8fa1844a3cdc3e2c822a98f7565f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: VRTK.Examples
+    className: VRTKExample_BezierPointerDefaults
+  - hash:
+      serializedVersion: 2
+      Hash: b25a2a41f0971cf81faad97536082b05
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: VRTK
+    className: VRTK_DesktopCamera
+  - hash:
+      serializedVersion: 2
+      Hash: f7c6ba8a4024efbf0de7752bd5a5f60d
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: VRTK.UnityEventHelper
+    className: VRTK_HeadsetCollision_UnityEvents
+  - hash:
+      serializedVersion: 2
+      Hash: b59d40636235b6f6d54a2aa201595d3f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: VRTK.UnityEventHelper
+    className: VRTK_PlayerClimb_UnityEvents
+  - hash:
+      serializedVersion: 2
+      Hash: f85613073ccb9f28227169fd4771554c
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: VRTK
+    className: VRTK_ObjectTooltip
+  - hash:
+      serializedVersion: 2
+      Hash: 059c625504141ee9b12a681866d0f499
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: VRTK.UnityEventHelper
+    className: VRTK_InteractNearTouch_UnityEvents
+  - hash:
+      serializedVersion: 2
+      Hash: c3a6134c643adc24348a827ef675558e
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: VRTK
+    className: VRTK_UIDraggableItem
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: VRTK.Examples.Archery
+    className: ArrowNotch
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: VRTK.Examples
+    className: VRTK_RoomExtender_ControllerExample
+  - hash:
+      serializedVersion: 2
+      Hash: 4ee36804264d81d54ea137fb66002a7d
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: VRTK.UnityEventHelper
+    className: VRTK_InteractUse_UnityEvents
+  - hash:
+      serializedVersion: 2
+      Hash: f34848eb42c07a5934f45dee154d356a
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: VRTK.Examples
+    className: VRTKExample_OptionTilePointerSelector
+  - hash:
+      serializedVersion: 2
+      Hash: b92f0d1a8862c0ac6e54bb1a91a20444
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: VRTK.Examples.Archery
+    className: BowAim
+  - hash:
+      serializedVersion: 2
+      Hash: 78b916f0bfd9c765acb82236ed9c1122
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: VRTK.Controllables.PhysicsBased
+    className: VRTK_PhysicsRotator
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: VRTK
+    className: SDK_UnityBoundaries
+  - hash:
+      serializedVersion: 2
+      Hash: 3b760e6526e13f7504f59e210145899a
+    assemblyName: Unity.TextMeshPro.dll
+    namespaceName: TMPro
+    className: TextMeshProUGUI
+  - hash:
+      serializedVersion: 2
+      Hash: 7333cfd1b6f966b6ab54d4b87202b7c2
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: VRTK
+    className: VRTK_PanelMenuController
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: VRTK
+    className: VRTK_ObjectAppearance
+  - hash:
+      serializedVersion: 2
+      Hash: 849ed1cc34faf38cd0f35aff9ecf2367
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: VRTK.Examples
+    className: Gun
+  - hash:
+      serializedVersion: 2
+      Hash: 1e001e5ac2d3a250ade8b5f3a4de1b98
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: Pvr_ControllerPower
+  - hash:
+      serializedVersion: 2
+      Hash: 92f95dc489b4c8c87dcf40a363c96048
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: VRTK
+    className: VRTK_SDKObjectState
+  - hash:
+      serializedVersion: 2
+      Hash: 746d100ecf2aeda07fdfa225fd726546
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: Pvr_UnitySDKEye
+  - hash:
+      serializedVersion: 2
+      Hash: 3b00d10838db53890848db904daf5454
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: Pvr_ControllerModuleInit
+  - hash:
+      serializedVersion: 2
+      Hash: f336e086360abe49a3323e5f1583c35a
+    assemblyName: Unity.Timeline.dll
+    namespaceName: UnityEngine.Timeline
+    className: AudioTrack
+  - hash:
+      serializedVersion: 2
+      Hash: cffb99994784278d357ae1d9e9644d3c
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: Pvr_VolumePowerBrightness
+  - hash:
+      serializedVersion: 2
+      Hash: 849ed1cc34faf38cd0f35aff9ecf2367
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: VRTK.Examples
+    className: Menu_Container_Object_Colors
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: VRTK
+    className: SDK_HyperealVRController
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: VRTK
+    className: SDK_WindowsMRHeadset
+  - hash:
+      serializedVersion: 2
+      Hash: 2b0595f6f61f80dcf6ff46a8df563b1e
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: VRTK.Examples
+    className: PusherStickyToggle
+  - hash:
+      serializedVersion: 2
+      Hash: ae83e830e7a90c0aff918c4c2e520825
+    assemblyName: UnityEngine.UI.dll
+    namespaceName: UnityEngine.UI
+    className: GraphicRaycaster
+  - hash:
+      serializedVersion: 2
+      Hash: 57c603a612b823bd13950ed0772ab67d
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: VRTK
+    className: VRTK_BezierPointerRenderer
+  - hash:
+      serializedVersion: 2
+      Hash: eec210efdc4db2de91ee7b38448c5922
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: VRTK
+    className: VRTK_SDKSetupSwitcher
+  - hash:
+      serializedVersion: 2
+      Hash: 4f7cf6f216c7f4afd58a95b1cbeca9d3
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: VRTK.Examples
+    className: VRTKExample_BezierPointerCustomStyles
+  - hash:
+      serializedVersion: 2
+      Hash: 88cc9df3c6fc697bfbeacd24c0d6f2d7
+    assemblyName: UnityEngine.TestRunner.dll
+    namespaceName: UnityEngine.TestTools
+    className: BeforeAfterTestCommandState
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: MoveSphere
+  - hash:
+      serializedVersion: 2
+      Hash: 409f98dd2cebb52d9add79a164724c52
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: VRTK
+    className: VRTK_RadialMenu
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: QuitGame
+  - hash:
+      serializedVersion: 2
+      Hash: 457cf6a93b3d202f95a9adca2ae76d2c
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: VRTK
+    className: VRTK_RigidbodyFollow
+  - hash:
+      serializedVersion: 2
+      Hash: 783f2677739641e47a89ddfead611f28
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: Pvr_Controller
+  - hash:
+      serializedVersion: 2
+      Hash: 621a63b18c9a5841cb1d42889d8c9cf7
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: VRTK.Examples
+    className: Remote_Beam_Controller
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: Pvr_ControllerEventsExamples
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: VRTK
+    className: SDK_XimmerseHeadset
+  - hash:
+      serializedVersion: 2
+      Hash: 5e02032283b3024733c5ba22d7195275
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: VRTK
+    className: VRTK_Pointer
+  - hash:
+      serializedVersion: 2
+      Hash: e96af23e6e4708fd0f9871a1e6ab7f22
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: Pvr_UIDraggableItem
+  - hash:
+      serializedVersion: 2
+      Hash: 0c6f8e8a3aeb3d16befa50d0607f262f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: VRTK.Examples
+    className: ControlsMenu
+  - hash:
+      serializedVersion: 2
+      Hash: 8f66f50037295ca25ce8257f1c704c23
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: VRTK.Examples
+    className: VRTKExample_BezierPointerLineRenderer
+  - hash:
+      serializedVersion: 2
+      Hash: 54dc530f9eadda5b3821ba514b789489
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: VRTK.UnityEventHelper
+    className: VRTK_DestinationMarker_UnityEvents
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: VRTK
+    className: SDK_PicoController
+  - hash:
+      serializedVersion: 2
+      Hash: f9321e5459e113f9b20218453b654a8f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: VRTK
+    className: VRTK_HipTracking
+  - hash:
+      serializedVersion: 2
+      Hash: b3af75dcb745b0747e0d25ab17e76196
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: VRTK.Examples.Archery
+    className: Arrow
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: VRTK
+    className: WindowsMR_ControllerManager
+  - hash:
+      serializedVersion: 2
+      Hash: 04b9bdba2a765254190f4f651e8acc31
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: VRTK.UnityEventHelper
+    className: VRTK_ObjectControl_UnityEvents
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: VRTK.Examples
+    className: RendererOffOnDash
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: VRTK
+    className: SDK_UnityHeadsetTracker
+  - hash:
+      serializedVersion: 2
+      Hash: bc2a55bf9a425f8e5e4888d0975ac24d
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: VRTK.Examples
+    className: ToggleGameObjectSlider
+  - hash:
+      serializedVersion: 2
+      Hash: 6edef2e3824e2c9894f97f7d00d54ce7
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: VRTK
+    className: VRTK_Door
+  - hash:
+      serializedVersion: 2
+      Hash: 50e06f7f171ddd660373d4e1eb03517f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: Pvr_UnitySDKEditor
+  - hash:
+      serializedVersion: 2
+      Hash: fec75e6d204df866a3cbf89657e0950d
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: VRTK.UnityEventHelper
+    className: VRTK_PointerDirectionIndicator_UnityEvents
+  - hash:
+      serializedVersion: 2
+      Hash: c3d3430df9e3ea95e3e3d587961390fb
+    assemblyName: Unity.Timeline.dll
+    namespaceName: UnityEngine.Timeline
+    className: MarkerTrack
+  - hash:
+      serializedVersion: 2
+      Hash: 6299314f9d644babe3216b11c57cee85
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: VRTK.Examples
+    className: VRTK_ControllerUIPointerEvents_ListenerExample
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: VRTK.Examples
+    className: IgnoreTeleportDummy
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: Resetbutton
+  - hash:
+      serializedVersion: 2
+      Hash: a4234ce60516da86cb36b41d8f0aa734
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: VRTK
+    className: VRTK_Logger
+  - hash:
+      serializedVersion: 2
+      Hash: ff5dde4acc69ec609d993943de6d9f94
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: VRTK
+    className: VRTK_Wheel
+  - hash:
+      serializedVersion: 2
+      Hash: ae83e830e7a90c0aff918c4c2e520825
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: Pvr_UIGraphicRaycaster
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: VRTK
+    className: RadialButtonIcon
+  - hash:
+      serializedVersion: 2
+      Hash: e65a73e6d5a0d376c4d849d6a757144c
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: VRTK
+    className: VRTK_WarpObjectControlAction
+  - hash:
+      serializedVersion: 2
+      Hash: bfc1cd62a3e3ea5373b4525eb7682285
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: VRTK.UnityEventHelper
+    className: VRTK_BaseControllable_UnityEvents
+  - hash:
+      serializedVersion: 2
+      Hash: d791aa6007fa3640be1164ea75bb087d
+    assemblyName: Unity.TextMeshPro.dll
+    namespaceName: TMPro
+    className: TMP_StyleSheet
+  - hash:
+      serializedVersion: 2
+      Hash: e75e58ab373cc0817a1fdddc5e276a4a
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: VRTK.UnityEventHelper
+    className: VRTK_MoveTransformGrabAttach_UnityEvents
+  - hash:
+      serializedVersion: 2
+      Hash: 849ed1cc34faf38cd0f35aff9ecf2367
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: VRTK.Examples
+    className: RealGun_Slide
+  - hash:
+      serializedVersion: 2
+      Hash: 141447db1d8d28d57334207ddc38f940
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: VRTK
+    className: VRTK_InteractObjectHighlighter
+  - hash:
+      serializedVersion: 2
+      Hash: e8f56157f6c5889e8d99995712ac8475
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: VRTK.Examples
+    className: ControlReactor
+  - hash:
+      serializedVersion: 2
+      Hash: d6b9da538ec5f6a4b1e9a751e951d9b4
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: VRTK.Examples.Archery
+    className: BowHandle
+  - hash:
+      serializedVersion: 2
+      Hash: dfb9e8f93b48608fc2c97aefcfc4e7f2
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: VRTK
+    className: VRTK_Chest
+  - hash:
+      serializedVersion: 2
+      Hash: df434544c9f7b33d1cc7e635b180d279
+    assemblyName: Unity.TextMeshPro.dll
+    namespaceName: TMPro
+    className: TextMeshPro
+  - hash:
+      serializedVersion: 2
+      Hash: 3165968ba45c74472d279ba04455fccb
+    assemblyName: Unity.TextMeshPro.dll
+    namespaceName: TMPro
+    className: TMP_ColorGradient
+  - hash:
+      serializedVersion: 2
+      Hash: 9b61f0638b5fc8e7b1c33e16925b5f02
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: VRTK.UnityEventHelper
+    className: VRTK_HeadsetFade_UnityEvents
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: MoveCylinder
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: VRTK
+    className: SDK_HyperealVRHeadset
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: UnityEngine.TestRunner.dll
+    namespaceName: UnityEngine.TestTools.TestRunner.Callbacks
+    className: PlayModeRunnerCallback
+  - hash:
+      serializedVersion: 2
+      Hash: 60edc51f9223d08ee402b82d6a8681f0
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: VRTK.UnityEventHelper
+    className: VRTK_ControllerRigidbodyActivator_UnityEvents
+  - hash:
+      serializedVersion: 2
+      Hash: 10da847f41c0c7271c9e7d35c9ad2d07
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: VRTK
+    className: VRTK_ControllerTooltips
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: VRTK
+    className: SDK_XimmerseController
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: UnityEngine.UI.dll
+    namespaceName: UnityEngine.EventSystems
+    className: BaseInput
+  - hash:
+      serializedVersion: 2
+      Hash: 508c9d4c43636649a12deb10c3341f20
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: VRTK.Examples
+    className: ToggleGameObject
+  - hash:
+      serializedVersion: 2
+      Hash: b2048c07f872bbae3b249b89b676bd14
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: VRTK
+    className: VRTK_NavMeshData
+  - hash:
+      serializedVersion: 2
+      Hash: caa533b001ae39b864ba8425019e2268
+    assemblyName: UnityEngine.UI.dll
+    namespaceName: UnityEngine.UI
+    className: Outline
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: RayVisualizer
+  - hash:
+      serializedVersion: 2
+      Hash: deddeaec17e00d105b2c5dc3371cdba8
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: VRTK
+    className: VRTK_RotateObjectControlAction
+  - hash:
+      serializedVersion: 2
+      Hash: c3660c8bf61c1d71da43f0a2eab6c12f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: Pvr_UnitySDKEyeOverlay
+  - hash:
+      serializedVersion: 2
+      Hash: 0597c32ac76c12fd4833619930542089
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: Pvr_UnitySDKEyeManager
+  - hash:
+      serializedVersion: 2
+      Hash: a0fea0cc3659770a7b85e48062642f5f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: VRTK.Examples
+    className: GunShoot
+  - hash:
+      serializedVersion: 2
+      Hash: e299761d18622d5282f9864a0c4617f2
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: VRTK
+    className: VRTK_ControllerHighlighter
+  - hash:
+      serializedVersion: 2
+      Hash: a63fc1a3b035e5a0b5839cd7f7b3086e
+    assemblyName: UnityEngine.UI.dll
+    namespaceName: UnityEngine.EventSystems
+    className: EventTrigger
+  - hash:
+      serializedVersion: 2
+      Hash: 6ba996328bcc18180b9c5910546640e7
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: VRTK
+    className: VRTK_HeadsetControllerAware
+  - hash:
+      serializedVersion: 2
+      Hash: 8649814970b42d345b89944b862453cc
+    assemblyName: Unity.TextMeshPro.dll
+    namespaceName: TMPro
+    className: TMP_SubMesh
+  - hash:
+      serializedVersion: 2
+      Hash: 134ca5fe93a779a6843e36336fd2433f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: VRTK.UnityEventHelper
+    className: VRTK_BasicTeleport_UnityEvents
+  - hash:
+      serializedVersion: 2
+      Hash: a987add8143bda2994e55c94b1f3a1c2
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: VRTK.UnityEventHelper
+    className: VRTK_SDKManager_UnityEvents
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: UnityEngine.TestRunner.dll
+    namespaceName: UnityEngine.TestRunner.Utils
+    className: TestRunCallbackListener
+  - hash:
+      serializedVersion: 2
+      Hash: 3da7360737a193492dc972d8bf6898e0
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: VRTK.Examples
+    className: ControllableReactor
+  - hash:
+      serializedVersion: 2
+      Hash: 4ef0f7d42cdb13479386e1f049c315aa
+    assemblyName: UnityEngine.TestRunner.dll
+    namespaceName: UnityEngine.TestTools.TestRunner
+    className: PlaymodeTestsController
+  - hash:
+      serializedVersion: 2
+      Hash: 2aeeec1b1a144c469cd2d37776bc2315
+    assemblyName: UnityEngine.UI.dll
+    namespaceName: UnityEngine.UI
+    className: Dropdown
+  - hash:
+      serializedVersion: 2
+      Hash: 2f6b53e8311307301c4bb3499e01af05
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: VRTK.UnityEventHelper
+    className: VRTK_BodyPhysics_UnityEvents
+  - hash:
+      serializedVersion: 2
+      Hash: 40eac42b3b68bf9fbadab7caf6680d60
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: VRTK.Examples.Archery
+    className: BowAnimation
+  - hash:
+      serializedVersion: 2
+      Hash: 748dd2a2a28da4e618912da5ac45684b
+    assemblyName: UnityEngine.UI.dll
+    namespaceName: UnityEngine.EventSystems
+    className: StandaloneInputModule
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: VRTK.Examples
+    className: Breakable_Cube
+  - hash:
+      serializedVersion: 2
+      Hash: 09d47d3dbd70797049765cffe3219de8
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: Pvr_ControllerInit
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: VRTK
+    className: SDK_PicoBoundaries
+  - hash:
+      serializedVersion: 2
+      Hash: 515e70bb6d84e7050ababa7e6ccbb508
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: VRTK.Examples
+    className: UseRotate
+  - hash:
+      serializedVersion: 2
+      Hash: 4750fb63d39ed48cff0a8bffaa784dbc
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: VRTK.UnityEventHelper
+    className: VRTK_ControllerEvents_UnityEvents
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: VRTK
+    className: WindowsMR_TrackedObject
+  - hash:
+      serializedVersion: 2
+      Hash: aa88ae22474df55295327e4ee99e5a24
+    assemblyName: UnityEngine.UI.dll
+    namespaceName: UnityEngine.UI
+    className: Toggle
+  - hash:
+      serializedVersion: 2
+      Hash: 5ffb45aaf5c9d37bd63cd94b04044f4a
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: VRTK.UnityEventHelper
+    className: VRTK_Button_UnityEvents
+  - hash:
+      serializedVersion: 2
+      Hash: 8220b46879dc5e37db1b940c938f5744
+    assemblyName: Unity.Timeline.dll
+    namespaceName: UnityEngine.Timeline
+    className: SignalEmitter
+  - hash:
+      serializedVersion: 2
+      Hash: fd77c9e29625197a71ab251afb0215c4
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: Pvr_ControllerVisual
+  - hash:
+      serializedVersion: 2
+      Hash: 849ed1cc34faf38cd0f35aff9ecf2367
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: VRTK.Examples
+    className: LightSaber
+  - hash:
+      serializedVersion: 2
+      Hash: 7072231382eb3c4871b3dd75ad0227e1
+    assemblyName: UnityEngine.UI.dll
+    namespaceName: UnityEngine.UI
+    className: Slider
+  - hash:
+      serializedVersion: 2
+      Hash: 30556473955db10c973fac26dc39b7ab
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: VRTK
+    className: VRTK_DragWorld
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: VRTK
+    className: SDK_SteamVRController
+  - hash:
+      serializedVersion: 2
+      Hash: 61f411b987f43b67a058c6edc883e1a0
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: VRTK.UnityEventHelper
+    className: VRTK_ControlAnimationGrabAttach_UnityEvents
+  - hash:
+      serializedVersion: 2
+      Hash: 1d1d312b760e1fff6cfa1a562cbf1a00
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: VRTK.Examples
+    className: TogglePointerInteraction
+  - hash:
+      serializedVersion: 2
+      Hash: 0fd6822f6177297bd0eb4d83cc7a9030
+    assemblyName: UnityEngine.UI.dll
+    namespaceName: UnityEngine.UI
+    className: ToggleGroup
+  - hash:
+      serializedVersion: 2
+      Hash: c3d3430df9e3ea95e3e3d587961390fb
+    assemblyName: Unity.Timeline.dll
+    namespaceName: UnityEngine.Timeline
+    className: PlayableTrack
+  platform: 13
+  scenePathNames:
+  - Assets/VRTK/Examples/[005 - Interactions] InteractableObjects.unity
+  playerPath: D:/pico/unityAPK/vrtkTest005.apk
