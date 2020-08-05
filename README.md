@@ -2,9 +2,11 @@
 
 ## Special Thanks to Contributors
 We're very grateful for the significant contribution from:    
-**Jenoah Kers**   
-**Nikita Kayal**   
-**Roger ter Heide**   
+
+**Improvive Team**
+  **Jenoah Kers**   
+  **Nikita Kayal**   
+  **Roger ter Heide**   
 
 ## Unity Versions
 
