@@ -4,9 +4,9 @@
 We're very grateful for the significant contribution from:    
 
 **Improvive Team**
->>**Jenoah Kers**   
->>**Nikita Kayal**   
->>**Roger ter Heide**   
+>**Jenoah Kers**   
+>**Nikita Kayal**   
+>**Roger ter Heide**   
 
 ## Unity Versions
 
