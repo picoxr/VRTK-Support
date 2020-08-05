@@ -1,5 +1,11 @@
 # VRTK Support
 
+## Special Thanks to Contributors
+We're very grateful for the significant contribution from:    
+**Jenoah Kers**   
+**Nikita Kayal**   
+**Roger ter Heide**   
+
 ## Unity Versions
 
 Unity2019.3.6
