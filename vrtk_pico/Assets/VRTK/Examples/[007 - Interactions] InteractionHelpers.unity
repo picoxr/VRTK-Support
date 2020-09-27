@@ -1675,6 +1675,8 @@ GameObject:
   - component: {fileID: 101247727}
   - component: {fileID: 101247726}
   - component: {fileID: 101247725}
+  - component: {fileID: 101247728}
+  - component: {fileID: 101247729}
   m_Layer: 5
   m_Name: IgnoreMeCanvas
   m_TagString: Untagged
@@ -1763,6 +1765,34 @@ Canvas:
   m_SortingLayerID: 0
   m_SortingOrder: 0
   m_TargetDisplay: 0
+--- !u!114 &101247728
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 101247723}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1518a5e598c7da244bc4850d3ae63354, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  clickOnPointerCollision: 0
+  autoActivateWithinDistance: 0
+--- !u!114 &101247729
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 101247723}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1518a5e598c7da244bc4850d3ae63354, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  clickOnPointerCollision: 0
+  autoActivateWithinDistance: 0
 --- !u!1 &109582311
 GameObject:
   m_ObjectHideFlags: 0
@@ -1969,7 +1999,7 @@ MonoBehaviour:
   clickAfterHoverDuration: 0
   maximumLength: Infinity
   attachedTo: {fileID: 0}
-  controllerEvents: {fileID: 0}
+  controllerEvents: {fileID: 109582313}
   customOrigin: {fileID: 0}
   controller: {fileID: 0}
   pointerOriginTransform: {fileID: 0}
@@ -4298,6 +4328,7 @@ GameObject:
   - component: {fileID: 306632836}
   - component: {fileID: 306632835}
   - component: {fileID: 306632834}
+  - component: {fileID: 306632837}
   m_Layer: 5
   m_Name: Button (1)
   m_TagString: Untagged
@@ -4415,6 +4446,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 306632832}
   m_CullTransparentMesh: 0
+--- !u!114 &306632837
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 306632832}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1518a5e598c7da244bc4850d3ae63354, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  clickOnPointerCollision: 0
+  autoActivateWithinDistance: 0
 --- !u!1 &307922428
 GameObject:
   m_ObjectHideFlags: 0
@@ -7802,6 +7847,12 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 629200663}
   m_CullTransparentMesh: 0
+--- !u!20 &629285725 stripped
+Camera:
+  m_CorrespondingSourceObject: {fileID: 7481298461570880141, guid: 1aadf2692d8ee294cae8ed209b65260c,
+    type: 3}
+  m_PrefabInstance: {fileID: 1429715388}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &631840821
 GameObject:
   m_ObjectHideFlags: 0
@@ -10581,6 +10632,7 @@ GameObject:
   - component: {fileID: 923134532}
   - component: {fileID: 923134531}
   - component: {fileID: 923134530}
+  - component: {fileID: 923134534}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -10627,7 +10679,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1518a5e598c7da244bc4850d3ae63354, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  clickOnPointerCollision: 0
+  clickOnPointerCollision: 1
   autoActivateWithinDistance: 0
 --- !u!114 &923134531
 MonoBehaviour:
@@ -10678,7 +10730,7 @@ Canvas:
   m_Enabled: 1
   serializedVersion: 3
   m_RenderMode: 2
-  m_Camera: {fileID: 0}
+  m_Camera: {fileID: 629285725}
   m_PlaneDistance: 100
   m_PixelPerfect: 0
   m_ReceivesEvents: 1
@@ -10689,6 +10741,20 @@ Canvas:
   m_SortingLayerID: 0
   m_SortingOrder: 0
   m_TargetDisplay: 0
+--- !u!114 &923134534
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 923134528}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b81a2561ece41014f88084aba2553028, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  clickOnPointerCollision: 0
+  autoActivateWithinDistance: 0
 --- !u!1 &926798725
 GameObject:
   m_ObjectHideFlags: 0
@@ -17582,12 +17648,12 @@ GameObject:
   m_Component:
   - component: {fileID: 1408711849}
   - component: {fileID: 1408711850}
+  - component: {fileID: 1408711855}
   - component: {fileID: 1408711856}
   - component: {fileID: 1408711854}
   - component: {fileID: 1408711853}
   - component: {fileID: 1408711852}
   - component: {fileID: 1408711851}
-  - component: {fileID: 1408711855}
   m_Layer: 0
   m_Name: LeftControllerScriptAlias
   m_TagString: Untagged
@@ -17778,7 +17844,7 @@ MonoBehaviour:
   clickAfterHoverDuration: 0
   maximumLength: Infinity
   attachedTo: {fileID: 0}
-  controllerEvents: {fileID: 0}
+  controllerEvents: {fileID: 1408711850}
   customOrigin: {fileID: 0}
   controller: {fileID: 0}
   pointerOriginTransform: {fileID: 0}
