@@ -20,10 +20,10 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/VRTK/Examples/[005 - Interactions] InteractableObjects.unity
     guid: bece393a6b2458142935d8d7562c52d7
-  - enabled: 0
+  - enabled: 1
     path: Assets/VRTK/Examples/[006 - Locomotion] MovementTypes.unity
     guid: 0d6a417054df32d4a90351ce5c3fc638
-  - enabled: 1
+  - enabled: 0
     path: Assets/VRTK/Examples/[007 - Interactions] InteractionHelpers.unity
     guid: ea2236e506afcac41a7b82e176d839d1
   - enabled: 0
