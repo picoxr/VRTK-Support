@@ -20,7 +20,7 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/VRTK/Examples/[005 - Interactions] InteractableObjects.unity
     guid: bece393a6b2458142935d8d7562c52d7
-  - enabled: 1
+  - enabled: 0
     path: Assets/VRTK/Examples/[006 - Locomotion] MovementTypes.unity
     guid: 0d6a417054df32d4a90351ce5c3fc638
   - enabled: 0
@@ -32,4 +32,7 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/VRTK/LegacyExampleFiles/005_Controller_BasicObjectGrabbing.unity
     guid: 05a9fcd8c10d7b74da0aab19606660f4
+  - enabled: 1
+    path: Assets/VRTK/LegacyExampleFiles/034_Controls_InteractingWithUnityUI.unity
+    guid: 2ce499512664316478fc7632f4bb4674
   m_configObjects: {}
