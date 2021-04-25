@@ -40,3 +40,6 @@ Also, be sure to make a backup (or two) beforehand.
 11. Go to Edit > Project settings > Player > XR Settings and add “None” as an option for VR devices.
 12. Hook up all required components for the specific application you are working on (if there are any.)
 13. You're done!
+
+## Note:
+- If you have any questions/comments, please raise requests at [**PicoDevSupport Portal**](https://picodevsupport.atlassian.net/servicedesk/customer/user/login?
