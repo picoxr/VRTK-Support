@@ -8,9 +8,11 @@ We're very grateful for the significant contribution from:
 >**Nikita Kayal**   
 >**Roger ter Heide**   
 
-## Unity Versions
+## Dependency
 
-Unity2019.3.6
+- Unity2019.3.6
+- VRTK 3.3
+- Pico Unity SDK 2.8.9
 
 ## Description
 
