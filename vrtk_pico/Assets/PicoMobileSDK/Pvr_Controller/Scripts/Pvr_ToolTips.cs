@@ -92,6 +92,7 @@ public class Pvr_ToolTips : MonoBehaviour
                 }
                 break;
             case Pvr_UnitySDKAPI.ControllerDevice.Neo2:
+            case Pvr_UnitySDKAPI.ControllerDevice.Neo3:
                 {
                     tipsAlpha = (330 - transform.parent.parent.parent.localRotation.eulerAngles.x) / 45.0f;
                     if (transform.parent.parent.parent.localRotation.eulerAngles.x >= 270 &&
@@ -134,7 +135,8 @@ public class Pvr_ToolTips : MonoBehaviour
 
     public static void RefreshTips()
     {
-        tooltips.LoadTextFromJson();
+        if(tooltips != null)
+            tooltips.LoadTextFromJson();
     }
 }
 

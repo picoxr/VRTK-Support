@@ -5,7 +5,9 @@ using UnityEngine;
 
 public class Pvr_UnitySDKHeadTrack : MonoBehaviour
 {
+    [Tooltip("If true, head tracking will affect the rotation of each Pvr_UnitySDK's cameras.")]
     public bool trackRotation = true;
+    [Tooltip("If true, head tracking will affect the position of each Pvr_UnitySDK's cameras.")]
     public bool trackPosition = true;
     public Transform target;
     private bool updated = false;
@@ -39,7 +41,8 @@ public class Pvr_UnitySDKHeadTrack : MonoBehaviour
         }
         if (trackRotation)
         {
-            var rot = Pvr_UnitySDKManager.SDK.HeadPose.Orientation;
+            var rot = Pvr_UnitySDKSensor.Instance.HeadPose.Orientation;
+            
             if (target == null)
             {
                 transform.localRotation = rot;
@@ -52,7 +55,7 @@ public class Pvr_UnitySDKHeadTrack : MonoBehaviour
 
         else
         {
-            var rot = Pvr_UnitySDKManager.SDK.HeadPose.Orientation;
+            var rot = Pvr_UnitySDKSensor.Instance.HeadPose.Orientation;
             if (target == null)
             {
                 transform.localRotation = Quaternion.identity;
@@ -64,7 +67,7 @@ public class Pvr_UnitySDKHeadTrack : MonoBehaviour
         }
         if (trackPosition)
         {
-            Vector3 pos = Pvr_UnitySDKManager.SDK.HeadPose.Position;
+            Vector3 pos = Pvr_UnitySDKSensor.Instance.HeadPose.Position;
             if (target == null)
             {
                 transform.localPosition = pos;

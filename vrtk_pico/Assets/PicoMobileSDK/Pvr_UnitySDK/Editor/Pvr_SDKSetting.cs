@@ -23,6 +23,10 @@ public class Pvr_SDKSetting : EditorWindow
     public bool toggleBuildTarget = true;
     public bool toggleVSync = true;
     public bool toggleOrientation = true;
+    public bool toggleSetAppID = true;
+    public static bool appIDCheck = false;
+    private bool appIdShowError = false;
+	public static string AppID = "";
     GUIStyle styleApply;
 
     #region strings
@@ -32,33 +36,88 @@ public class Pvr_SDKSetting : EditorWindow
     string[] strBtnChange = { "切换至中文", "Switch to English" };
     string[] strApplied = { "Applied", "已应用" };
 
-    string[] strInformationText = { "Information:", "信息说明" };
-    string[] strInfo1Text = { "1 Rotation tag in Androidmainfest: \n " +
-                                "  <meta-data android:name=\"pvr.app.type\" android:value=\"vr\" /> \n" +
-                                "  <meta-data android:name=\"pvr.display.orientation\" android:value=\"180\" />",
-                              "1 Rotation tag in Androidmainfest: \n " +
-                                "  <meta-data android:name=\"pvr.app.type\" android:value=\"vr\" /> \n" +
-                                "  <meta-data android:name=\"pvr.display.orientation\" android:value=\"180\" />", };
-    string[] strInfo2Text = { "2 Player Setting: \n" +
-                                "  Default Orientation setting Landscape Left",
-                            "2 Player Setting: \n" +
-                                "  Default Orientation setting Landscape Left" };
-    string[] strInfo3Text = { "3 Get the lastest version of SDK:", "3 获取最新版本的SDK:" };
-    string[] strInfoURL = { "http://us-dev.picovr.com/sdk", "http://dev.picovr.com/sdk" };
+    string[] strInformationText = {"Information:", "信息说明"};
 
-    string[] strConfigurationText = { "Configuration:", "配置" };
-    string[] strConfiguration1Text = { "1 current:             Build Target = {0}\n" +
-                                       "   Recommended:  Build Target = {1}\n",
-                                        "1 当前:             Build Target = {0}\n" +
-                                       "   推荐:             Build Target = {1}\n" };
-    string[] strConfiguration2Text = { "2 current:             V Sync Count = {0}\n" +
-                                       "   Recommended:  V Sync Count = {1}\n",
-                                        "2 当前:             V Sync Count = {0}\n" +
-                                       "   推荐:             V Sync Count = {1}\n" };
-    string[] strConfiguration3Text = { "3 current:             Orientation = {0}\n" +
-                                       "   Recommended:  Orientation = {1}\n",
-                                        "3 当前:             Orientation = {0}\n" +
-                                       "   推荐:             Orientation = {1}\n" };
+    string[] strInfo1Text =
+    {
+        "1 Support Unity Version: Unity2017.4 - Unity2019.3.6,Unity2019.4.1x,Unity2020.1.8 and above",
+        "1 支持Unity版本：Unity2017.4到Unity 2019.3.6，Unity2019.4.1x，Unity2020.1.8及以上版本"
+    };
+
+    string[] strInfo2Text =
+    {
+        "2 Rotation tag in Androidmainfest: \n " +
+        "  <meta-data android:name=\"pvr.app.type\" android:value=\"vr\" /> \n" +
+        "  <meta-data android:name=\"pvr.display.orientation\" android:value=\"180\" />",
+        "2 Rotation tag in Androidmainfest: \n " +
+        "  <meta-data android:name=\"pvr.app.type\" android:value=\"vr\" /> \n" +
+        "  <meta-data android:name=\"pvr.display.orientation\" android:value=\"180\" />",
+    };
+
+    private string[] strInfo3Text =
+    {
+        
+        "3 EntitlementCheck is highly recommended in order to protect the copyright of an app. To enable it upon app start-up,  \n" +
+        "go to \"Menu/Pvr_UnitySDK/PlatformSettings\" and enter your APPID.",
+        "3 强烈推荐启用应用版权保护，可在\"Menu/Pvr_UnitySDK/PlatformSettings\" 配置面板中开启并填入正确的APPID。"
+    };
+
+    string[] strInfo4Text =
+    {
+        "4 Player Setting: \n" +
+        "  Default Orientation setting Landscape Left",
+        "4 Player Setting: \n" +
+        "  Default Orientation setting Landscape Left"
+    };
+
+    string[] strInfoURL = {"http://us-dev.picovr.com/sdk", "http://dev.picovr.com/sdk"};
+    string[] strConfigurationText = {"Configuration:", "配置"};
+    string[] strConfiguration1Text =
+    {
+        "1 current:             Build Target = {0}\n" +
+        "   Recommended:  Build Target = {1}\n",
+        "1 当前:             Build Target = {0}\n" +
+        "   推荐:             Build Target = {1}\n"
+    };
+
+    private string[] quizHova =
+    {
+        "If selected, you will need to enter the APPID that is obtained from Pico Developer Platform after uploading the app for an entitlement check upon the app launch.",
+        "如果勾选版权保护选项，并且填入正确的APPID，应用启动时会进行版权验证。可通过开发者平台获取APPID。"
+    };
+
+    private string[] strConfiguration2Text =
+    {
+        "2 User Entitlement Check [?]\n",
+        "2 启动应用程序时进行授权检查[?]\n"
+    };
+
+    string strConfiguration2TextAppID = " App ID ";
+
+    private string[] quizYes =
+    {
+        "The APPID is required to run an Entitlement Check. Create / Find your APPID Here:",
+        "应用版权保护要求填入正确的APPID，可通过网址创建或查看你的APPID：",
+        "If you do not need user Entitlement Check, please uncheck it.",
+        "如果不需要应用版权保护，请勿勾选"
+    };
+
+    private string getAppIDWebSite = "https://developer.pico-interactive.com/developer/overview";
+    string[] strConfiguration3Text =
+    {
+        "3 current:             V Sync Count = {0}\n" +
+        "   Recommended:  V Sync Count = {1}\n",
+        "3 当前:             V Sync Count = {0}\n" +
+        "   推荐:             V Sync Count = {1}\n"
+    };
+
+    string[] strConfiguration4Text =
+    {
+        "4 current:             Orientation = {0}\n" +
+        "   Recommended:  Orientation = {1}\n",
+        "4 当前:             Orientation = {0}\n" +
+        "   推荐:             Orientation = {1}\n"
+    };
 
     string[] strBtnApply = { "Apply", "应用" };
     string[] strBtnClose = { "Close", "关闭" };
@@ -71,15 +130,24 @@ public class Pvr_SDKSetting : EditorWindow
         EditorApplication.update += Update;
     }
 
-    [MenuItem("Pvr_UnitySDK" + "/Pico SDK Setting")]
     static void Init()
     {
         IsIgnoreWindow();
+        appIDCheck = IsAppIDChecked();
+        if ( appIDCheck)
+        {
+            AppID = Pvr_UnitySDKPlatformSetting.Instance.appID ;
+        }
         ShowSettingWindow();
     }
 
     static void Update()
     {
+        appIDCheck = IsAppIDChecked();
+        if ( appIDCheck)
+        {
+            AppID = Pvr_UnitySDKPlatformSetting.Instance.appID ;
+        }
         bool allapplied = IsAllApplied();
         bool showWindow = !allapplied;
 
@@ -101,11 +169,20 @@ public class Pvr_SDKSetting : EditorWindow
         if (File.Exists(path))
         {
             CPicoSDKSettingAsset asset = AssetDatabase.LoadAssetAtPath<CPicoSDKSettingAsset>(path);
-            return asset.IgnoreSDKSetting;
+            return asset.IgnoreSDKSetting ;
         }
         return false;
     }
-
+   public static bool IsAppIDChecked()
+   {
+       string path = Pvr_SDKSetting.assetPath + typeof(CPicoSDKSettingAsset).ToString() + ".asset";
+       if (File.Exists(path))
+       {
+           CPicoSDKSettingAsset asset = AssetDatabase.LoadAssetAtPath<CPicoSDKSettingAsset>(path);
+           return asset.AppIDChecked && Pvr_UnitySDKPlatformSetting.StartTimeEntitlementCheck;
+       }
+       return false;
+   }
     static void ShowSettingWindow()
     {
         if (window != null)
@@ -137,10 +214,13 @@ public class Pvr_SDKSetting : EditorWindow
         GUILayout.Label(strseparate, styleSlide);
 
         GUILayout.Label(strInformationText[(int)elanguage]);
-        GUILayout.Label(strInfo1Text[(int)elanguage]);
+
+        GUIStyle strInfo1TextStyle = new GUIStyle();
+        strInfo1TextStyle.fontStyle = FontStyle.Bold;
+        GUILayout.Label(strInfo1Text[(int)elanguage],strInfo1TextStyle);
         GUILayout.Label(strInfo2Text[(int)elanguage]);
         GUILayout.Label(strInfo3Text[(int)elanguage]);
-
+        GUILayout.Label(strInfo4Text[(int)elanguage]);
         string strURL = strInfoURL[(int)elanguage];
         GUIStyle style = new GUIStyle();
         style.normal.textColor = new Color(0, 122f / 255f, 204f / 255f);
@@ -148,7 +228,7 @@ public class Pvr_SDKSetting : EditorWindow
         {
             Application.OpenURL(strURL);
         }
-
+        
         GUILayout.Label(strseparate, styleSlide);
 
 
@@ -158,11 +238,19 @@ public class Pvr_SDKSetting : EditorWindow
         string strinfo1 = string.Format(strConfiguration1Text[(int)elanguage], EditorUserBuildSettings.activeBuildTarget, recommended_BuildTarget);
         EditorConfigurations(strinfo1, EditorUserBuildSettings.activeBuildTarget == recommended_BuildTarget, ref toggleBuildTarget);
 
-        string strinfo2 = string.Format(strConfiguration2Text[(int)elanguage], QualitySettings.vSyncCount, recommended_vSyncCount);
-        EditorConfigurations(strinfo2, QualitySettings.vSyncCount == recommended_vSyncCount, ref toggleVSync);
+       
+        string strinfo2 = strConfiguration2Text[(int) elanguage];
+        ConfigEntitlementCheck(strinfo2, appIDCheck && AppID !="", ref toggleSetAppID);
 
-        string strinfo3 = string.Format(strConfiguration3Text[(int)elanguage], PlayerSettings.defaultInterfaceOrientation, recommended_orientation);
-        EditorConfigurations(strinfo3, PlayerSettings.defaultInterfaceOrientation == recommended_orientation, ref toggleOrientation);
+   
+        string strinfo3 = string.Format(strConfiguration3Text[(int) elanguage], QualitySettings.vSyncCount,
+            recommended_vSyncCount);
+        EditorConfigurations(strinfo3, QualitySettings.vSyncCount == recommended_vSyncCount, ref toggleVSync);
+
+        string strinfo4 = string.Format(strConfiguration4Text[(int) elanguage],
+            PlayerSettings.defaultInterfaceOrientation, recommended_orientation);
+        EditorConfigurations(strinfo4, PlayerSettings.defaultInterfaceOrientation == recommended_orientation,
+            ref toggleOrientation);
 
 
         EditorGUILayout.Space();
@@ -182,6 +270,11 @@ public class Pvr_SDKSetting : EditorWindow
         }
         if (GUILayout.Button(strBtnApply[(int)elanguage], styleApply, GUILayout.Width(100), GUILayout.Height(30)))
         {
+            appIdShowError = false;
+            if(AppID == "")
+            {
+                appIdShowError = true;
+            }
             EditorApplication.delayCall += OnClickApply;
         }
         styleApply = null;
@@ -203,6 +296,25 @@ public class Pvr_SDKSetting : EditorWindow
             QualitySettings.vSyncCount = recommended_vSyncCount;
         }
 
+        if (toggleSetAppID && AppID != "")
+        {
+            // Todo give id to service
+            Pvr_UnitySDKPlatformSetting.Instance.appID = AppID;
+            Pvr_UnitySDKPlatformSetting.StartTimeEntitlementCheck = true;
+            appIDCheck = true;
+            appIdShowError = !appIDCheck;
+            SaveAssetAppIDChecked();
+        }
+        if (toggleSetAppID && AppID == "")
+        {
+            Pvr_UnitySDKPlatformSetting.StartTimeEntitlementCheck = false;
+        }
+        if (!toggleSetAppID)
+        {
+            Pvr_UnitySDKPlatformSetting.Instance.appID = AppID;
+            Pvr_UnitySDKPlatformSetting.StartTimeEntitlementCheck = toggleSetAppID;
+
+        }
         if (toggleOrientation && PlayerSettings.defaultInterfaceOrientation != recommended_orientation)
         {
             PlayerSettings.defaultInterfaceOrientation = recommended_orientation;
@@ -210,10 +322,10 @@ public class Pvr_SDKSetting : EditorWindow
 
         if (toggleBuildTarget && EditorUserBuildSettings.activeBuildTarget != recommended_BuildTarget)
         {
-            Close();
+            //Close();
             EditorUserBuildSettings.SwitchActiveBuildTarget(BuildTargetGroup.Android, recommended_BuildTarget);
             EditorUserBuildSettings.selectedBuildTargetGroup = BuildTargetGroup.Android;
-            ShowSettingWindow();
+            //ShowSettingWindow();
         }
     }
 
@@ -226,6 +338,10 @@ public class Pvr_SDKSetting : EditorWindow
         }
         else
         {
+            if (AppID == "")
+            {
+            	Pvr_UnitySDKPlatformSetting.StartTimeEntitlementCheck = false;
+            }
             Pvr_SettingMessageBoxEditor.Init(elanguage);
         }
     }
@@ -233,8 +349,8 @@ public class Pvr_SDKSetting : EditorWindow
     public static bool IsAllApplied()
     {
         bool notApplied = (EditorUserBuildSettings.activeBuildTarget != recommended_BuildTarget) ||
-                        (QualitySettings.vSyncCount != recommended_vSyncCount) ||
-                        (PlayerSettings.defaultInterfaceOrientation != recommended_orientation);
+                          (QualitySettings.vSyncCount != recommended_vSyncCount) ||!appIDCheck ||
+                          (PlayerSettings.defaultInterfaceOrientation != recommended_orientation);
 
         if (!notApplied)
             return true;
@@ -259,6 +375,94 @@ public class Pvr_SDKSetting : EditorWindow
             toggle = EditorGUILayout.Toggle(toggle);
         }
 
+        EditorGUILayout.EndHorizontal();
+    }
+
+    void ConfigEntitlementCheck(string strconfiguration, bool torf, ref bool toggle)
+    {
+       
+        EditorGUILayout.BeginHorizontal();
+        var startEntitleCheckLabel = new GUIContent(strconfiguration, quizHova[(int) elanguage]);
+        EditorGUILayout.LabelField(startEntitleCheckLabel,GUILayout.Width(500));
+        
+        GUIStyle styleApplied = new GUIStyle();
+        styleApplied.normal.textColor = Color.green;
+        if (torf)
+        {
+            GUILayout.Label(strApplied[(int) elanguage], styleApplied);
+        }
+        else
+        {
+            toggle = EditorGUILayout.Toggle(toggle);
+        }
+
+        EditorGUILayout.EndHorizontal();
+        if (toggle != Pvr_UnitySDKPlatformSetting.StartTimeEntitlementCheck)
+        {
+            Pvr_UnitySDKPlatformSetting.StartTimeEntitlementCheck = toggle;
+        }
+        if (toggle)
+        {
+            EditorGUILayout.BeginHorizontal();
+            GUILayout.Label(strConfiguration2TextAppID, GUILayout.Width(100));
+            if (!appIDCheck)
+            {
+                APPIDFiledEditorConfigurations(); 
+            }
+
+            if (AppID != "" && AppID != Pvr_UnitySDKPlatformSetting.Instance.appID  )
+            {
+                Pvr_UnitySDKPlatformSetting.Instance.appID = AppID;
+            }
+
+            if (toggle != Pvr_UnitySDKPlatformSetting.StartTimeEntitlementCheck)
+            {
+                    toggle = true;
+                    Pvr_UnitySDKPlatformSetting.StartTimeEntitlementCheck = true;
+            }
+            if (AppID != "" && appIDCheck)
+            {
+                GUILayout.Label(AppID);
+            }
+            EditorGUILayout.EndHorizontal();
+          
+            if (appIdShowError)
+            {
+                
+                EditorGUILayout.BeginHorizontal(GUILayout.Width(500));
+                EditorGUILayout.HelpBox("APPID is required for Entitlement Check", MessageType.Error, true);
+                EditorGUILayout.EndHorizontal();
+                EditorGUILayout.BeginHorizontal();             
+                GUILayout.Label(quizYes[(int)elanguage], GUILayout.Width(500));
+                EditorGUILayout.EndHorizontal();
+                EditorGUILayout.BeginHorizontal();
+                GUIStyle style = new GUIStyle();
+                style.normal.textColor = new Color(0, 122f / 255f, 204f / 255f);
+                if (GUILayout.Button("    " + getAppIDWebSite, style, GUILayout.Width(300)))
+                {
+                    Application.OpenURL(getAppIDWebSite);
+                }
+                EditorGUILayout.EndHorizontal();
+                EditorGUILayout.BeginHorizontal();             
+                GUILayout.Label(quizYes[(int)elanguage+2], GUILayout.Width(500));
+                EditorGUILayout.EndHorizontal();
+                EditorGUILayout.BeginHorizontal();
+                
+                EditorGUILayout.EndHorizontal();
+            }
+            else
+            {
+                Repaint();
+            }
+           
+            
+        }
+    }
+
+    void APPIDFiledEditorConfigurations()
+    {
+        EditorGUILayout.BeginHorizontal();
+        AppID=EditorGUILayout.TextField(AppID, GUILayout.Width(350.0f));
         EditorGUILayout.EndHorizontal();
     }
 
@@ -301,7 +505,34 @@ public class Pvr_SDKSetting : EditorWindow
         else if (elanguage == ELanguage.English)
             elanguage = ELanguage.Chinese;
     }
+    
+    private void SaveAssetAppIDChecked()
+    {
+        CPicoSDKSettingAsset asset;
+        string assetpath = Pvr_SDKSetting.assetPath + typeof(CPicoSDKSettingAsset).ToString() + ".asset";
+        if (File.Exists(assetpath))
+        {
+            asset = AssetDatabase.LoadAssetAtPath<CPicoSDKSettingAsset>(assetpath);
+        }
+        else
+        {
+            asset = new CPicoSDKSettingAsset();
+            ScriptableObjectUtility.CreateAsset<CPicoSDKSettingAsset>(asset, Pvr_SDKSetting.assetPath);
+        }
+        asset.AppIDChecked = true;
+        EditorUtility.SetDirty(asset);
+        AssetDatabase.SaveAssets();
+        AssetDatabase.Refresh();//must Refresh
+    }
 
+    void OnDestroy()
+    {
+        if (AppID == "")
+        {
+        	Pvr_UnitySDKPlatformSetting.StartTimeEntitlementCheck = false;
+        }
+        Debug.Log("Pvr_SDKSettingEditor Destroyed");
+    }
 }
 
 public enum ELanguage
@@ -372,6 +603,10 @@ public class Pvr_SettingMessageBoxEditor : EditorWindow
 
     void OnClickIgnore()
     {
+        if (Pvr_SDKSetting.AppID == "")
+        {
+        	Pvr_UnitySDKPlatformSetting.StartTimeEntitlementCheck = false;
+        }
         SaveAssetDataBase();
         Pvr_SDKSetting.window.Close();
         Close();
@@ -391,14 +626,16 @@ public class Pvr_SettingMessageBoxEditor : EditorWindow
             ScriptableObjectUtility.CreateAsset<CPicoSDKSettingAsset>(asset, Pvr_SDKSetting.assetPath);
         }
         asset.IgnoreSDKSetting = true;
-
         EditorUtility.SetDirty(asset);
         AssetDatabase.SaveAssets();
         AssetDatabase.Refresh();//must Refresh
     }
-
     void OnClickCancel()
     {
+        if (Pvr_SDKSetting.AppID == "")
+        {
+            Pvr_UnitySDKPlatformSetting.StartTimeEntitlementCheck = false;
+        }
         Close();
     }
 }

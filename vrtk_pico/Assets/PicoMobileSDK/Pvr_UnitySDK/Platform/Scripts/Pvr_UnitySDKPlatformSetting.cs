@@ -20,6 +20,12 @@ public sealed class Pvr_UnitySDKPlatformSetting : ScriptableObject
     [SerializeField]
     private bool entitlementchecksimulation;
 
+    [SerializeField]
+    private bool startTimeEntitlementCheck;
+    
+    [SerializeField]
+    public string appID;
+    
     public static bool Entitlementchecksimulation
     {
         get { return Instance.entitlementchecksimulation; }
@@ -30,6 +36,18 @@ public sealed class Pvr_UnitySDKPlatformSetting : ScriptableObject
         }
     }
 
+    public static bool StartTimeEntitlementCheck
+    {
+        get { return Instance.startTimeEntitlementCheck; }
+        set
+        {
+            if (Instance.startTimeEntitlementCheck != value)
+                Instance.startTimeEntitlementCheck = value;
+        }
+    }
+    
+ 
+    
     public List<string> deviceSN = new List<string>();
 
 

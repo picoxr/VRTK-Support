@@ -17,7 +17,7 @@ We're very grateful for the significant contribution from:
 ## Description
 
 This project demonstrates how to integrated VRTK scenes with Pico VR SDK.
-As the following picture shows, there are seven scenes which are already configured with Pico SDK v2.8.5 in Assets-VRTK-Examples for reference.
+As the following picture shows, there are seven scenes which are already configured with Pico SDK v2.8.9 in Assets-VRTK-Examples for reference.
 ![](1.jpg)
 
 ## Note

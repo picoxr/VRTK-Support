@@ -15,6 +15,7 @@ namespace Pvr_UnitySDKAPI
         Neo,
         G2,
         Neo2,
+        Neo3,
         NewController
     }
 }
@@ -61,64 +62,52 @@ public class Pvr_ControllerVisual : MonoBehaviour
         if (Controller.UPvr_GetKey(hand, Pvr_KeyCode.TOUCHPAD))
         {
             controllerRenderMat.material.SetTexture("_MainTex", m_touchpad);
-            controllerRenderMat.material.SetTexture("_EmissionMap", m_touchpad);
         }
         else if (Controller.UPvr_GetKey(hand, Pvr_KeyCode.APP))
         {
             controllerRenderMat.material.SetTexture("_MainTex", m_app);
-            controllerRenderMat.material.SetTexture("_EmissionMap", m_app);
         }
         else if (Controller.UPvr_GetKey(hand, Pvr_KeyCode.HOME))
         {
             controllerRenderMat.material.SetTexture("_MainTex", m_home);
-            controllerRenderMat.material.SetTexture("_EmissionMap", m_home);
         }
         else if (Controller.UPvr_GetKey(hand, Pvr_KeyCode.VOLUMEUP))
         {
             controllerRenderMat.material.SetTexture("_MainTex", m_volUp);
-            controllerRenderMat.material.SetTexture("_EmissionMap", m_volUp);
         }
         else if (Controller.UPvr_GetKey(hand, Pvr_KeyCode.VOLUMEDOWN))
         {
             controllerRenderMat.material.SetTexture("_MainTex", m_volDn);
-            controllerRenderMat.material.SetTexture("_EmissionMap", m_volDn);
         }
         else if (Controller.UPvr_GetControllerTriggerValue(hand) > 0 || Controller.UPvr_GetKey(hand,Pvr_KeyCode.TRIGGER))
         {
             controllerRenderMat.material.SetTexture("_MainTex", m_trigger);
-            controllerRenderMat.material.SetTexture("_EmissionMap", m_trigger);
         }
         else if(Controller.UPvr_GetKey(hand, Pvr_KeyCode.X))
         {
             controllerRenderMat.material.SetTexture("_MainTex", m_x);
-            controllerRenderMat.material.SetTexture("_EmissionMap", m_x);
         }
         else if(Controller.UPvr_GetKey(hand, Pvr_KeyCode.Y))
         {
             controllerRenderMat.material.SetTexture("_MainTex", m_y);
-            controllerRenderMat.material.SetTexture("_EmissionMap", m_y);
         }
         else if (Controller.UPvr_GetKey(hand, Pvr_KeyCode.A))
         {
             controllerRenderMat.material.SetTexture("_MainTex", m_a);
-            controllerRenderMat.material.SetTexture("_EmissionMap", m_a);
         }
         else if (Controller.UPvr_GetKey(hand, Pvr_KeyCode.B))
         {
             controllerRenderMat.material.SetTexture("_MainTex", m_b);
-            controllerRenderMat.material.SetTexture("_EmissionMap", m_b);
         }
         else if (Controller.UPvr_GetKey(hand, Pvr_KeyCode.Left) || Controller.UPvr_GetKey(hand, Pvr_KeyCode.Right))
         {
             controllerRenderMat.material.SetTexture("_MainTex", m_grip);
-            controllerRenderMat.material.SetTexture("_EmissionMap", m_grip);
         }
         else
         {
             if (controllerRenderMat.material.GetTexture("_MainTex") != m_idle)
             {
                 controllerRenderMat.material.SetTexture("_MainTex", m_idle);
-                controllerRenderMat.material.SetTexture("_EmissionMap", m_idle);
             }
         }
     }

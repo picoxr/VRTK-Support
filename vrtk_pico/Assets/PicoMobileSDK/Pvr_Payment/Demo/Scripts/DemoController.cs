@@ -53,7 +53,7 @@ public class DemoController : MonoBehaviour
             if (Input.GetKeyDown(KeyCode.Y) || Input.GetKeyDown(KeyCode.Joystick1Button2))
             {
                 Debug.Log("update");
-                Pvr_UnitySDKManager.pvr_UnitySDKSensor.ResetUnitySDKSensor();
+                Pvr_UnitySDKSensor.Instance.ResetUnitySDKSensor();
             }
         }
         if (Input.GetKeyDown(KeyCode.Joystick1Button1) || Input.GetKeyDown(KeyCode.Escape))

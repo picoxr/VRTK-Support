@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657826, g: 0.49641263, b: 0.57481676, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
 --- !u!157 &3
 LightmapSettings:
   m_ObjectHideFlags: 0
@@ -151,6 +151,22 @@ Prefab:
     - target: {fileID: 428262, guid: f4d2c95a82cadba4fb259ca17b5a8404, type: 2}
       propertyPath: m_RootOrder
       value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 11446018, guid: f4d2c95a82cadba4fb259ca17b5a8404, type: 2}
+      propertyPath: LeftEyeCamera
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 11446018, guid: f4d2c95a82cadba4fb259ca17b5a8404, type: 2}
+      propertyPath: RightEyeCamera
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 11446018, guid: f4d2c95a82cadba4fb259ca17b5a8404, type: 2}
+      propertyPath: MonoEyeCamera
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 11446018, guid: f4d2c95a82cadba4fb259ca17b5a8404, type: 2}
+      propertyPath: foveationLevel
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: f4d2c95a82cadba4fb259ca17b5a8404, type: 2}
@@ -638,6 +654,12 @@ MonoBehaviour:
   CameraTranslations:
   - {x: 0, y: 0, z: 0}
   - {x: 0, y: 0, z: 0}
+  layerEyeCamera:
+  - {fileID: 0}
+  - {fileID: 0}
+  overrideColorScaleAndOffset: 0
+  colorScale: {x: 1, y: 1, z: 1, w: 1}
+  colorOffset: {x: 0, y: 0, z: 0, w: 0}
   isExternalAndroidSurface: 0
 --- !u!23 &774427666
 MeshRenderer:
@@ -969,6 +991,12 @@ MonoBehaviour:
   CameraTranslations:
   - {x: 0, y: 0, z: 0}
   - {x: 0, y: 0, z: 0}
+  layerEyeCamera:
+  - {fileID: 0}
+  - {fileID: 0}
+  overrideColorScaleAndOffset: 0
+  colorScale: {x: 1, y: 1, z: 1, w: 1}
+  colorOffset: {x: 0, y: 0, z: 0, w: 0}
   isExternalAndroidSurface: 0
 --- !u!23 &1141072954
 MeshRenderer:
@@ -1341,6 +1369,12 @@ MonoBehaviour:
   CameraTranslations:
   - {x: 0, y: 0, z: 0}
   - {x: 0, y: 0, z: 0}
+  layerEyeCamera:
+  - {fileID: 0}
+  - {fileID: 0}
+  overrideColorScaleAndOffset: 0
+  colorScale: {x: 1, y: 1, z: 1, w: 1}
+  colorOffset: {x: 0, y: 0, z: 0, w: 0}
   isExternalAndroidSurface: 0
 --- !u!23 &1796826481
 MeshRenderer:
@@ -1562,6 +1596,12 @@ MonoBehaviour:
   CameraTranslations:
   - {x: 0, y: 0, z: 0}
   - {x: 0, y: 0, z: 0}
+  layerEyeCamera:
+  - {fileID: 0}
+  - {fileID: 0}
+  overrideColorScaleAndOffset: 0
+  colorScale: {x: 1, y: 1, z: 1, w: 1}
+  colorOffset: {x: 0, y: 0, z: 0, w: 0}
   isExternalAndroidSurface: 0
 --- !u!23 &1927061295
 MeshRenderer:

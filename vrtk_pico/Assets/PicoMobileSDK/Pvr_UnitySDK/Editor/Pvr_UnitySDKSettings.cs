@@ -77,7 +77,6 @@ public class Pvr_UnitySDKQualitySettings
             }
             XmlNode applicationNode = xmlDoc.SelectSingleNode("/manifest/application"); 
             XmlElement xmlEle = xmlDoc.CreateElement("meta-data");  
-            Debug.Log(android.NamespaceName.ToString());
             xmlEle.SetAttribute( "name", android.NamespaceName,"platform_high");
             xmlEle.SetAttribute( "value", android.NamespaceName, Value);      
             applicationNode.AppendChild(xmlEle);    

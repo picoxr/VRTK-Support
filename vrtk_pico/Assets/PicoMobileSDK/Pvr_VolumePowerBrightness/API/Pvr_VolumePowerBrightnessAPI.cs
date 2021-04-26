@@ -132,7 +132,7 @@ namespace Pvr_UnitySDKAPI
                     javaSysActivityClass = new UnityEngine.AndroidJavaClass("com.psmart.aosoperation.SysActivity");
                 }
 
-                if (javaSysActivityClass != null &&Pvr_UnitySDKManager.pvr_UnitySDKRender.activity != null)
+                if (javaSysActivityClass != null &&Pvr_UnitySDKRender.Instance.activity != null)
                 {
                     if (batteryjavaVrActivityClass ==null)
                     {
@@ -159,13 +159,13 @@ namespace Pvr_UnitySDKAPI
             try
             {
                 javaSysActivityClass = new UnityEngine.AndroidJavaClass("com.psmart.aosoperation.SysActivity");
-                if (javaSysActivityClass != null &&Pvr_UnitySDKManager.pvr_UnitySDKRender.activity != null)
+                if (javaSysActivityClass != null &&Pvr_UnitySDKRender.Instance.activity != null)
                 {
                    
                     batteryjavaVrActivityClass = new UnityEngine.AndroidJavaClass("com.psmart.aosoperation.BatteryReceiver");
                     volumejavaVrActivityClass = new AndroidJavaClass("com.psmart.aosoperation.AudioReceiver");
                
-                    Pvr_UnitySDKAPI.System.UPvr_CallStaticMethod(javaSysActivityClass, "Pvr_InitAudioDevice", Pvr_UnitySDKManager.pvr_UnitySDKRender.activity); 
+                    Pvr_UnitySDKAPI.System.UPvr_CallStaticMethod(javaSysActivityClass, "Pvr_InitAudioDevice", Pvr_UnitySDKRender.Instance.activity); 
                     return true;
                 }
                 else
@@ -186,7 +186,7 @@ namespace Pvr_UnitySDKAPI
             try
             {
                // string startreceivre = PicoVRManager.SDK.gameObject.name;
-                Pvr_UnitySDKAPI.System.UPvr_CallStaticMethod(batteryjavaVrActivityClass, "Pvr_StartReceiver", Pvr_UnitySDKManager.pvr_UnitySDKRender.activity, startreceivre);
+                Pvr_UnitySDKAPI.System.UPvr_CallStaticMethod(batteryjavaVrActivityClass, "Pvr_StartReceiver", Pvr_UnitySDKRender.Instance.activity, startreceivre);
                 return true;
             }
             catch (Exception e)
@@ -203,7 +203,7 @@ namespace Pvr_UnitySDKAPI
 #if ANDROID_DEVICE
             try
             {
-                Pvr_UnitySDKAPI.System.UPvr_CallStaticMethod(batteryjavaVrActivityClass, "Pvr_StopReceiver", Pvr_UnitySDKManager.pvr_UnitySDKRender.activity);
+                Pvr_UnitySDKAPI.System.UPvr_CallStaticMethod(batteryjavaVrActivityClass, "Pvr_StopReceiver", Pvr_UnitySDKRender.Instance.activity);
                 return true;
             }
             catch (Exception e)
@@ -220,7 +220,7 @@ namespace Pvr_UnitySDKAPI
 #if ANDROID_DEVICE
             try
             {
-                Pvr_UnitySDKAPI.System.UPvr_CallStaticMethod(javaSysActivityClass, "Pvr_SetScreen_Brightness", brightness, Pvr_UnitySDKManager.pvr_UnitySDKRender.activity);
+                Pvr_UnitySDKAPI.System.UPvr_CallStaticMethod(javaSysActivityClass, "Pvr_SetScreen_Brightness", brightness, Pvr_UnitySDKRender.Instance.activity);
                 return true;
             }
             catch (Exception e)
@@ -238,7 +238,7 @@ namespace Pvr_UnitySDKAPI
             int currentlight = 0;
             try
             {
-                Pvr_UnitySDKAPI.System.UPvr_CallStaticMethod<int>(ref currentlight, javaSysActivityClass, "Pvr_GetScreen_Brightness", Pvr_UnitySDKManager.pvr_UnitySDKRender.activity);
+                Pvr_UnitySDKAPI.System.UPvr_CallStaticMethod<int>(ref currentlight, javaSysActivityClass, "Pvr_GetScreen_Brightness", Pvr_UnitySDKRender.Instance.activity);
             }
             catch (Exception e)
             {
@@ -287,7 +287,7 @@ namespace Pvr_UnitySDKAPI
             try
             {
                // string startreceivre = PicoVRManager.SDK.gameObject.name;
-                Pvr_UnitySDKAPI.System.UPvr_CallStaticMethod(volumejavaVrActivityClass, "Pvr_StartReceiver", Pvr_UnitySDKManager.pvr_UnitySDKRender.activity, startreceivre);
+                Pvr_UnitySDKAPI.System.UPvr_CallStaticMethod(volumejavaVrActivityClass, "Pvr_StartReceiver", Pvr_UnitySDKRender.Instance.activity, startreceivre);
                 return true;
             }
             catch (Exception e)
@@ -304,7 +304,7 @@ namespace Pvr_UnitySDKAPI
 #if ANDROID_DEVICE
             try
             {
-                Pvr_UnitySDKAPI.System.UPvr_CallStaticMethod(volumejavaVrActivityClass, "Pvr_StopReceiver", Pvr_UnitySDKManager.pvr_UnitySDKRender.activity);
+                Pvr_UnitySDKAPI.System.UPvr_CallStaticMethod(volumejavaVrActivityClass, "Pvr_StopReceiver", Pvr_UnitySDKRender.Instance.activity);
                 return true;
             }
             catch (Exception e)

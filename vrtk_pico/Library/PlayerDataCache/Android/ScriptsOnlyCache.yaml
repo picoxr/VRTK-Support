@@ -3,6 +3,10 @@ ScriptsOnlyBuild:
     Assembly-CSharp.dll:
     - Pvr_Controller
     - Pvr_ControllerManager
+    - Pvr_ControllerPower
+    - Pvr_ToolTips
+    - Pvr_TouchVisual
+    - Pvr_UICanvas
     - Pvr_UnitySDKEye
     - Pvr_UnitySDKEyeManager
     - Pvr_UnitySDKFPS
@@ -10,22 +14,44 @@ ScriptsOnlyBuild:
     - Pvr_UnitySDKManager
     - Pvr_UnitySDKPlatformSetting
     - Pvr_UnitySDKProjectSetting
-    - VRTK.Examples.UI_Interactions
-    - VRTK.Examples.UI_Keyboard
-    - VRTK.Examples.Utilities.SceneChanger
-    - VRTK.Examples.VRTK_ControllerUIPointerEvents_ListenerExample
+    - VRTK.Controllables.ArtificialBased.VRTK_ArtificialRotator
+    - VRTK.Examples.BeamRotator
+    - VRTK.Examples.PanelMenuSaucerGrid
+    - VRTK.Examples.PanelMenuSphereSlider
+    - VRTK.Examples.ToggleGameObject
+    - VRTK.Examples.Utilities.VRTKExample_FixSetup
+    - VRTK.Examples.Utilities.VRTKExample_SceneSwitcher
+    - VRTK.GrabAttachMechanics.VRTK_FixedJointGrabAttach
+    - VRTK.RadialButtonIcon
     - VRTK.SDK_ControllerSim
     - VRTK.SDK_InputSimulator
     - VRTK.SDK_PicoCameraRig
     - VRTK.SDK_PicoHeadsetTracker
-    - VRTK.VRTK_BasicTeleport
-    - VRTK.VRTK_ButtonControl
+    - VRTK.SDK_UnityCameraRig
+    - VRTK.SDK_UnityControllerTracker
+    - VRTK.SDK_UnityHeadsetTracker
+    - VRTK.SecondaryControllerGrabActions.VRTK_SwapControllerGrabAction
+    - VRTK.UICircle
     - VRTK.VRTK_ControllerEvents
+    - VRTK.VRTK_ControllerTooltips
+    - VRTK.VRTK_DestinationPoint
+    - VRTK.VRTK_HeadsetControllerAware
+    - VRTK.VRTK_HeightAdjustTeleport
+    - VRTK.VRTK_IndependentRadialMenuController
+    - VRTK.VRTK_InteractGrab
     - VRTK.VRTK_InteractTouch
+    - VRTK.VRTK_InteractUse
+    - VRTK.VRTK_InteractableObject
     - VRTK.VRTK_Logger
+    - VRTK.VRTK_ObjectTooltip
+    - VRTK.VRTK_PanelMenuController
+    - VRTK.VRTK_PanelMenuItemController
+    - VRTK.VRTK_PlayerObject
     - VRTK.VRTK_Pointer
+    - VRTK.VRTK_PolicyList
+    - VRTK.VRTK_RadialMenu
+    - VRTK.VRTK_RadialMenuController
     - VRTK.VRTK_SDKManager
-    - VRTK.VRTK_SDKObjectAlias
     - VRTK.VRTK_SDKSetup
     - VRTK.VRTK_SDKSetupSwitcher
     - VRTK.VRTK_StraightPointerRenderer
@@ -35,6 +61,9 @@ ScriptsOnlyBuild:
     - VRTK.VRTK_UIDropZone
     - VRTK.VRTK_UIPointer
     - VRTK.VRTK_VelocityEstimator
+    - VRTK.WindowsMR_Camera
+    - VRTK.WindowsMR_ControllerManager
+    - VRTK.WindowsMR_TrackedObject
     Unity.Rider.Editor.dll:
     - Packages.Rider.Editor.UnitTesting.CallbackData
     UnityEditor.TestRunner.dll:
@@ -53,10 +82,8 @@ ScriptsOnlyBuild:
     - UnityEngine.UI.GridLayoutGroup
     - UnityEngine.UI.HorizontalLayoutGroup
     - UnityEngine.UI.Image
-    - UnityEngine.UI.InputField
     - UnityEngine.UI.LayoutElement
     - UnityEngine.UI.Mask
-    - UnityEngine.UI.Outline
     - UnityEngine.UI.ScrollRect
     - UnityEngine.UI.Scrollbar
     - UnityEngine.UI.Slider
@@ -64,7 +91,7 @@ ScriptsOnlyBuild:
     - UnityEngine.UI.Toggle
     - UnityEngine.UI.VerticalLayoutGroup
   sceneClasses:
-    Assets/VRTK/LegacyExampleFiles/034_Controls_InteractingWithUnityUI.unity:
+    Assets/VRTK/Examples/[007 - Interactions] InteractionHelpers.unity:
     - Class: 1
       Script: {instanceID: 0}
     - Class: 4
@@ -93,187 +120,177 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 89
       Script: {instanceID: 0}
-    - Class: 90
-      Script: {instanceID: 0}
-    - Class: 95
-      Script: {instanceID: 0}
     - Class: 104
       Script: {instanceID: 0}
     - Class: 108
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 11204}
+      Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 11324}
+      Script: {instanceID: 11354}
     - Class: 114
-      Script: {instanceID: 11396}
+      Script: {instanceID: 11356}
     - Class: 114
-      Script: {instanceID: 11458}
+      Script: {instanceID: 11358}
     - Class: 114
-      Script: {instanceID: 11460}
+      Script: {instanceID: 11360}
     - Class: 114
-      Script: {instanceID: 11516}
+      Script: {instanceID: 11362}
     - Class: 114
-      Script: {instanceID: 11542}
+      Script: {instanceID: 11388}
     - Class: 114
-      Script: {instanceID: 11586}
+      Script: {instanceID: 11392}
     - Class: 114
-      Script: {instanceID: 11602}
+      Script: {instanceID: 11402}
     - Class: 114
-      Script: {instanceID: 11636}
+      Script: {instanceID: 11518}
+    - Class: 114
+      Script: {instanceID: 11546}
+    - Class: 114
+      Script: {instanceID: 11592}
+    - Class: 114
+      Script: {instanceID: 11610}
+    - Class: 114
+      Script: {instanceID: 11638}
     - Class: 114
       Script: {instanceID: 11656}
     - Class: 114
-      Script: {instanceID: 11678}
+      Script: {instanceID: 11740}
     - Class: 114
-      Script: {instanceID: 11682}
+      Script: {instanceID: 11778}
     - Class: 114
-      Script: {instanceID: 11714}
+      Script: {instanceID: 11788}
     - Class: 114
-      Script: {instanceID: 11792}
+      Script: {instanceID: 11812}
     - Class: 114
-      Script: {instanceID: 11916}
+      Script: {instanceID: 11848}
     - Class: 114
-      Script: {instanceID: 11938}
+      Script: {instanceID: 11862}
     - Class: 114
-      Script: {instanceID: 11986}
+      Script: {instanceID: 11894}
     - Class: 114
-      Script: {instanceID: 12070}
+      Script: {instanceID: 11900}
     - Class: 114
-      Script: {instanceID: 12146}
+      Script: {instanceID: 11962}
     - Class: 114
-      Script: {instanceID: 12234}
+      Script: {instanceID: 11990}
+    - Class: 114
+      Script: {instanceID: 12110}
+    - Class: 114
+      Script: {instanceID: 12154}
+    - Class: 114
+      Script: {instanceID: 12158}
+    - Class: 114
+      Script: {instanceID: 12192}
+    - Class: 114
+      Script: {instanceID: 12200}
+    - Class: 114
+      Script: {instanceID: 12216}
     - Class: 114
       Script: {instanceID: 12314}
     - Class: 114
-      Script: {instanceID: 12350}
+      Script: {instanceID: 12384}
     - Class: 114
-      Script: {instanceID: 12372}
+      Script: {instanceID: 12394}
     - Class: 114
-      Script: {instanceID: 12396}
+      Script: {instanceID: 12472}
     - Class: 114
-      Script: {instanceID: 12398}
+      Script: {instanceID: 12488}
     - Class: 114
-      Script: {instanceID: 12424}
+      Script: {instanceID: 12532}
     - Class: 114
-      Script: {instanceID: 12552}
+      Script: {instanceID: 12572}
     - Class: 114
-      Script: {instanceID: 12606}
+      Script: {instanceID: 12608}
     - Class: 114
-      Script: {instanceID: 12646}
+      Script: {instanceID: 12632}
     - Class: 114
-      Script: {instanceID: 12666}
+      Script: {instanceID: 12662}
     - Class: 114
-      Script: {instanceID: 12710}
+      Script: {instanceID: 12664}
     - Class: 114
-      Script: {instanceID: 12778}
+      Script: {instanceID: 12762}
     - Class: 114
-      Script: {instanceID: 12842}
+      Script: {instanceID: 12804}
     - Class: 114
-      Script: {instanceID: 12900}
+      Script: {instanceID: 12828}
     - Class: 114
-      Script: {instanceID: 12938}
+      Script: {instanceID: 12872}
     - Class: 114
-      Script: {instanceID: 13026}
+      Script: {instanceID: 12882}
     - Class: 114
-      Script: {instanceID: 13040}
+      Script: {instanceID: 12884}
     - Class: 114
-      Script: {instanceID: 13046}
+      Script: {instanceID: 12926}
     - Class: 114
-      Script: {instanceID: 13072}
+      Script: {instanceID: 12952}
     - Class: 114
-      Script: {instanceID: 13134}
+      Script: {instanceID: 12996}
     - Class: 114
-      Script: {instanceID: 13270}
+      Script: {instanceID: 13064}
     - Class: 114
-      Script: {instanceID: 13316}
+      Script: {instanceID: 13128}
     - Class: 114
-      Script: {instanceID: 13324}
+      Script: {instanceID: 13188}
     - Class: 114
-      Script: {instanceID: 13368}
+      Script: {instanceID: 13202}
     - Class: 114
-      Script: {instanceID: 13390}
+      Script: {instanceID: 13226}
     - Class: 114
-      Script: {instanceID: 13514}
+      Script: {instanceID: 13294}
     - Class: 114
-      Script: {instanceID: 13732}
+      Script: {instanceID: 13308}
     - Class: 114
-      Script: {instanceID: 13748}
+      Script: {instanceID: 13314}
     - Class: 114
-      Script: {instanceID: 13766}
+      Script: {instanceID: 13336}
     - Class: 114
-      Script: {instanceID: 13804}
+      Script: {instanceID: 13360}
     - Class: 114
-      Script: {instanceID: 13820}
+      Script: {instanceID: 13408}
     - Class: 114
-      Script: {instanceID: 13848}
+      Script: {instanceID: 13428}
     - Class: 114
-      Script: {instanceID: 13874}
+      Script: {instanceID: 13540}
     - Class: 114
-      Script: {instanceID: 16718}
+      Script: {instanceID: 13556}
     - Class: 114
-      Script: {instanceID: 16726}
+      Script: {instanceID: 13574}
     - Class: 114
-      Script: {instanceID: 16730}
+      Script: {instanceID: 13628}
     - Class: 114
-      Script: {instanceID: 16734}
+      Script: {instanceID: 13662}
     - Class: 114
-      Script: {instanceID: 16738}
+      Script: {instanceID: 13674}
     - Class: 114
-      Script: {instanceID: 16742}
+      Script: {instanceID: 13698}
     - Class: 114
-      Script: {instanceID: 16748}
+      Script: {instanceID: 13758}
     - Class: 114
-      Script: {instanceID: 16754}
+      Script: {instanceID: 13780}
     - Class: 114
-      Script: {instanceID: 16864}
+      Script: {instanceID: 13854}
     - Class: 114
-      Script: {instanceID: 16868}
+      Script: {instanceID: 14038}
     - Class: 114
-      Script: {instanceID: 16872}
+      Script: {instanceID: 14046}
     - Class: 114
-      Script: {instanceID: 16878}
+      Script: {instanceID: 14076}
     - Class: 114
-      Script: {instanceID: 16882}
+      Script: {instanceID: 14094}
     - Class: 114
-      Script: {instanceID: 16888}
+      Script: {instanceID: 14098}
     - Class: 114
-      Script: {instanceID: 16892}
+      Script: {instanceID: 14134}
     - Class: 114
-      Script: {instanceID: 16900}
+      Script: {instanceID: 14154}
     - Class: 114
-      Script: {instanceID: 16904}
+      Script: {instanceID: 14178}
     - Class: 114
-      Script: {instanceID: 16908}
-    - Class: 114
-      Script: {instanceID: 16912}
-    - Class: 114
-      Script: {instanceID: 16916}
-    - Class: 114
-      Script: {instanceID: 16930}
-    - Class: 114
-      Script: {instanceID: 17010}
-    - Class: 114
-      Script: {instanceID: 17014}
-    - Class: 114
-      Script: {instanceID: 17018}
-    - Class: 114
-      Script: {instanceID: 17022}
-    - Class: 114
-      Script: {instanceID: 17026}
-    - Class: 114
-      Script: {instanceID: 17042}
-    - Class: 114
-      Script: {instanceID: 17058}
-    - Class: 114
-      Script: {instanceID: 17064}
-    - Class: 114
-      Script: {instanceID: 17132}
-    - Class: 114
-      Script: {instanceID: 17144}
-    - Class: 114
-      Script: {instanceID: 17360}
+      Script: {instanceID: 14206}
     - Class: 115
+      Script: {instanceID: 0}
+    - Class: 120
       Script: {instanceID: 0}
     - Class: 124
       Script: {instanceID: 0}
@@ -300,6 +317,36 @@ ScriptsOnlyBuild:
     - Class: 258
       Script: {instanceID: 0}
   scriptHashData:
+  - hash:
+      serializedVersion: 2
+      Hash: 8aa3d6ccbcb54ee8db6c1229854adaaa
+    assemblyName: UnityEngine.UI.dll
+    namespaceName: UnityEngine.UI
+    className: ContentSizeFitter
+  - hash:
+      serializedVersion: 2
+      Hash: aeb62f729c52c814dec86c47dcac1471
+    assemblyName: UnityEngine.UI.dll
+    namespaceName: UnityEngine.UI
+    className: Text
+  - hash:
+      serializedVersion: 2
+      Hash: 89f9a1b4c64db9559e39f4a2e3bfaadd
+    assemblyName: UnityEngine.UI.dll
+    namespaceName: UnityEngine.UI
+    className: Image
+  - hash:
+      serializedVersion: 2
+      Hash: ae83e830e7a90c0aff918c4c2e520825
+    assemblyName: UnityEngine.UI.dll
+    namespaceName: UnityEngine.UI
+    className: GraphicRaycaster
+  - hash:
+      serializedVersion: 2
+      Hash: aa88ae22474df55295327e4ee99e5a24
+    assemblyName: UnityEngine.UI.dll
+    namespaceName: UnityEngine.UI
+    className: Toggle
   - hash:
       serializedVersion: 2
       Hash: 27fb4366520d54a89b0a509371bcf6cb
@@ -338,7 +385,7 @@ ScriptsOnlyBuild:
     className: VRTK_InteractHaptics
   - hash:
       serializedVersion: 2
-      Hash: 3c08375166df118bd1801438fc36b92f
+      Hash: c42672c997f8be6b1aa86a927ebea785
     assemblyName: Unity.TextMeshPro.dll
     namespaceName: TMPro
     className: TMP_SelectionCaret
@@ -368,7 +415,7 @@ ScriptsOnlyBuild:
     className: AudioPlayableAsset
   - hash:
       serializedVersion: 2
-      Hash: 626925ef558787b2d85c809198164d19
+      Hash: b4fc42b020df4b67385e61ff21d513cc
     assemblyName: Unity.TextMeshPro.dll
     namespaceName: TMPro
     className: TMP_Dropdown
@@ -488,6 +535,12 @@ ScriptsOnlyBuild:
     className: ScaleOnUse
   - hash:
       serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: UnityEngine.TestRunner.dll
+    namespaceName: UnityEngine.TestTools.TestRunner.Callbacks
+    className: PlayerQuitHandler
+  - hash:
+      serializedVersion: 2
       Hash: 30a0ee9e270483d2cf02bd4c3ed35080
     assemblyName: Assembly-CSharp.dll
     namespaceName: VRTK.Examples
@@ -560,12 +613,6 @@ ScriptsOnlyBuild:
     className: VRTK_TunnelEffect
   - hash:
       serializedVersion: 2
-      Hash: 72712369a7c681ad84fc255a5ec0b333
-    assemblyName: UnityEngine.UI.dll
-    namespaceName: UnityEngine.UI
-    className: Text
-  - hash:
-      serializedVersion: 2
       Hash: 499fd23433e68e265d153aa6b95d0047
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
@@ -632,13 +679,7 @@ ScriptsOnlyBuild:
     className: SDK_OculusController
   - hash:
       serializedVersion: 2
-      Hash: 8e0313c6f5e2ce35991fec2d64f8eaab
-    assemblyName: UnityEngine.UI.dll
-    namespaceName: UnityEngine.UI
-    className: Image
-  - hash:
-      serializedVersion: 2
-      Hash: b781a773288c3e597253ab74cc02ee9c
+      Hash: d092e25e6c6df7270b252804aa308788
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: Pvr_UIPointer
@@ -662,7 +703,7 @@ ScriptsOnlyBuild:
     className: VRTK_SnapDropZone_UnityEvents
   - hash:
       serializedVersion: 2
-      Hash: 234235b9fb07320d11497e08a726cc56
+      Hash: 234d407605354852c48e57df17c9a1c6
     assemblyName: Unity.TextMeshPro.dll
     namespaceName: TMPro
     className: TMP_InputField
@@ -686,6 +727,12 @@ ScriptsOnlyBuild:
     className: UICircle
   - hash:
       serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: UserEntitlementCheck
+  - hash:
+      serializedVersion: 2
       Hash: fe636f2afd9192f3b447639e2930803f
     assemblyName: Assembly-CSharp.dll
     namespaceName: VRTK.Examples
@@ -704,13 +751,19 @@ ScriptsOnlyBuild:
     className: Sword
   - hash:
       serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: Pvr_UnityEyeMask
+  - hash:
+      serializedVersion: 2
       Hash: 9684b730c1ca8a3c2e3fa1652f09faa1
     assemblyName: Assembly-CSharp.dll
     namespaceName: VRTK
     className: VRTK_VelocityEstimator
   - hash:
       serializedVersion: 2
-      Hash: 1b10637a619f103a5186a033555baade
+      Hash: a2c37424951779e6d453d73f3b2c6460
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: CPicoSDKSettingAsset
@@ -764,12 +817,6 @@ ScriptsOnlyBuild:
     className: VRTK_RadialMenuController
   - hash:
       serializedVersion: 2
-      Hash: 8aa3d6ccbcb54ee8db6c1229854adaaa
-    assemblyName: UnityEngine.UI.dll
-    namespaceName: UnityEngine.UI
-    className: ContentSizeFitter
-  - hash:
-      serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
@@ -780,6 +827,12 @@ ScriptsOnlyBuild:
     assemblyName: Assembly-CSharp.dll
     namespaceName: VRTK.Examples.Archery
     className: Follow
+  - hash:
+      serializedVersion: 2
+      Hash: 07e1226449af4d620f882e476119b858
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: GetSeeThroughImage
   - hash:
       serializedVersion: 2
       Hash: 4f03875303977b0819d112d67f667f11
@@ -804,6 +857,12 @@ ScriptsOnlyBuild:
     assemblyName: Assembly-CSharp.dll
     namespaceName: VRTK.UnityEventHelper
     className: VRTK_HeadsetControllerAware_UnityEvents
+  - hash:
+      serializedVersion: 2
+      Hash: 781a5bf22efd4aba1faa19e44a8136f3
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: Pvr_ToBService
   - hash:
       serializedVersion: 2
       Hash: 0dbc3be398b4869a5c8d0d8481ee402c
@@ -956,7 +1015,7 @@ ScriptsOnlyBuild:
     className: VRTK_TeleportDisableOnHeadsetCollision
   - hash:
       serializedVersion: 2
-      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+      Hash: ef5c43f921427d03730f6ea4c848f07d
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
     className: RectMask2D
@@ -974,7 +1033,7 @@ ScriptsOnlyBuild:
     className: VRTK_ObjectTooltip_UnityEvents
   - hash:
       serializedVersion: 2
-      Hash: 4e9333594897a1fb8b136ad2eae996c7
+      Hash: 1103fb0758976355cdf9b7d5ce9cb7e0
     assemblyName: Unity.TextMeshPro.dll
     namespaceName: TMPro
     className: TMP_SubMeshUI
@@ -1076,6 +1135,12 @@ ScriptsOnlyBuild:
     className: SDK_PicoSystem
   - hash:
       serializedVersion: 2
+      Hash: d4ada3cde2dd02cb6e943cfd65ba105e
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: AchievementSample
+  - hash:
+      serializedVersion: 2
       Hash: 0a3cfadd66a365399ab94e244e65bc90
     assemblyName: Assembly-CSharp.dll
     namespaceName: VRTK
@@ -1130,6 +1195,12 @@ ScriptsOnlyBuild:
     className: VRTK_InteractGrab_UnityEvents
   - hash:
       serializedVersion: 2
+      Hash: 5f170942ee57c7a568f5bcfc7521adea
+    assemblyName: UnityEngine.TestRunner.dll
+    namespaceName: UnityEngine.TestTools
+    className: EnumerableTestState
+  - hash:
+      serializedVersion: 2
       Hash: cc4274b586df3c02688bac01b88bd16c
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.EventSystems
@@ -1172,7 +1243,7 @@ ScriptsOnlyBuild:
     className: VRTK_PhysicsSlider
   - hash:
       serializedVersion: 2
-      Hash: b8a5e8091ab0b8861d2add371082c5e0
+      Hash: fd68d84f33fad85aac38f2739c0ee270
     assemblyName: Unity.TextMeshPro.dll
     namespaceName: TMPro
     className: TMP_SpriteAsset
@@ -1226,6 +1297,12 @@ ScriptsOnlyBuild:
     className: SDK_PicoHeadset
   - hash:
       serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Unity.XR.WindowsMR.dll
+    namespaceName: UnityEngine.EventSystems
+    className: HoloLensInput
+  - hash:
+      serializedVersion: 2
       Hash: c893711e8d5f87691b43bb17a6ab2266
     assemblyName: Assembly-CSharp.dll
     namespaceName: VRTK.Examples
@@ -1242,6 +1319,12 @@ ScriptsOnlyBuild:
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: HighlightAtGaze
+  - hash:
+      serializedVersion: 2
+      Hash: 6a1740751fcbe3cc995dbcc04a956d01
+    assemblyName: Unity.XR.WindowsMR.dll
+    namespaceName: UnityEngine.EventSystems
+    className: HoloLensInputModule
   - hash:
       serializedVersion: 2
       Hash: 361f525e9e51617cb0ac071fa16bd4e6
@@ -1340,7 +1423,7 @@ ScriptsOnlyBuild:
     className: SnapDropZoneGroup_Switcher
   - hash:
       serializedVersion: 2
-      Hash: 3aedf24aefa7ca101eccb24493738ee5
+      Hash: 95dab08e9b8f1a8a197230e8f71718cc
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: Pvr_UnitySDKManager
@@ -1350,12 +1433,6 @@ ScriptsOnlyBuild:
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: InputManager
-  - hash:
-      serializedVersion: 2
-      Hash: b3ab2106268377ffe25dd18ac23dca28
-    assemblyName: Unity.TextMeshPro.dll
-    namespaceName: TMPro
-    className: TMP_Asset
   - hash:
       serializedVersion: 2
       Hash: b5c71bed93f1af3836a6dde2e11f3b07
@@ -1404,6 +1481,12 @@ ScriptsOnlyBuild:
     assemblyName: Assembly-CSharp.dll
     namespaceName: VRTK.Examples
     className: Zipline
+  - hash:
+      serializedVersion: 2
+      Hash: 1eb9aed3cd6453fbc580cf51127908af
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: Pvr_UnitySDKAPI.Achievement
+    className: Pvr_CallbackRunner
   - hash:
       serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
@@ -1676,6 +1759,12 @@ ScriptsOnlyBuild:
     className: OverlayExternalSurfaceDemo
   - hash:
       serializedVersion: 2
+      Hash: 57e1077da17ce131f08bac81a876637a
+    assemblyName: Unity.XR.WindowsMR.dll
+    namespaceName: UnityEngine.XR.WSA
+    className: SpatialMappingRenderer
+  - hash:
+      serializedVersion: 2
       Hash: 96c4f721270b9fcfd4aaa14010b28949
     assemblyName: Assembly-CSharp.dll
     namespaceName: VRTK.Examples
@@ -1694,7 +1783,7 @@ ScriptsOnlyBuild:
     className: SDK_ControllerSim
   - hash:
       serializedVersion: 2
-      Hash: feb9a5a121d15fa3654d4e50a5233045
+      Hash: f84d945e5e1ca985698660fc26e9657f
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
     className: RawImage
@@ -1844,7 +1933,7 @@ ScriptsOnlyBuild:
     className: VRTK_TeleportDisableOnControllerObscured
   - hash:
       serializedVersion: 2
-      Hash: 783f593b9380cf72d0f7ebfd4a0d4bcd
+      Hash: f64fd37da5cb89243ec68b5026d70bb8
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
     className: InputField
@@ -1880,7 +1969,7 @@ ScriptsOnlyBuild:
     className: HorizontalLayoutGroup
   - hash:
       serializedVersion: 2
-      Hash: 35a9693c388776aaf487636491a20f11
+      Hash: 300fd99066f8c288e85f5e81ce65fe34
     assemblyName: Unity.TextMeshPro.dll
     namespaceName: TMPro
     className: TMP_FontAsset
@@ -1892,7 +1981,7 @@ ScriptsOnlyBuild:
     className: Remote_Beam
   - hash:
       serializedVersion: 2
-      Hash: e1300922cc039f41ab46a47f4cb05898
+      Hash: 87ad3705a58f19c47136728d4a6e9c47
     assemblyName: Unity.TextMeshPro.dll
     namespaceName: TMPro
     className: TMP_Settings
@@ -1952,7 +2041,7 @@ ScriptsOnlyBuild:
     className: VRTK_ArtificialRotator
   - hash:
       serializedVersion: 2
-      Hash: f2e2e8d55ce8b01233ca070ccc336ae4
+      Hash: 7e239ec43eaa0e12cc9923a46e08f366
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: Pvr_UnitySDKPlatformSetting
@@ -2132,13 +2221,19 @@ ScriptsOnlyBuild:
     className: VRTK_PhysicsRotator
   - hash:
       serializedVersion: 2
+      Hash: 746dd34481f4a6772249bdb6d9f13f41
+    assemblyName: Unity.XR.WindowsMR.dll
+    namespaceName: UnityEngine.XR.WSA
+    className: SpatialMappingCollider
+  - hash:
+      serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
     assemblyName: Assembly-CSharp.dll
     namespaceName: VRTK
     className: SDK_UnityBoundaries
   - hash:
       serializedVersion: 2
-      Hash: 3b760e6526e13f7504f59e210145899a
+      Hash: 6939772cb3ce775a8e8d99f332534491
     assemblyName: Unity.TextMeshPro.dll
     namespaceName: TMPro
     className: TextMeshProUGUI
@@ -2174,7 +2269,7 @@ ScriptsOnlyBuild:
     className: VRTK_SDKObjectState
   - hash:
       serializedVersion: 2
-      Hash: 746d100ecf2aeda07fdfa225fd726546
+      Hash: 1d35dfcc8034c68a1faca2ac388b49d5
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: Pvr_UnitySDKEye
@@ -2222,12 +2317,6 @@ ScriptsOnlyBuild:
     className: PusherStickyToggle
   - hash:
       serializedVersion: 2
-      Hash: ae83e830e7a90c0aff918c4c2e520825
-    assemblyName: UnityEngine.UI.dll
-    namespaceName: UnityEngine.UI
-    className: GraphicRaycaster
-  - hash:
-      serializedVersion: 2
       Hash: 57c603a612b823bd13950ed0772ab67d
     assemblyName: Assembly-CSharp.dll
     namespaceName: VRTK
@@ -2246,7 +2335,7 @@ ScriptsOnlyBuild:
     className: VRTKExample_BezierPointerCustomStyles
   - hash:
       serializedVersion: 2
-      Hash: 88cc9df3c6fc697bfbeacd24c0d6f2d7
+      Hash: 8e6ceabfd38a184413d69b7db56c89cc
     assemblyName: UnityEngine.TestRunner.dll
     namespaceName: UnityEngine.TestTools
     className: BeforeAfterTestCommandState
@@ -2456,7 +2545,7 @@ ScriptsOnlyBuild:
     className: VRTK_BaseControllable_UnityEvents
   - hash:
       serializedVersion: 2
-      Hash: d791aa6007fa3640be1164ea75bb087d
+      Hash: 800c50acba124432abb4cf0d47202e06
     assemblyName: Unity.TextMeshPro.dll
     namespaceName: TMPro
     className: TMP_StyleSheet
@@ -2498,7 +2587,7 @@ ScriptsOnlyBuild:
     className: VRTK_Chest
   - hash:
       serializedVersion: 2
-      Hash: df434544c9f7b33d1cc7e635b180d279
+      Hash: 8f15c253902ff4eef507927669b9dc80
     assemblyName: Unity.TextMeshPro.dll
     namespaceName: TMPro
     className: TextMeshPro
@@ -2588,13 +2677,13 @@ ScriptsOnlyBuild:
     className: VRTK_RotateObjectControlAction
   - hash:
       serializedVersion: 2
-      Hash: c3660c8bf61c1d71da43f0a2eab6c12f
+      Hash: fcc4ff1cbb1b34dcf848e41a945c6b28
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: Pvr_UnitySDKEyeOverlay
   - hash:
       serializedVersion: 2
-      Hash: 0597c32ac76c12fd4833619930542089
+      Hash: 00b9dcbe96ad88c208fe9de14dd89657
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: Pvr_UnitySDKEyeManager
@@ -2624,7 +2713,7 @@ ScriptsOnlyBuild:
     className: VRTK_HeadsetControllerAware
   - hash:
       serializedVersion: 2
-      Hash: 8649814970b42d345b89944b862453cc
+      Hash: 5dea360fb0b147724ac344e6f399c2f3
     assemblyName: Unity.TextMeshPro.dll
     namespaceName: TMPro
     className: TMP_SubMesh
@@ -2654,7 +2743,7 @@ ScriptsOnlyBuild:
     className: ControllableReactor
   - hash:
       serializedVersion: 2
-      Hash: 4ef0f7d42cdb13479386e1f049c315aa
+      Hash: 9726bc46e15d44429bd38fb013657f1e
     assemblyName: UnityEngine.TestRunner.dll
     namespaceName: UnityEngine.TestTools.TestRunner
     className: PlaymodeTestsController
@@ -2690,7 +2779,7 @@ ScriptsOnlyBuild:
     className: Breakable_Cube
   - hash:
       serializedVersion: 2
-      Hash: 09d47d3dbd70797049765cffe3219de8
+      Hash: f120b5c10dc325f490a2273e56eb3bbf
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: Pvr_ControllerInit
@@ -2718,12 +2807,6 @@ ScriptsOnlyBuild:
     assemblyName: Assembly-CSharp.dll
     namespaceName: VRTK
     className: WindowsMR_TrackedObject
-  - hash:
-      serializedVersion: 2
-      Hash: aa88ae22474df55295327e4ee99e5a24
-    assemblyName: UnityEngine.UI.dll
-    namespaceName: UnityEngine.UI
-    className: Toggle
   - hash:
       serializedVersion: 2
       Hash: 5ffb45aaf5c9d37bd63cd94b04044f4a
@@ -2792,5 +2875,5 @@ ScriptsOnlyBuild:
     className: PlayableTrack
   platform: 13
   scenePathNames:
-  - Assets/VRTK/LegacyExampleFiles/034_Controls_InteractingWithUnityUI.unity
-  playerPath: D:/Pico/Unity Project/VRTK-Support-master/vrtk_pico/vrtkui.apk
+  - Assets/VRTK/Examples/[007 - Interactions] InteractionHelpers.unity
+  playerPath: D:/Unity/picoxrtest/VRTK-Support-master/vrtk7.apk

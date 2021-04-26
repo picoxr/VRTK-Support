@@ -18,7 +18,7 @@ public class RayVisualizer : MonoBehaviour {
 	
     void Update ()
     {
-        var t = Pvr_UnitySDKManager.SDK.HeadPose.Matrix;
+        var t = Pvr_UnitySDKSensor.Instance.HeadPose.Matrix;
         Pvr_UnitySDKAPI.System.UPvr_getEyeTrackingGazeRay(ref gazeRay);
         _line.SetPosition(0, t.MultiplyPoint(new Vector3(0,-0.05f,0.2f)));
         _line.SetPosition(1, gazeRay.Origin + gazeRay.Direction * 20);

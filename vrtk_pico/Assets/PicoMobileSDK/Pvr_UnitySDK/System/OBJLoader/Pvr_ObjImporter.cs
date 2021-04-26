@@ -19,7 +19,7 @@ public class Pvr_ObjImporter
     private List<Vector3> vertices;
     private List<Vector2> uv;
     private List<Vector3> normals;
-    private List<Vector3Int> faceData;
+    private List<PvrVector3Int> faceData;
     private List<int> intArray;
 
     private const int MIN_POW_10 = -16;
@@ -33,7 +33,7 @@ public class Pvr_ObjImporter
         vertices = new List<Vector3>();
         uv = new List<Vector2>();
         normals = new List<Vector3>();
-        faceData = new List<Vector3Int>();
+        faceData = new List<PvrVector3Int>();
         intArray = new List<int>();
 
         LoadMeshData(filePath);
@@ -125,7 +125,7 @@ public class Pvr_ObjImporter
                     
                     while (splitStart < sb.Length && char.IsDigit(sb[splitStart]))
                     {
-                        faceData.Add(new Vector3Int(GetInt(sb, ref splitStart, ref sbFloat),
+                        faceData.Add(new PvrVector3Int(GetInt(sb, ref splitStart, ref sbFloat),
                             GetInt(sb, ref splitStart, ref sbFloat), GetInt(sb, ref splitStart, ref sbFloat)));
                         j++;
 
@@ -221,15 +221,15 @@ public class Pvr_ObjImporter
     }
 }
 
-public sealed class Vector3Int
+public sealed class PvrVector3Int
 {
     public int x { get; set; }
     public int y { get; set; }
     public int z { get; set; }
 
-    public Vector3Int() { }
+    public PvrVector3Int() { }
 
-    public Vector3Int(int x, int y, int z)
+    public PvrVector3Int(int x, int y, int z)
     {
         this.x = x;
         this.y = y;

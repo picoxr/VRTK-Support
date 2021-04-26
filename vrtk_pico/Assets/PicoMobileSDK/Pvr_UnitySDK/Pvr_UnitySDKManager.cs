@@ -23,7 +23,6 @@ public class Pvr_UnitySDKManager : MonoBehaviour
     /************************************    Properties  *************************************/
     #region Properties
     public static PlatForm platform;
-    bool BattEnable = false;
 
     private static Pvr_UnitySDKManager sdk = null;
     public static Pvr_UnitySDKManager SDK
@@ -34,95 +33,19 @@ public class Pvr_UnitySDKManager : MonoBehaviour
             {
                 sdk = UnityEngine.Object.FindObjectOfType<Pvr_UnitySDKManager>();
             }
-            if (sdk == null)
-            {
-                var go = new GameObject("Pvr_UnitySDKManager");
-                sdk = go.AddComponent<Pvr_UnitySDKManager>();
-                go.transform.localPosition = Vector3.zero;
-            }
             return sdk;
         }
     }
 
-    // Sensor
-    [HideInInspector]
-    public static Pvr_UnitySDKSensor pvr_UnitySDKSensor;
-    [HideInInspector]
-    public Pvr_UnitySDKPose HeadPose;
-    [HideInInspector]
-    public bool reStartHead = false;
-    //render
-    [HideInInspector]
-    public static Pvr_UnitySDKRender pvr_UnitySDKRender;
-
-    [SerializeField]
-    private float eyeVFov = 90.0f;
-    [HideInInspector]
-    public float EyeVFoV
-    {
-        get
-        {
-            return eyeVFov;
-        }
-        set
-        {
-            if (value != eyeVFov)
-            {
-                eyeVFov = value;
-            }
-        }
-    }
-    [SerializeField]
-    private float eyeHFov = 90.0f;
-    [HideInInspector]
-    public float EyeHFoV
-    {
-        get
-        {
-            return eyeHFov;
-        }
-        set
-        {
-            if (value != eyeHFov)
-            {
-                eyeHFov = value;
-            }
-        }
-    }
     [HideInInspector]
     public float EyesAspect = 1.0f;
     
     [HideInInspector]
-    public static int eyeTextureCount = 6;
-    [HideInInspector]
-    public RenderTexture[] eyeTextures;// = new RenderTexture[eyeTextureCount];
-    [HideInInspector]
-    public int[] eyeTextureIds;
-    [HideInInspector]
-    public int currEyeTextureIdx = 0;
-    [HideInInspector]
-    public int nextEyeTextureIdx = 1;
-    [HideInInspector]
-    public RenderTexture[] overlayTextures;// = new RenderTexture[eyeTextureCount];
-    [HideInInspector]
-    public int[] overlayTextureIds;
-    [HideInInspector]
-    public int overlayCamNum = 0;
-
-    [HideInInspector]
-    public int resetRot = 0;
-    [HideInInspector]
-    public int resetPos = 0;
-    [HideInInspector]
     public int posStatus = 0;
     [HideInInspector]
-    public bool isPUI;
+    public bool ismirroring;
     [HideInInspector]
     public Vector3 resetBasePos = new Vector3();
-    [HideInInspector]
-    public Vector3 resetCol0Pos = new Vector3();
-    [HideInInspector]
-    public Vector3 resetCol1Pos = new Vector3();
     [HideInInspector]
     public int trackingmode = -1;
     [HideInInspector]
@@ -204,30 +127,6 @@ public class Pvr_UnitySDKManager : MonoBehaviour
         Pvr_UnitySDKProjectSetting.GetProjectConfig().customRTSize = new Vector2(w, h);
     }
 
-    [SerializeField]
-    private float rtScaleFactor = 1;
-    public float RtScaleFactor
-    {
-        get
-        {
-            return rtScaleFactor;
-        }
-        set
-        {
-            if (value != rtScaleFactor)
-            {
-                rtScaleFactor = value;
-
-                if (pvr_UnitySDKRender != null)
-                {
-                    pvr_UnitySDKRender.ReCreateEyeBuffer();
-                }
-            }
-        }
-    }
-
-    [HideInInspector]
-    public int RenderviewNumber = 0;
     public Vector3 EyeOffset(Eye eye)
     {
         return eye == Eye.LeftEye ? leftEyeOffset : rightEyeOffset;
@@ -295,110 +194,7 @@ public class Pvr_UnitySDKManager : MonoBehaviour
             }
         }
     }
-    //6dof recenter
-    [SerializeField]
-    private bool sixDofPosReset;
-    public bool SixDofPosReset
-    {
-        get
-        {
-            return sixDofPosReset;
-        }
-        set
-        {
-            if (value != sixDofPosReset)
-            {
-                sixDofPosReset = value;
-            }
-        }
-    }
 
-    //show safe panel
-    [SerializeField]
-    private bool showSafePanel;
-    public bool ShowSafePanel
-    {
-        get
-        {
-            return showSafePanel;
-        }
-        set
-        {
-            if (value != showSafePanel)
-            {
-                showSafePanel = value;
-            }
-        }
-    }
-    
-    //use default range 0.8m
-    [SerializeField]
-    private bool defaultRange;
-    public bool DefaultRange
-    {
-        get
-        {
-            return defaultRange;
-        }
-        set
-        {
-            if (value != defaultRange)
-            {
-                defaultRange = value;
-            }
-        }
-    }
-    //custom range
-    [SerializeField]
-    private float customRange = 0.8f;
-    public float CustomRange
-    {
-        get
-        {
-            return customRange;
-        }
-        set
-        {
-            if (value != customRange)
-            {
-                customRange = value;
-            }
-        }
-    }
-    //Moving Ratios
-    [SerializeField]
-    private float movingRatios;
-    public float MovingRatios
-    {
-        get
-        {
-            return movingRatios;
-        }
-        set
-        {
-            if (value != movingRatios)
-            {
-                movingRatios = value;
-            }
-        }
-    }
-    // screenFade
-    [SerializeField]
-    private bool screenFade = false;
-    public bool ScreenFade
-    {
-        get
-        {
-            return screenFade;
-        }
-        set
-        {
-            if (value != screenFade)
-            {
-                screenFade = value;
-            }
-        }
-    }
     //Neck model
     [HideInInspector]
     public Vector3 neckOffset = new Vector3(0, 0.075f, 0.0805f);
@@ -424,12 +220,6 @@ public class Pvr_UnitySDKManager : MonoBehaviour
     [HideInInspector]
     public bool isEnterVRMode = false;
 
-    private GameObject safeArea;
-    [HideInInspector]
-    public GameObject safeToast;
-    [HideInInspector]
-    public GameObject resetPanel;
-    private GameObject safePanel;
     public bool isHasController = false;
     public Pvr_UnitySDKConfigProfile pvr_UnitySDKConfig;
 
@@ -464,24 +254,19 @@ public class Pvr_UnitySDKManager : MonoBehaviour
         }
     }
 
-    [SerializeField]
-    private bool copyrightprotection = false;
-
     private bool mIsAndroid7 = false;
     public static Func<bool> eventEnterVRMode;
 
-    private static StereoRenderingPathPico stereoRenderPath = StereoRenderingPathPico.MultiPass;
-    public static StereoRenderingPathPico StereoRenderPath
-    {
-        get
-        {
-            return stereoRenderPath;
-        }
-    }
-    public static SDKStereoRendering StereoRendering { get; private set; }
+    [HideInInspector]
+    public bool ShowVideoSeethrough = false;
 
+    public int SystemDebugFFRLevel = -1;
+    public int SystemFFRLevel = -1;
+    //Entitlement Check Result
+    public int AppCheckResult = 100;
+    public delegate void EntitlementCheckResult(int ReturnValue);
+    public static event EntitlementCheckResult EntitlementCheckResultEvent;
     #endregion
-
 
     /************************************ Private Interfaces  *********************************/
 
@@ -513,32 +298,15 @@ public class Pvr_UnitySDKManager : MonoBehaviour
     {
         Pvr_UnitySDKAPI.Sensor.UPvr_SetTrackingOriginType(this.trackingOrigin);
         Pvr_UnitySDKAPI.Render.UPvr_SetMonoMode(this.monoscopic);
-
-        if (pvr_UnitySDKRender == null)
+        if (Pvr_UnitySDKRender.Instance == null)
         {
-            PLOG.I("pvr_UnitySDKRender  init");
-            pvr_UnitySDKRender = new Pvr_UnitySDKRender();
+            PLOG.I("pvr_UnitySDKRender init failed");
         }
-        else
+        if (Pvr_UnitySDKSensor.Instance == null)
         {
-            pvr_UnitySDKRender.Init();
+            PLOG.I("pvr_UnitySDKSensor init failed");
         }
-
-        HeadPose = new Pvr_UnitySDKPose(Vector3.zero, Quaternion.identity);
-        if (pvr_UnitySDKSensor == null)
-        {
-            PLOG.I("pvr_UnitySDKSensor init");
-            pvr_UnitySDKSensor = new Pvr_UnitySDKSensor();
-        }
-        else
-        {
-            pvr_UnitySDKSensor.InitUnitySDK6DofSensor();
-            if (trackingmode == 2 || trackingmode == 3)
-            {
-                pvr_UnitySDKSensor.InitUnitySDKSensor();
-            }
-
-        }
+        
         Pvr_UnitySDKAPI.System.UPvr_StartHomeKeyReceiver(this.gameObject.name);
 
         return true;
@@ -573,11 +341,11 @@ public class Pvr_UnitySDKManager : MonoBehaviour
                 }
             }
         }
-        string body = "";
-        if (msg.Contains("messageBody"))
-        {
-            body = (string)Jdmsg["messageBody"];
-        }
+        //string body = "";
+        //if (msg.Contains("messageBody"))
+        //{
+        //    body = (string)Jdmsg["messageBody"];
+        //}
         //DateTime dt = DateTime.Parse("1970-01-01 00:00:00").AddMilliseconds(Convert.ToInt64((Int64)Jdmsg["messageTime"]));
         //string time = dt.ToString("yyyy-MM-dd HH:mm:ss");
         if (UseToast)
@@ -1063,7 +831,11 @@ public class Pvr_UnitySDKManager : MonoBehaviour
     {
         if (pvr_UnitySDKEditor == null)
         {
-            HeadPose = new Pvr_UnitySDKPose(Vector3.zero, Quaternion.identity);
+            pvr_UnitySDKEditor = this.gameObject.AddComponent<Pvr_UnitySDKEditor>();
+        }
+        else
+        {
+            pvr_UnitySDKEditor = null;
             pvr_UnitySDKEditor = this.gameObject.AddComponent<Pvr_UnitySDKEditor>();
         }
         return true;
@@ -1076,92 +848,96 @@ public class Pvr_UnitySDKManager : MonoBehaviour
 
     public void SDKManagerLongHomeKey()
     {
-        //closepanel
-        if (resetPanel.activeSelf)
-        {
-            resetPanel.SetActive(false);
-            resetPanel.transform.Find("Panel").GetComponent<Canvas>().sortingOrder = 10001;
-        }
-        if (pvr_UnitySDKSensor != null)
+        if (Pvr_UnitySDKSensor.Instance != null)
         {
             if (isHasController)
             {
                 if (Controller.UPvr_GetControllerState(0) == ControllerState.Connected ||
                     Controller.UPvr_GetControllerState(1) == ControllerState.Connected)
                 {
-                    pvr_UnitySDKSensor.OptionalResetUnitySDKSensor(0, 1);
+                    Pvr_UnitySDKSensor.Instance.OptionalResetUnitySDKSensor(0, 1);
                 }
                 else
                 {
-                    pvr_UnitySDKSensor.OptionalResetUnitySDKSensor(1, 1);
+                    Pvr_UnitySDKSensor.Instance.OptionalResetUnitySDKSensor(1, 1);
                 }
             }
             else
             {
-                pvr_UnitySDKSensor.OptionalResetUnitySDKSensor(1, 1);
+                Pvr_UnitySDKSensor.Instance.OptionalResetUnitySDKSensor(1, 1);
             }
 
         }
     }
 
+    public Action longPressHomeKeyAction;
+
     private void setLongHomeKey()
     {
         if (sdk.HmdOnlyrot)
         {
-            if (pvr_UnitySDKSensor != null)
+            if (Pvr_UnitySDKSensor.Instance != null)
             {
-                PLOG.I(pvr_UnitySDKSensor.ResetUnitySDKSensor()
+                PLOG.I(Pvr_UnitySDKSensor.Instance.ResetUnitySDKSensor()
                     ? "Long Home Key to Reset Sensor Success!"
                     : "Long Home Key to Reset Sensor Failed!");
             }
         }
         else
         {
-            if (trackingmode == 4)
+            if (trackingmode == 4 || trackingmode == 5 || trackingmode == 6)
             {
-                pvr_UnitySDKSensor.OptionalResetUnitySDKSensor(1, 1);
+                Pvr_UnitySDKSensor.Instance.OptionalResetUnitySDKSensor(1, 1);
 
             }
             else
             {
-                if (safeToast != null)
+                if (trackingmode == 2 || trackingmode == 3)
                 {
-                    if (safeToast.activeSelf)
+                    if (isHasController && (Controller.UPvr_GetControllerState(0) == ControllerState.Connected || Controller.UPvr_GetControllerState(1) == ControllerState.Connected))
                     {
-                        if (isHasController && (Controller.UPvr_GetControllerState(0) == ControllerState.Connected || Controller.UPvr_GetControllerState(1) == ControllerState.Connected))
-                        {
-                            pvr_UnitySDKSensor.OptionalResetUnitySDKSensor(0, 1);
-                        }
-                        else
-                        {
-                            pvr_UnitySDKSensor.OptionalResetUnitySDKSensor(1, 1);
-                        }
+                        Pvr_UnitySDKSensor.Instance.OptionalResetUnitySDKSensor(0, 1);
                     }
                     else
                     {
-                        resetPanel.SetActive(true);
+                        Pvr_UnitySDKSensor.Instance.OptionalResetUnitySDKSensor(1, 1);
                     }
                 }
-                else
+
+                if (trackingmode == 0 || trackingmode == 1)
                 {
-                    if (trackingmode == 0 || trackingmode == 1)
-                    {
-                        pvr_UnitySDKSensor.ResetUnitySDKSensor();
-                    }
+                    Pvr_UnitySDKSensor.Instance.ResetUnitySDKSensor();
                 }
+
             }
-            
+            if (longPressHomeKeyAction != null)
+            {
+                longPressHomeKeyAction();
+            }
         }
     }
 
     public void verifyAPPCallback(string code)
     {
         Debug.Log("PvrLog verifyAPPCallback" + code);
-        //code:0 valid
-        //code:other invalid
+        AppCheckResult = Convert.ToInt32(code);
+        if (EntitlementCheckResultEvent != null)
+        {
+            EntitlementCheckResultEvent(AppCheckResult);
+        }  
+    }
+
+    public void IpdRefreshCallBack(string ipd)
+    {
+        Debug.Log("PvrLog IpdRefreshCallBack");
+        foreach (var t in Pvr_UnitySDKEyeManager.Instance.Eyes)
+        {
+            t.RefreshCameraPosition(Convert.ToSingle(ipd));
+        }
     }
     /*************************************  Unity API ****************************************/
-    #region Unity API
+
+#region Unity API
 
     void Awake()
     {
@@ -1174,46 +950,27 @@ public class Pvr_UnitySDKManager : MonoBehaviour
             Debug.Log("DISFT LWRP = Enable");
         }
         Debug.Log("DISFT Content Proctect :" + Pvr_UnitySDKProjectSetting.GetProjectConfig().usecontentprotect.ToString());
+        
         int isrot = 0;
-        int rot = (int)GlobalIntConfigs.Enable_Activity_Rotation;
-        Render.UPvr_GetIntConfig(rot, ref isrot);
-        if (isrot == 1)
+        int rot = 0;
+        LoadIsMirroringValue();
+        if (!ismirroring)
         {
-            Debug.Log("DISFT ScreenOrientation.Portrait = Enable");
-            Screen.orientation = ScreenOrientation.Portrait;
+            rot = (int)GlobalIntConfigs.Enable_Activity_Rotation;
+            Render.UPvr_GetIntConfig(rot, ref isrot);
+            if (isrot == 1)
+            {
+                Debug.Log("DISFT ScreenOrientation.Portrait = Enable");
+                Screen.orientation = ScreenOrientation.Portrait;
+            }
         }
-        bool supportSinglePass = true;
-#if UNITY_2018_1_OR_NEWER
-        if (UnityEngine.Rendering.GraphicsSettings.renderPipelineAsset != null)
+        else
         {
-            supportSinglePass = false;
-            if(!Pvr_UnitySDKAPI.BoundarySystem.UPvr_EnableLWRP(true))
-            {
-                Debug.Log("UPvr_EnableLWRP return false");
-            }
-            Vector2 resolution = Pvr_UnitySDKRender.GetEyeBufferResolution();
-            if (!Pvr_UnitySDKAPI.BoundarySystem.UPvr_SetViewportSize((int)resolution.x, (int)resolution.y))
-            {
-                Debug.Log("UPvr_SetViewportSize return false");
-            }            
+            rot = (int)GlobalIntConfigs.GetDisplay_Orientation;
+            Render.UPvr_GetIntConfig(rot, ref isrot);
+            Screen.orientation = isrot == 0 ? ScreenOrientation.Portrait : ScreenOrientation.LandscapeLeft;
         }
-            
-#endif
-        if(Pvr_UnitySDKProjectSetting.GetProjectConfig().usesinglepass)
-        {
-            bool result = false;
-            if (supportSinglePass)
-            {
-                result = Pvr_UnitySDKAPI.System.UPvr_EnableSinglePass(true);
-            }
-            if (result)
-            {
-                StereoRendering = new Pvr_UnitySDKSinglePass();
-                stereoRenderPath = StereoRenderingPathPico.SinglePass;
-                eyeTextureCount = 3;
-            }
-            Debug.Log("EnableSinglePass supportSinglePass " + supportSinglePass.ToString() + " result " + result);
-        }
+
 #endif
 
 #if ANDROID_DEVICE
@@ -1280,16 +1037,18 @@ public class Pvr_UnitySDKManager : MonoBehaviour
         }
 #endif
         Render.UPvr_GetIntConfig((int)GlobalIntConfigs.iPhoneHMDModeEnabled, ref iPhoneHMDModeEnabled);
-        if (sdk == null)
-        {
-            sdk = this;
-        }
-        if (sdk != this)
-        {
-            PLOG.E("SDK object should be a singleton.");
-            enabled = false;
-            return;
-        }
+
+        Pvr_ControllerManager.ControllerStatusChangeEvent += CheckControllerStateForG2;
+#if ANDROID_DEVICE
+        InitUI();
+        RefreshTextByLanguage();
+#endif
+    }
+
+
+    //wait for unity to start rendering
+    IEnumerator Start()
+    {
         if (SDKManagerInit())
         {
             PLOG.I("SDK Init success.");
@@ -1299,26 +1058,28 @@ public class Pvr_UnitySDKManager : MonoBehaviour
             PLOG.E("SDK Init Failed.");
             Application.Quit();
         }
-
-        SDKManagerInitFPS();
-        Pvr_ControllerManager.ControllerStatusChangeEvent += CheckControllerStateForG2;
-#if ANDROID_DEVICE
-        InitUI();
-        RefreshTextByLanguage();
-#endif
-        if (!SDK.HmdOnlyrot)
+        if (Pvr_UnitySDKRender.Instance != null)
         {
-            if (Sensor.Pvr_IsHead6dofReset() && ShowSafePanel)
-            {
-                safePanel.SetActive(true);
-            }
+            Pvr_UnitySDKRender.Instance.ReInit();
         }
-    }
-
-
-    //wait for unity to start rendering
-    IEnumerator Start()
-    {
+        SDKManagerInitFPS();
+        if (Pvr_UnitySDKPlatformSetting.StartTimeEntitlementCheck)
+        {
+            if (! (PlatformSettings.UPvr_IsCurrentDeviceValid() == Pvr_UnitySDKPlatformSetting.simulationType.Valid))
+            {
+                Debug.Log("DISFT Entitlement Check Simulation DO NOT PASS");
+                string appID = Pvr_UnitySDKPlatformSetting.Instance.appID;
+                Debug.Log("DISFT Start-time Entitlement Check Enable");
+                PLOG.I("DISFT Start-time Entitlement Check APPID :" + appID);
+                // 0:success -1:invalid params -2:service not exist -3:time out
+                PlatformSettings.UPvr_AppEntitlementCheckExtra(appID);
+            }
+            else
+            {
+                Debug.Log("DISFT Entitlement Check Simulation PASS");
+            }
+                  
+        }
 #if UNITY_EDITOR
         yield break;
 #else
@@ -1335,10 +1096,9 @@ public class Pvr_UnitySDKManager : MonoBehaviour
         }
         Debug.Log("InitRenderThreadRoutine after a wait");
 
-
-        if (pvr_UnitySDKRender != null)
+        if (Pvr_UnitySDKRender.Instance != null)
         {
-            pvr_UnitySDKRender.IssueRenderThread();
+            Pvr_UnitySDKRender.Instance.IssueRenderThread();
         }
         else
         {
@@ -1382,166 +1142,18 @@ public class Pvr_UnitySDKManager : MonoBehaviour
         {
             newPicovrTriggered = true;
         }
-
-        if (pvr_UnitySDKSensor != null)
-        {
-            pvr_UnitySDKSensor.SensorUpdate();
-        }
-
-        if (trackingmode == 2 || trackingmode == 3) 
-        {
 #if ANDROID_DEVICE
-            if (isHasController && (Controller.UPvr_GetControllerState(0) == ControllerState.Connected || Controller.UPvr_GetControllerState(1) == ControllerState.Connected))
-            {
-                safeToast.transform.Find("Panel/Text").GetComponent<Text>().text =
-                    Pvr_UnitySDKAPI.System.UPvr_GetLangString("safeToast0") + CustomRange + Pvr_UnitySDKAPI.System.UPvr_GetLangString("safeToast1");
-
-                if (Input.GetKeyDown(KeyCode.JoystickButton0) || Controller.UPvr_GetKeyDown(0, Pvr_KeyCode.TOUCHPAD) || Controller.UPvr_GetKeyDown(1, Pvr_KeyCode.TOUCHPAD))
-                {
-                    if (safePanel.activeSelf)
-                        safePanel.SetActive(false);
-                    if (resetPanel.activeSelf)
-                    {
-                        resetPanel.SetActive(false);
-                        pvr_UnitySDKSensor.OptionalResetUnitySDKSensor(0, 1);
-                    }
-                }
-            }
-            else
-            {
-                safeToast.transform.Find("Panel/Text").GetComponent<Text>().text =
-                    Pvr_UnitySDKAPI.System.UPvr_GetLangString("safeToast2") + CustomRange + Pvr_UnitySDKAPI.System.UPvr_GetLangString("safeToast3");
-                if (Input.GetKeyDown(KeyCode.JoystickButton0))
-                {
-                    if (safePanel.activeSelf)
-                    {
-                        safePanel.SetActive(false);
-                    }
-                    if (resetPanel.activeSelf)
-                    {
-                        resetPanel.SetActive(false);
-                        pvr_UnitySDKSensor.OptionalResetUnitySDKSensor(1, 1);
-                    }
-                }
-            }
-
-            if (safeToast.activeSelf)
-            {
-                safeToast.transform.localPosition = SDK.HeadPose.Position;
-                safeToast.transform.localRotation = Quaternion.Euler(0, SDK.HeadPose.Orientation.eulerAngles.y, 0);
-            }
-            if (resetPanel.activeSelf)
-            {
-                resetPanel.transform.localPosition = SDK.HeadPose.Position;
-                resetPanel.transform.localRotation = Quaternion.Euler(0, SDK.HeadPose.Orientation.eulerAngles.y, 0);
-            }
-            if (safePanel.activeSelf)
-            {
-                safePanel.transform.localPosition = SDK.HeadPose.Position;
-                safePanel.transform.localRotation = Quaternion.Euler(0, SDK.HeadPose.Orientation.eulerAngles.y, 0);
-            }
-
-            if (!SDK.HmdOnlyrot)
-            {
-                //default 0.8m
-                if (DefaultRange)
-                {
-                    if (isHasController)
-                    {
-                        if (Mathf.Sqrt(Mathf.Pow(HeadPose.Position.x, 2.0f) + Mathf.Pow(HeadPose.Position.z, 2.0f)) > 0.56f || Mathf.Sqrt(Mathf.Pow(Controller.UPvr_GetControllerPOS(0).x, 2.0f) + Mathf.Pow(Controller.UPvr_GetControllerPOS(0).z, 2.0f)) > 0.8f || Mathf.Sqrt(Mathf.Pow(Controller.UPvr_GetControllerPOS(1).x, 2.0f) + Mathf.Pow(Controller.UPvr_GetControllerPOS(1).z, 2.0f)) > 0.8f)
-                        {
-                            safeArea.transform.localScale.Set(1.6f, 1.6f, 1.6f);
-                            safeArea.SetActive(true);
-                        }
-                        else
-                        {
-                            safeArea.SetActive(false);
-                        }
-                    }
-                    else
-                    {
-                        if (Mathf.Sqrt(Mathf.Pow(HeadPose.Position.x, 2.0f) + Mathf.Pow(HeadPose.Position.z, 2.0f)) > 0.56f)
-                        {
-                            safeArea.transform.localScale.Set(1.6f, 1.6f, 1.6f);
-                            safeArea.SetActive(true);
-                        }
-                        else
-                        {
-                            safeArea.SetActive(false);
-                        }
-                    }
-
-                    if (Mathf.Sqrt(Mathf.Pow(HeadPose.Position.x, 2.0f) + Mathf.Pow(HeadPose.Position.z, 2.0f)) > 0.8f)
-                    {
-                        if (!safeToast.activeSelf)
-                        {
-                            safeToast.transform.Find("Panel").GetComponent<Canvas>().sortingOrder = resetPanel.transform.Find("Panel").GetComponent<Canvas>().sortingOrder + 1;
-                            safeToast.SetActive(true);
-                        }
-                    }
-                    else
-                    {
-                        if (safeToast.activeSelf)
-                        {
-                            safeToast.SetActive(false);
-                            safeToast.transform.Find("Panel").GetComponent<Canvas>().sortingOrder = 10001;
-                        }
-                    }
-                }
-                else
-                {
-                    if (isHasController)
-                    {
-                        if (Mathf.Sqrt(Mathf.Pow(HeadPose.Position.x, 2.0f) + Mathf.Pow(HeadPose.Position.z, 2.0f)) > (0.7f * CustomRange) || Mathf.Sqrt(Mathf.Pow(Controller.UPvr_GetControllerPOS(0).x, 2.0f) + Mathf.Pow(Controller.UPvr_GetControllerPOS(0).z, 2.0f)) > CustomRange || Mathf.Sqrt(Mathf.Pow(Controller.UPvr_GetControllerPOS(1).x, 2.0f) + Mathf.Pow(Controller.UPvr_GetControllerPOS(1).z, 2.0f)) > CustomRange)
-                        {
-                            safeArea.transform.localScale.Set(CustomRange / 0.5f, CustomRange / 0.5f, CustomRange / 0.5f);
-                            safeArea.SetActive(true);
-                        }
-                        else
-                        {
-                            safeArea.SetActive(false);
-                        }
-                    }
-                    else
-                    {
-                        if (Mathf.Sqrt(Mathf.Pow(HeadPose.Position.x, 2.0f) + Mathf.Pow(HeadPose.Position.z, 2.0f)) > (0.7f * CustomRange))
-                        {
-                            safeArea.transform.localScale.Set(CustomRange / 0.5f, CustomRange / 0.5f, CustomRange / 0.5f);
-                            safeArea.SetActive(true);
-                        }
-                        else
-                        {
-                            safeArea.SetActive(false);
-                        }
-                    }
-                    if (Mathf.Sqrt(Mathf.Pow(HeadPose.Position.x, 2.0f) + Mathf.Pow(HeadPose.Position.z, 2.0f)) > CustomRange)
-                    {
-                        if (!safeToast.activeSelf)
-                        {
-                            safeToast.transform.Find("Panel").GetComponent<Canvas>().sortingOrder = resetPanel.transform.Find("Panel").GetComponent<Canvas>().sortingOrder + 1;
-                            safeToast.SetActive(true);
-                        }
-                    }
-                    else
-                    {
-                        if (safeToast.activeSelf)
-                        {
-                            safeToast.SetActive(false);
-                            safeToast.transform.Find("Panel").GetComponent<Canvas>().sortingOrder = 10001;
-                        }
-                    }
-                }
-            }
-#endif
+        if (Pvr_UnitySDKSensor.Instance != null)
+        {
+            Pvr_UnitySDKSensor.Instance.SensorUpdate();
         }
-
+#endif
         picovrTriggered = newPicovrTriggered;
         newPicovrTriggered = false;
 
     }
     void OnDestroy()
     {
-
         if (sdk == this)
         {
             sdk = null;
@@ -1552,29 +1164,26 @@ public class Pvr_UnitySDKManager : MonoBehaviour
         Pvr_ControllerManager.ControllerStatusChangeEvent -= CheckControllerStateForG2;
     }
 
-    public void OnApplicationQuit()
+    private void OnEnable()
     {
-
-#if UNITY_ANDROID && !UNITY_EDITOR
-        /*
-               if (pvr_UnitySDKSensor != null)
-                 {
-                pvr_UnitySDKSensor.StopUnitySDKSensor();
-                  }
-                try{
-                    PLOG.I("OnApplicationQuit  1  -------------------------");
-                    Pvr_UnitySDKPluginEvent.Issue( RenderEventType.ShutdownRenderThread );
-                }
-                catch (Exception e)
-                {
-                    PLOG.I("ShutdownRenderThread Error" + e.Message);
-                }
-        */
-#endif
+        if (sdk == null)
+        {
+            sdk = this;
+        }
+        else
+        {
+            if (sdk != this)
+                sdk = this;
+        }
     }
-
     void OnDisable()
     {
+#if UNITY_EDITOR
+        if (pvr_UnitySDKEditor != null)
+        {
+            pvr_UnitySDKEditor = null;
+        }
+#endif
         StopAllCoroutines();
     }
 
@@ -1582,35 +1191,61 @@ public class Pvr_UnitySDKManager : MonoBehaviour
     {
         Pvr_UnitySDKAPI.System.UPvr_StopHomeKeyReceiver();
         this.LeaveVRMode();
-        if (pvr_UnitySDKSensor != null)
+        if (Pvr_UnitySDKSensor.Instance != null)
         {
-            pvr_UnitySDKSensor.StopUnitySDKSensor();
+            Pvr_UnitySDKSensor.Instance.StopUnitySDKSensor();
         }
     }
 
     private void OnApplicationPause(bool pause)
     {
-        Debug.Log("OnApplicationPause-------------------------" + (pause ? "true" : "false"));
+		bool unityPause = pause;
+        Debug.Log("OnApplicationPause-------------------------" + (unityPause ? "true" : "false"));
+       
 #if UNITY_ANDROID && !UNITY_EDITOR
-        if (Pvr_UnitySDKAPI.System.UPvr_IsPicoActivity())
+        if (Pvr_UnitySDKAPI.System.UPvr_IsPicoActivity() && !Pvr_UnitySDKRender.Instance.isShellMode)
         {
             bool state = Pvr_UnitySDKAPI.System.UPvr_GetMainActivityPauseStatus();
-            PLOG.I("Current Activity Pause State:" + state);
+            Debug.Log("OnApplicationPause-------------------------Activity Pause State:" + state);
             pause = state;
         }
-
-        if (pause)
-        { 
-            onResume = false;
-            OnPause();
-        }
-        else
-        {             
-            onResume = true;
-            GL.InvalidateState();
-            StartCoroutine(OnResume());
-        }
+		if(unityPause == pause)
+        {
+			if (pause)
+			{ 
+				onResume = false;
+				OnPause();
+			}
+			else
+			{             
+				onResume = true;
+				GL.InvalidateState();
+				StartCoroutine(OnResume());
+			}
+		}
+		else
+		{
+			if (pause)
+			{ 
+				Debug.Log("OnApplicationPause-------------------------Activity pause Unity resume");
+				GL.InvalidateState();
+				StartCoroutine(OnResume());
+				onResume = false;
+				OnPause();
+			}
+			else
+			{    
+				Debug.Log("OnApplicationPause-------------------------Activity resume Unity pause");		
+				OnPause();		
+				onResume = true;
+				GL.InvalidateState();
+				StartCoroutine(OnResume());
+			}
+		}
 #endif
+
+        
+       
     }
 
     public void EnterVRMode()
@@ -1636,15 +1271,6 @@ public class Pvr_UnitySDKManager : MonoBehaviour
 
     private void InitUI()
     {
-        if (trackingmode > 1)
-        {
-            safeArea = Instantiate(Resources.Load("Prefabs/SafeArea") as GameObject, transform, false);
-            safeToast = Instantiate(Resources.Load("Prefabs/SafeToast") as GameObject, transform, false);
-        }
-
-        resetPanel = Instantiate(Resources.Load("Prefabs/ResetPanel") as GameObject, transform, false);
-        safePanel = Instantiate(Resources.Load("Prefabs/SafePanel") as GameObject, transform, false);
-
         if (iPhoneHMDModeEnabled == 1)
         {
             var flamingo2Tips = Instantiate(Resources.Load("Prefabs/flamingo2Tips") as GameObject, transform.Find("Head"), false).transform;
@@ -1659,28 +1285,6 @@ public class Pvr_UnitySDKManager : MonoBehaviour
 
     private void RefreshTextByLanguage()
     {
-        if (safeToast != null)
-        {
-            safeToast.transform.Find("Panel").GetComponent<RectTransform>().sizeDelta = new Vector2(470, 470);
-            safeToast.transform.Find("Panel/title").localPosition = new Vector3(0, 173, 0);
-            safeToast.transform.Find("Panel/Image").localPosition = new Vector3(0, -108, 0);
-            safeToast.transform.Find("Panel/Text").GetComponent<RectTransform>().sizeDelta = new Vector2(440, 180);
-            safeToast.transform.Find("Panel/Text").localPosition = new Vector3(10, 55, 0);
-        }
-
-        if (safePanel != null && resetPanel != null)
-        {
-            safePanel.transform.Find("Panel").GetComponent<RectTransform>().sizeDelta = new Vector2(470, 470);
-            safePanel.transform.Find("Panel/toast1").GetComponent<RectTransform>().sizeDelta = new Vector2(425, 200);
-            resetPanel.transform.Find("Panel").GetComponent<RectTransform>().sizeDelta = new Vector2(470, 470);
-            resetPanel.transform.Find("Panel/toast").GetComponent<RectTransform>().sizeDelta = new Vector2(440, 180);
-
-            resetPanel.transform.Find("Panel/toast").GetComponent<Text>().text =
-                Pvr_UnitySDKAPI.System.UPvr_GetLangString("resetPanel0") + CustomRange + Pvr_UnitySDKAPI.System.UPvr_GetLangString("resetPanel1");
-            safePanel.transform.Find("Panel/toast1").GetComponent<Text>().text =
-                Pvr_UnitySDKAPI.System.UPvr_GetLangString("safePanel0") + CustomRange + Pvr_UnitySDKAPI.System.UPvr_GetLangString("safePanel1");
-        }
-
         if (msgtoast != null)
         {
             msgtoast.transform.Find("Text").GetComponent<Text>().text = Pvr_UnitySDKAPI.System.UPvr_GetLangString("msgtoast0");
@@ -1693,6 +1297,17 @@ public class Pvr_UnitySDKManager : MonoBehaviour
             LowcontrollerBatterytoast.transform.Find("Text").GetComponent<Text>().text = Pvr_UnitySDKAPI.System.UPvr_GetLangString("LowcontrollerBatterytoast");
         }
     }
+
+    private void LoadIsMirroringValue()
+    {
+        AndroidJavaClass jc = new AndroidJavaClass("com.unity3d.player.UnityPlayer");
+        AndroidJavaObject jo = jc.GetStatic<AndroidJavaObject>("currentActivity");
+        AndroidJavaObject packageManagerObj = jo.Call<AndroidJavaObject>("getPackageManager");
+        string packageName = jo.Call<string>("getPackageName");
+        AndroidJavaObject applicationInfoObj = packageManagerObj.Call<AndroidJavaObject>("getApplicationInfo", packageName, 128);
+        AndroidJavaObject bundleObj = applicationInfoObj.Get<AndroidJavaObject>("metaData");
+        ismirroring = Convert.ToBoolean(bundleObj.Call<int>("getInt", "bypass_presentation",0));
+    }
 #endregion
 
     /************************************    IEnumerator  *************************************/
@@ -1701,16 +1316,11 @@ public class Pvr_UnitySDKManager : MonoBehaviour
         int ability6dof = 0;
         int enumindex = (int)Pvr_UnitySDKAPI.GlobalIntConfigs.ABILITY6DOF;
         Pvr_UnitySDKAPI.Render.UPvr_GetIntConfig(enumindex, ref ability6dof);
-        if (ResetTrackerOnLoad && ability6dof == 1)
-        {
-            Debug.Log("Reset Tracker OnLoad");
-            pvr_UnitySDKSensor.OptionalResetUnitySDKSensor(1, 1);
-        }
-
+        
         RefreshTextByLanguage();
-        if (pvr_UnitySDKSensor != null)
+        if (Pvr_UnitySDKSensor.Instance != null)
         {
-            pvr_UnitySDKSensor.StartUnitySDKSensor();
+            Pvr_UnitySDKSensor.Instance.StartUnitySDKSensor();
 
             int iEnable6Dof = -1;
 #if !UNITY_EDITOR && UNITY_ANDROID
@@ -1726,22 +1336,9 @@ public class Pvr_UnitySDKManager : MonoBehaviour
 #endif
                 if (sensormode != 8)
                 {
-                    pvr_UnitySDKSensor.ResetUnitySDKSensor();
+                    Pvr_UnitySDKSensor.Instance.ResetUnitySDKSensor();
                 }
             }
-
-            if (!SDK.HmdOnlyrot)
-            {
-                if (Sensor.Pvr_IsHead6dofReset() && ShowSafePanel)
-                {
-                    if (trackingmode == 2 || trackingmode == 3)
-                    {
-                        safePanel.SetActive(true);
-                    }
-                    
-                }
-            }
-
         }
 
         if (Pvr_UnitySDKAPI.System.UPvr_IsPicoActivity())
@@ -1758,10 +1355,50 @@ public class Pvr_UnitySDKManager : MonoBehaviour
             Pvr_UnitySDKEyeManager.Instance.Eyes[i].RefreshCameraPosition(Pvr_UnitySDKAPI.System.UPvr_GetIPD());
         }
 
-        yield return new WaitForSeconds(1.0f);
+        var waitNum = 15;
+        Render.UPvr_GetIntConfig((int)GlobalIntConfigs.GetWaitFrameNum, ref waitNum);
+        var resetNum = 10;
+        Render.UPvr_GetIntConfig((int)GlobalIntConfigs.GetResetFrameNum, ref resetNum);
 
+        for (int i = 0; i < waitNum; i++)
+        {
+            if (i == resetNum)
+            {
+                if (ResetTrackerOnLoad && ability6dof == 1)
+                {
+                    Debug.Log("Reset Tracker OnLoad");
+                    Pvr_UnitySDKSensor.Instance.OptionalResetUnitySDKSensor(1, 1);
+                }
+            }
+            yield return null;
+        }
+        
         this.EnterVRMode();
         Pvr_UnitySDKAPI.System.UPvr_StartHomeKeyReceiver(this.gameObject.name);
         Pvr_UnitySDKEye.setLevel = false;
+        if (longPressHomeKeyAction != null)
+        {
+            longPressHomeKeyAction();
+        }
+        if ( Pvr_UnitySDKAPI.Render.UPvr_GetIntSysProc("pvrsist.foveation.level",ref SystemDebugFFRLevel) ) 
+        {
+            Pvr_UnitySDKAPI.Render.SetFoveatedRenderingLevel((EFoveationLevel)(SystemDebugFFRLevel));
+            Debug.Log("DISFT OnResume Get System Debug ffr level is : " + SystemDebugFFRLevel);
+        }
+        else
+        {
+            Debug.Log("DISFT OnResume Get System Debug ffr level Error,ffr level is : " + SystemDebugFFRLevel);
+        }
+            
+        if (SystemDebugFFRLevel == -1)
+        {
+            Pvr_UnitySDKAPI.Render.UPvr_GetIntConfig((int)GlobalIntConfigs.EnableFFRBYSYS, ref SystemFFRLevel);
+            if (SystemFFRLevel != -1)
+            {
+                Pvr_UnitySDKAPI.Render.SetFoveatedRenderingLevel((EFoveationLevel)(SystemFFRLevel));
+                Debug.Log("DISFT OnResume Get System ffr level is : " + SystemFFRLevel);
+            }
+        } 
+        
     }
 }
