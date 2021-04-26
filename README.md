@@ -10,7 +10,7 @@ We're very grateful for the significant contribution from:
 
 ## Dependency
 
-- Unity2019.3.6
+- Unity2019.4.24
 - VRTK 3.3
 - Pico Unity SDK 2.8.9
 
