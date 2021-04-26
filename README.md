@@ -23,7 +23,7 @@ As the following picture shows, there are seven scenes which are already configu
 ## Note
 
 Please keep in mind that the guide has to be executed in this order. If not, then the integration might not be as desired. 
-VRTK should already be installed and you need access to the files given in this folder. It's tested in Unity 2019.3.6f1 and confirmed to work in that version. 
+VRTK should already be installed and you need access to the files given in this folder.  
 Not all features might be implemented. These features can be found in the provided VRTK demo scenes. 
 Also, be sure to make a backup (or two) beforehand.
 
