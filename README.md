@@ -1,5 +1,7 @@
 # VRTK Support
 
+- If you have any questions/comments, please visit [**Pico Developer Answers**](https://devanswers.pico-interactive.com/) and raise your question there.
+
 ## Special Thanks to Contributors
 We're very grateful for the significant contribution from:    
 
@@ -42,6 +44,3 @@ Also, be sure to make a backup (or two) beforehand.
 11. Go to Edit > Project settings > Player > XR Settings and add “None” as an option for VR devices.
 12. Hook up all required components for the specific application you are working on (if there are any.)
 13. You're done!
-
-## Note:
-- If you have any questions/comments, please raise requests at [**PicoDevSupport Portal**](https://picodevsupport.atlassian.net/servicedesk/customer/user/login?
