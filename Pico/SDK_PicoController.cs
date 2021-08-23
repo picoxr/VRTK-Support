@@ -684,10 +684,10 @@ namespace VRTK
             {
                 case ControllerHand.Left:
                     Vector2 touchpad0Pos = Controller.UPvr_GetTouchPadPosition(0) / 128 - Vector2.one;
-                    return new Vector2(touchpad0Pos.y, touchpad0Pos.x);
+                    return new Vector2(touchpad0Pos.x, touchpad0Pos.y);
                 case ControllerHand.Right:
                     Vector2 touchpad1Pos = Controller.UPvr_GetTouchPadPosition(1) / 128 - Vector2.one;
-                    return new Vector2(touchpad1Pos.y, touchpad1Pos.x);
+                    return new Vector2(touchpad1Pos.x, touchpad1Pos.y);
             }
 
             return Vector2.zero;
