@@ -1,5 +1,0 @@
-sceneSetups:
-- path: Assets/VRTK/Examples/[001 - Interactions] ControllerEvents.unity
-  isLoaded: 1
-  isActive: 1
-  isSubScene: 0
