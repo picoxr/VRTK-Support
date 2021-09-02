@@ -1,0 +1,1078 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <LangVersion>latest</LangVersion>
+    <CscToolPath>E:\Program Files\unity\2019.4.29f1c2\Editor\Data\Tools\RoslynScripts</CscToolPath>
+    <CscToolExe>unity_csc.bat</CscToolExe>
+  </PropertyGroup>
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>10.0.20506</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <RootNamespace></RootNamespace>
+    <ProjectGuid>{7878BC1D-E9A6-3F64-16D3-CE541B5C4D2C}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <AssemblyName>Assembly-CSharp</AssemblyName>
+    <TargetFrameworkVersion>v4.7.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <BaseDirectory>.</BaseDirectory>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>Temp\bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE;UNITY_2019_4_29;UNITY_2019_4;UNITY_2019;UNITY_5_3_OR_NEWER;UNITY_5_4_OR_NEWER;UNITY_5_5_OR_NEWER;UNITY_5_6_OR_NEWER;UNITY_2017_1_OR_NEWER;UNITY_2017_2_OR_NEWER;UNITY_2017_3_OR_NEWER;UNITY_2017_4_OR_NEWER;UNITY_2018_1_OR_NEWER;UNITY_2018_2_OR_NEWER;UNITY_2018_3_OR_NEWER;UNITY_2018_4_OR_NEWER;UNITY_2019_1_OR_NEWER;UNITY_2019_2_OR_NEWER;UNITY_2019_3_OR_NEWER;UNITY_2019_4_OR_NEWER;UNITY_INCLUDE_TESTS;ENABLE_AR;ENABLE_AUDIO;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_EVENT_QUEUE;ENABLE_MICROPHONE;ENABLE_MULTIPLE_DISPLAYS;ENABLE_PHYSICS;ENABLE_TEXTURE_STREAMING;ENABLE_UNET;ENABLE_LZMA;ENABLE_UNITYEVENTS;ENABLE_VR;ENABLE_WEBCAM;ENABLE_UNITYWEBREQUEST;ENABLE_WWW;ENABLE_CLOUD_SERVICES;ENABLE_CLOUD_SERVICES_COLLAB;ENABLE_CLOUD_SERVICES_COLLAB_SOFTLOCKS;ENABLE_CLOUD_SERVICES_ADS;ENABLE_CLOUD_SERVICES_USE_WEBREQUEST;ENABLE_CLOUD_SERVICES_CRASH_REPORTING;ENABLE_CLOUD_SERVICES_NATIVE_CRASH_REPORTING;ENABLE_CLOUD_SERVICES_PURCHASING;ENABLE_CLOUD_SERVICES_ANALYTICS;ENABLE_CLOUD_SERVICES_UNET;ENABLE_CLOUD_SERVICES_BUILD;ENABLE_CLOUD_LICENSE;ENABLE_EDITOR_HUB_LICENSE;ENABLE_WEBSOCKET_CLIENT;ENABLE_DIRECTOR_AUDIO;ENABLE_DIRECTOR_TEXTURE;ENABLE_MANAGED_JOBS;ENABLE_MANAGED_TRANSFORM_JOBS;ENABLE_MANAGED_ANIMATION_JOBS;ENABLE_MANAGED_AUDIO_JOBS;ENABLE_RUNTIME_PERMISSIONS;ENABLE_ENGINE_CODE_STRIPPING;ENABLE_ONSCREEN_KEYBOARD;INCLUDE_DYNAMIC_GI;ENABLE_MONO_BDWGC;ENABLE_SCRIPTING_GC_WBARRIERS;PLATFORM_SUPPORTS_MONO;ENABLE_VIDEO;PLATFORM_ANDROID;UNITY_ANDROID;UNITY_ANDROID_API;ENABLE_EGL;ENABLE_NETWORK;ENABLE_RUNTIME_GI;ENABLE_CRUNCH_TEXTURE_COMPRESSION;PLATFORM_SUPPORTS_ADS_ID;UNITY_CAN_SHOW_SPLASH_SCREEN;UNITY_HAS_GOOGLEVR;UNITY_HAS_TANGO;ENABLE_SPATIALTRACKING;UNITY_ASTC_ONLY_DECOMPRESS;ENABLE_UNITYADS_RUNTIME;UNITY_UNITYADS_API;ENABLE_MONO;NET_STANDARD_2_0;ENABLE_PROFILER;UNITY_ASSERTIONS;UNITY_EDITOR;UNITY_EDITOR_IG;UNITY_EDITOR_64;UNITY_EDITOR_WIN;ENABLE_UNITY_COLLECTIONS_CHECKS;ENABLE_BURST_AOT;UNITY_TEAM_LICENSE;ENABLE_CUSTOM_RENDER_TEXTURE;ENABLE_DIRECTOR;ENABLE_LOCALIZATION;ENABLE_SPRITES;ENABLE_TERRAIN;ENABLE_TILEMAP;ENABLE_TIMELINE;ENABLE_LEGACY_INPUT_MANAGER;VRTK_DEFINE_SDK_PICO;VRTK_VERSION_3_3_0;VRTK_VERSION_3_3_0_OR_NEWER;VRTK_VERSION_3_1_0_OR_NEWER;VRTK_VERSION_3_2_0_OR_NEWER;VRTK_VERSION_3_2_1_OR_NEWER;CSHARP_7_OR_LATER;CSHARP_7_3_OR_NEWER</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <NoWarn>0169</NoWarn>
+    <AllowUnsafeBlocks>False</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>Temp\bin\Release\</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <NoWarn>0169</NoWarn>
+    <AllowUnsafeBlocks>False</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup>
+    <NoConfig>true</NoConfig>
+    <NoStdLib>true</NoStdLib>
+    <AddAdditionalExplicitAssemblyReferences>false</AddAdditionalExplicitAssemblyReferences>
+    <ImplicitlyExpandNETStandardFacades>false</ImplicitlyExpandNETStandardFacades>
+    <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="UnityEngine">
+      <HintPath>E:\Program Files\unity\2019.4.29f1c2\Editor\Data\Managed/UnityEngine/UnityEngine.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor">
+      <HintPath>E:\Program Files\unity\2019.4.29f1c2\Editor\Data\Managed/UnityEditor.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+     <Compile Include="Assets\PicoMobileSDK\Pvr_Achievement\API\Pvr_Achievement.cs" />
+     <Compile Include="Assets\PicoMobileSDK\Pvr_Achievement\API\Pvr_AchievementAPI.cs" />
+     <Compile Include="Assets\PicoMobileSDK\Pvr_Achievement\Sample\AchievementSample.cs" />
+     <Compile Include="Assets\PicoMobileSDK\Pvr_Achievement\Scripts\Models\Pvr_AchievementDefinition.cs" />
+     <Compile Include="Assets\PicoMobileSDK\Pvr_Achievement\Scripts\Models\Pvr_AchievementProgress.cs" />
+     <Compile Include="Assets\PicoMobileSDK\Pvr_Achievement\Scripts\Models\Pvr_AchievementUpdate.cs" />
+     <Compile Include="Assets\PicoMobileSDK\Pvr_Achievement\Scripts\Models\Pvr_DeserializableList.cs" />
+     <Compile Include="Assets\PicoMobileSDK\Pvr_Achievement\Scripts\Pvr_Callback.cs" />
+     <Compile Include="Assets\PicoMobileSDK\Pvr_Achievement\Scripts\Pvr_CallbackRunner.cs" />
+     <Compile Include="Assets\PicoMobileSDK\Pvr_Achievement\Scripts\Pvr_Message.cs" />
+     <Compile Include="Assets\PicoMobileSDK\Pvr_Achievement\Scripts\Pvr_Request.cs" />
+     <Compile Include="Assets\PicoMobileSDK\Pvr_BoundarySDK\API\Pvr_BoundaryAPI.cs" />
+     <Compile Include="Assets\PicoMobileSDK\Pvr_BoundarySDK\API\Pvr_BoundarySystem.cs" />
+     <Compile Include="Assets\PicoMobileSDK\Pvr_Controller\API\Pvr_ControllerAPI.cs" />
+     <Compile Include="Assets\PicoMobileSDK\Pvr_Controller\Scripts\Pvr_Controller.cs" />
+     <Compile Include="Assets\PicoMobileSDK\Pvr_Controller\Scripts\Pvr_ControllerDemo.cs" />
+     <Compile Include="Assets\PicoMobileSDK\Pvr_Controller\Scripts\Pvr_ControllerEventsExamples.cs" />
+     <Compile Include="Assets\PicoMobileSDK\Pvr_Controller\Scripts\Pvr_ControllerInit.cs" />
+     <Compile Include="Assets\PicoMobileSDK\Pvr_Controller\Scripts\Pvr_ControllerLink.cs" />
+     <Compile Include="Assets\PicoMobileSDK\Pvr_Controller\Scripts\Pvr_ControllerManager.cs" />
+     <Compile Include="Assets\PicoMobileSDK\Pvr_Controller\Scripts\Pvr_ControllerModuleInit.cs" />
+     <Compile Include="Assets\PicoMobileSDK\Pvr_Controller\Scripts\Pvr_ControllerPower.cs" />
+     <Compile Include="Assets\PicoMobileSDK\Pvr_Controller\Scripts\Pvr_ControllerVisual.cs" />
+     <Compile Include="Assets\PicoMobileSDK\Pvr_Controller\Scripts\Pvr_ToolTips.cs" />
+     <Compile Include="Assets\PicoMobileSDK\Pvr_Controller\Scripts\Pvr_TouchPadScroll.cs" />
+     <Compile Include="Assets\PicoMobileSDK\Pvr_Controller\Scripts\Pvr_TouchVisual.cs" />
+     <Compile Include="Assets\PicoMobileSDK\Pvr_Payment\Demo\Scripts\DemoController.cs" />
+     <Compile Include="Assets\PicoMobileSDK\Pvr_Payment\Demo\Scripts\LoadingRatation.cs" />
+     <Compile Include="Assets\PicoMobileSDK\Pvr_Payment\Demo\Utils\InputManager.cs" />
+     <Compile Include="Assets\PicoMobileSDK\Pvr_Payment\Scripts\Callback.cs" />
+     <Compile Include="Assets\PicoMobileSDK\Pvr_Payment\Scripts\CommonDic.cs" />
+     <Compile Include="Assets\PicoMobileSDK\Pvr_Payment\Scripts\LoginSDK.cs" />
+     <Compile Include="Assets\PicoMobileSDK\Pvr_Payment\Scripts\PicoPaymentSDK.cs" />
+     <Compile Include="Assets\PicoMobileSDK\Pvr_ToBService\API\Pvr_ToBServiceAPI.cs" />
+     <Compile Include="Assets\PicoMobileSDK\Pvr_ToBService\Scripts\Pvr_ToBService.cs" />
+     <Compile Include="Assets\PicoMobileSDK\Pvr_UnitySDK\API\Pvr_UnitySDKAPI.cs" />
+     <Compile Include="Assets\PicoMobileSDK\Pvr_UnitySDK\LogUtils.cs" />
+     <Compile Include="Assets\PicoMobileSDK\Pvr_UnitySDK\PicoSDKSetting\Scripts\CPicoSDKSettingAsset.cs" />
+     <Compile Include="Assets\PicoMobileSDK\Pvr_UnitySDK\PicoSDKSetting\Scripts\Pvr_UnitySDKProjectSetting.cs" />
+     <Compile Include="Assets\PicoMobileSDK\Pvr_UnitySDK\Platform\Scripts\Pvr_UnitySDKPlatformSetting.cs" />
+     <Compile Include="Assets\PicoMobileSDK\Pvr_UnitySDK\Pvr_UnitySDKManager.cs" />
+     <Compile Include="Assets\PicoMobileSDK\Pvr_UnitySDK\QuitGame.cs" />
+     <Compile Include="Assets\PicoMobileSDK\Pvr_UnitySDK\Render\Pvr_UnityEyeMask.cs" />
+     <Compile Include="Assets\PicoMobileSDK\Pvr_UnitySDK\Render\Pvr_UnitySDKEye.cs" />
+     <Compile Include="Assets\PicoMobileSDK\Pvr_UnitySDK\Render\Pvr_UnitySDKEyeManager.cs" />
+     <Compile Include="Assets\PicoMobileSDK\Pvr_UnitySDK\Render\Pvr_UnitySDKEyeOverlay.cs" />
+     <Compile Include="Assets\PicoMobileSDK\Pvr_UnitySDK\Render\Pvr_UnitySDKRender.cs" />
+     <Compile Include="Assets\PicoMobileSDK\Pvr_UnitySDK\Render\Pvr_UnitySDKSinglePass.cs" />
+     <Compile Include="Assets\PicoMobileSDK\Pvr_UnitySDK\Scenes\Examples\EyeTracking\Scripts\HighlightAtGaze.cs" />
+     <Compile Include="Assets\PicoMobileSDK\Pvr_UnitySDK\Scenes\Examples\EyeTracking\Scripts\RayVisualizer.cs" />
+     <Compile Include="Assets\PicoMobileSDK\Pvr_UnitySDK\Scenes\Examples\GetSeeThroughImage\Scripts\GetSeeThroughImage.cs" />
+     <Compile Include="Assets\PicoMobileSDK\Pvr_UnitySDK\Scenes\Examples\OverlayExternalSurface\OverlayExternalSurfaceDemo.cs" />
+     <Compile Include="Assets\PicoMobileSDK\Pvr_UnitySDK\Scenes\Examples\Sphere\Scripts\MoveCylinder.cs" />
+     <Compile Include="Assets\PicoMobileSDK\Pvr_UnitySDK\Scenes\Examples\Sphere\Scripts\MoveSphere.cs" />
+     <Compile Include="Assets\PicoMobileSDK\Pvr_UnitySDK\Scenes\Examples\Sphere\Scripts\Resetbutton.cs" />
+     <Compile Include="Assets\PicoMobileSDK\Pvr_UnitySDK\Scenes\Examples\UserEntitlementCheck\UserEntitlementCheck.cs" />
+     <Compile Include="Assets\PicoMobileSDK\Pvr_UnitySDK\Sensor\Pvr_UnitySDKHeadTrack.cs" />
+     <Compile Include="Assets\PicoMobileSDK\Pvr_UnitySDK\Sensor\Pvr_UnitySDKPose.cs" />
+     <Compile Include="Assets\PicoMobileSDK\Pvr_UnitySDK\Sensor\Pvr_UnitySDKSensor.cs" />
+     <Compile Include="Assets\PicoMobileSDK\Pvr_UnitySDK\SplashScreen\Scripts\CLoadingAsset.cs" />
+     <Compile Include="Assets\PicoMobileSDK\Pvr_UnitySDK\System\Config\Pvr_UnitySDKConfigProfile.cs" />
+     <Compile Include="Assets\PicoMobileSDK\Pvr_UnitySDK\System\Config\Pvr_UnitySDKFPS.cs" />
+     <Compile Include="Assets\PicoMobileSDK\Pvr_UnitySDK\System\Event\Pvr_GazeFuse.cs" />
+     <Compile Include="Assets\PicoMobileSDK\Pvr_UnitySDK\System\Event\Pvr_GazeInputModule.cs" />
+     <Compile Include="Assets\PicoMobileSDK\Pvr_UnitySDK\System\Event\Pvr_GazeInputModuleCrosshair.cs" />
+     <Compile Include="Assets\PicoMobileSDK\Pvr_UnitySDK\System\Event\Pvr_UnitySDKPluginEvent.cs" />
+     <Compile Include="Assets\PicoMobileSDK\Pvr_UnitySDK\System\Event\Pvr_UnitySDKSightInputModule.cs" />
+     <Compile Include="Assets\PicoMobileSDK\Pvr_UnitySDK\System\OBJLoader\Pvr_ObjImporter.cs" />
+     <Compile Include="Assets\PicoMobileSDK\Pvr_UnitySDK\System\UIEvent\Pvr_EnumFlags.cs" />
+     <Compile Include="Assets\PicoMobileSDK\Pvr_UnitySDK\System\UIEvent\Pvr_EnumFlagsAttributeDrawer.cs" />
+     <Compile Include="Assets\PicoMobileSDK\Pvr_UnitySDK\System\UIEvent\Pvr_InputModule.cs" />
+     <Compile Include="Assets\PicoMobileSDK\Pvr_UnitySDK\System\UIEvent\Pvr_UICanvas.cs" />
+     <Compile Include="Assets\PicoMobileSDK\Pvr_UnitySDK\System\UIEvent\Pvr_UIDraggableItem.cs" />
+     <Compile Include="Assets\PicoMobileSDK\Pvr_UnitySDK\System\UIEvent\Pvr_UIDropZone.cs" />
+     <Compile Include="Assets\PicoMobileSDK\Pvr_UnitySDK\System\UIEvent\Pvr_UIGraphicRaycaster.cs" />
+     <Compile Include="Assets\PicoMobileSDK\Pvr_UnitySDK\System\UIEvent\Pvr_UIPointer.cs" />
+     <Compile Include="Assets\PicoMobileSDK\Pvr_UnitySDK\UnityEditor\Pvr_UnitySDKEditor.cs" />
+     <Compile Include="Assets\PicoMobileSDK\Pvr_VolumePowerBrightness\API\Pvr_VolumePowerBrightnessAPI.cs" />
+     <Compile Include="Assets\PicoMobileSDK\Pvr_VolumePowerBrightness\Scripts\Pvr_VolumePowerBrightness.cs" />
+     <Compile Include="Assets\VRTK\Examples\ExampleResources\SceneResources\[001 - Interactions] ControllerEvents\Scripts\VRTKExample_ControllerEventsDelegateListeners.cs" />
+     <Compile Include="Assets\VRTK\Examples\ExampleResources\SceneResources\[002 - Pointers] StraightPointer\Scripts\VRTKExample_PointerObjectHighlighterActivator.cs" />
+     <Compile Include="Assets\VRTK\Examples\ExampleResources\SceneResources\[003 - Pointers] BezierPointer\Scripts\VRTKExample_BezierPointerChanger.cs" />
+     <Compile Include="Assets\VRTK\Examples\ExampleResources\SceneResources\[003 - Pointers] BezierPointer\Scripts\VRTKExample_BezierPointerCustomStyles.cs" />
+     <Compile Include="Assets\VRTK\Examples\ExampleResources\SceneResources\[003 - Pointers] BezierPointer\Scripts\VRTKExample_BezierPointerDefaults.cs" />
+     <Compile Include="Assets\VRTK\Examples\ExampleResources\SceneResources\[003 - Pointers] BezierPointer\Scripts\VRTKExample_BezierPointerLineRenderer.cs" />
+     <Compile Include="Assets\VRTK\Examples\ExampleResources\SceneResources\[005 - Interactions] InteractableObjects\Scripts\ControllableReactor.cs" />
+     <Compile Include="Assets\VRTK\Examples\ExampleResources\SceneResources\[005 - Interactions] InteractableObjects\Scripts\SnapDropZoneToggle.cs" />
+     <Compile Include="Assets\VRTK\Examples\ExampleResources\SceneResources\[005 - Interactions] InteractableObjects\Scripts\ToggleCustomHands.cs" />
+     <Compile Include="Assets\VRTK\Examples\ExampleResources\SceneResources\[005 - Interactions] InteractableObjects\Scripts\TogglePointerInteraction.cs" />
+     <Compile Include="Assets\VRTK\Examples\ExampleResources\SceneResources\[006 - Locomotion] MovementTypes\Scripts\ClimbableHandLift.cs" />
+     <Compile Include="Assets\VRTK\Examples\ExampleResources\SceneResources\[006 - Locomotion] MovementTypes\Scripts\ElevatorControl.cs" />
+     <Compile Include="Assets\VRTK\Examples\ExampleResources\SceneResources\[006 - Locomotion] MovementTypes\Scripts\IgnoreTeleportDummy.cs" />
+     <Compile Include="Assets\VRTK\Examples\ExampleResources\SceneResources\[006 - Locomotion] MovementTypes\Scripts\OptionsMenu.cs" />
+     <Compile Include="Assets\VRTK\Examples\ExampleResources\SceneResources\[006 - Locomotion] MovementTypes\Scripts\ToggleGameObject.cs" />
+     <Compile Include="Assets\VRTK\Examples\ExampleResources\SceneResources\[006 - Locomotion] MovementTypes\Scripts\ToggleGameObjectSlider.cs" />
+     <Compile Include="Assets\VRTK\Examples\ExampleResources\SceneResources\[007 - Interactions] InteractionHelpers\Scripts\PanelMenuSaucerGrid.cs" />
+     <Compile Include="Assets\VRTK\Examples\ExampleResources\SceneResources\[007 - Interactions] InteractionHelpers\Scripts\PanelMenuSphereSlider.cs" />
+     <Compile Include="Assets\VRTK\Examples\ExampleResources\SharedResources\Prefabs\AnimatedBezierPointer\Scripts\BeamRotator.cs" />
+     <Compile Include="Assets\VRTK\Examples\ExampleResources\SharedResources\Prefabs\FireExtinguisher\Scripts\FireExtinguisher_Base.cs" />
+     <Compile Include="Assets\VRTK\Examples\ExampleResources\SharedResources\Prefabs\FireExtinguisher\Scripts\FireExtinguisher_Sprayer.cs" />
+     <Compile Include="Assets\VRTK\Examples\ExampleResources\SharedResources\Prefabs\Guns\Scripts\GunShoot.cs" />
+     <Compile Include="Assets\VRTK\Examples\ExampleResources\SharedResources\Prefabs\Lamp\Scripts\InteractableLamp.cs" />
+     <Compile Include="Assets\VRTK\Examples\ExampleResources\SharedResources\Prefabs\LightSaber\Scripts\ScaleOnUse.cs" />
+     <Compile Include="Assets\VRTK\Examples\ExampleResources\SharedResources\Prefabs\Whirlygig\Scripts\InteractableWhirlyGig.cs" />
+     <Compile Include="Assets\VRTK\Examples\ExampleResources\SharedResources\Scripts\VRTKExample_FixSetup.cs" />
+     <Compile Include="Assets\VRTK\Examples\ExampleResources\SharedResources\Scripts\VRTKExample_ObjectListToggle.cs" />
+     <Compile Include="Assets\VRTK\Examples\ExampleResources\SharedResources\Scripts\VRTKExample_OptionTile.cs" />
+     <Compile Include="Assets\VRTK\Examples\ExampleResources\SharedResources\Scripts\VRTKExample_OptionTilePointerSelector.cs" />
+     <Compile Include="Assets\VRTK\Examples\ExampleResources\SharedResources\Scripts\VRTKExample_SceneSwitcher.cs" />
+     <Compile Include="Assets\VRTK\Examples\Test.cs" />
+     <Compile Include="Assets\VRTK\LegacyExampleFiles\ExampleResources\Scripts\Archery\Arrow.cs" />
+     <Compile Include="Assets\VRTK\LegacyExampleFiles\ExampleResources\Scripts\Archery\ArrowNotch.cs" />
+     <Compile Include="Assets\VRTK\LegacyExampleFiles\ExampleResources\Scripts\Archery\ArrowSpawner.cs" />
+     <Compile Include="Assets\VRTK\LegacyExampleFiles\ExampleResources\Scripts\Archery\BowAim.cs" />
+     <Compile Include="Assets\VRTK\LegacyExampleFiles\ExampleResources\Scripts\Archery\BowAnimation.cs" />
+     <Compile Include="Assets\VRTK\LegacyExampleFiles\ExampleResources\Scripts\Archery\BowHandle.cs" />
+     <Compile Include="Assets\VRTK\LegacyExampleFiles\ExampleResources\Scripts\Archery\Follow.cs" />
+     <Compile Include="Assets\VRTK\LegacyExampleFiles\ExampleResources\Scripts\AutoRotation.cs" />
+     <Compile Include="Assets\VRTK\LegacyExampleFiles\ExampleResources\Scripts\Breakable_Cube.cs" />
+     <Compile Include="Assets\VRTK\LegacyExampleFiles\ExampleResources\Scripts\ButtonReactor.cs" />
+     <Compile Include="Assets\VRTK\LegacyExampleFiles\ExampleResources\Scripts\ControlReactor.cs" />
+     <Compile Include="Assets\VRTK\LegacyExampleFiles\ExampleResources\Scripts\Controller_Hand.cs" />
+     <Compile Include="Assets\VRTK\LegacyExampleFiles\ExampleResources\Scripts\Controller_Menu.cs" />
+     <Compile Include="Assets\VRTK\LegacyExampleFiles\ExampleResources\Scripts\ControlsMenu.cs" />
+     <Compile Include="Assets\VRTK\LegacyExampleFiles\ExampleResources\Scripts\ExcludeTeleport.cs" />
+     <Compile Include="Assets\VRTK\LegacyExampleFiles\ExampleResources\Scripts\FireExtinguisher_Base.cs" />
+     <Compile Include="Assets\VRTK\LegacyExampleFiles\ExampleResources\Scripts\FireExtinguisher_Sprayer.cs" />
+     <Compile Include="Assets\VRTK\LegacyExampleFiles\ExampleResources\Scripts\Gun.cs" />
+     <Compile Include="Assets\VRTK\LegacyExampleFiles\ExampleResources\Scripts\HandLift.cs" />
+     <Compile Include="Assets\VRTK\LegacyExampleFiles\ExampleResources\Scripts\Lamp.cs" />
+     <Compile Include="Assets\VRTK\LegacyExampleFiles\ExampleResources\Scripts\LightSaber.cs" />
+     <Compile Include="Assets\VRTK\LegacyExampleFiles\ExampleResources\Scripts\Menu_Color_Changer.cs" />
+     <Compile Include="Assets\VRTK\LegacyExampleFiles\ExampleResources\Scripts\Menu_Container_Object_Colors.cs" />
+     <Compile Include="Assets\VRTK\LegacyExampleFiles\ExampleResources\Scripts\Menu_Object_Spawner.cs" />
+     <Compile Include="Assets\VRTK\LegacyExampleFiles\ExampleResources\Scripts\ModelVillage_TeleportLocation.cs" />
+     <Compile Include="Assets\VRTK\LegacyExampleFiles\ExampleResources\Scripts\MoveBlock.cs" />
+     <Compile Include="Assets\VRTK\LegacyExampleFiles\ExampleResources\Scripts\Openable_Door.cs" />
+     <Compile Include="Assets\VRTK\LegacyExampleFiles\ExampleResources\Scripts\PanelMenu\PanelMenuDemoFlyingSaucer.cs" />
+     <Compile Include="Assets\VRTK\LegacyExampleFiles\ExampleResources\Scripts\PanelMenu\PanelMenuDemoSphere.cs" />
+     <Compile Include="Assets\VRTK\LegacyExampleFiles\ExampleResources\Scripts\PanelMenu\PanelMenuUIGrid.cs" />
+     <Compile Include="Assets\VRTK\LegacyExampleFiles\ExampleResources\Scripts\PanelMenu\PanelMenuUISlider.cs" />
+     <Compile Include="Assets\VRTK\LegacyExampleFiles\ExampleResources\Scripts\PusherStickyToggle.cs" />
+     <Compile Include="Assets\VRTK\LegacyExampleFiles\ExampleResources\Scripts\RC_Car.cs" />
+     <Compile Include="Assets\VRTK\LegacyExampleFiles\ExampleResources\Scripts\RC_Car_Controller.cs" />
+     <Compile Include="Assets\VRTK\LegacyExampleFiles\ExampleResources\Scripts\RealGun.cs" />
+     <Compile Include="Assets\VRTK\LegacyExampleFiles\ExampleResources\Scripts\RealGun_SafetySwitch.cs" />
+     <Compile Include="Assets\VRTK\LegacyExampleFiles\ExampleResources\Scripts\RealGun_Slide.cs" />
+     <Compile Include="Assets\VRTK\LegacyExampleFiles\ExampleResources\Scripts\Remote_Beam.cs" />
+     <Compile Include="Assets\VRTK\LegacyExampleFiles\ExampleResources\Scripts\Remote_Beam_Controller.cs" />
+     <Compile Include="Assets\VRTK\LegacyExampleFiles\ExampleResources\Scripts\RendererOffOnDash.cs" />
+     <Compile Include="Assets\VRTK\LegacyExampleFiles\ExampleResources\Scripts\SceneChanger.cs" />
+     <Compile Include="Assets\VRTK\LegacyExampleFiles\ExampleResources\Scripts\SceneLoader.cs" />
+     <Compile Include="Assets\VRTK\LegacyExampleFiles\ExampleResources\Scripts\SnapDropZoneGroup_Switcher.cs" />
+     <Compile Include="Assets\VRTK\LegacyExampleFiles\ExampleResources\Scripts\Sphere_Spawner.cs" />
+     <Compile Include="Assets\VRTK\LegacyExampleFiles\ExampleResources\Scripts\Sword.cs" />
+     <Compile Include="Assets\VRTK\LegacyExampleFiles\ExampleResources\Scripts\Tests\VRTK_BaseTest.cs" />
+     <Compile Include="Assets\VRTK\LegacyExampleFiles\ExampleResources\Scripts\Tests\VRTK_ControllerReference_Setup.cs" />
+     <Compile Include="Assets\VRTK\LegacyExampleFiles\ExampleResources\Scripts\UI_Interactions.cs" />
+     <Compile Include="Assets\VRTK\LegacyExampleFiles\ExampleResources\Scripts\UI_Keyboard.cs" />
+     <Compile Include="Assets\VRTK\LegacyExampleFiles\ExampleResources\Scripts\UseRotate.cs" />
+     <Compile Include="Assets\VRTK\LegacyExampleFiles\ExampleResources\Scripts\VRTK_ControllerAppearance_Example.cs" />
+     <Compile Include="Assets\VRTK\LegacyExampleFiles\ExampleResources\Scripts\VRTK_ControllerEvents_ListenerExample.cs" />
+     <Compile Include="Assets\VRTK\LegacyExampleFiles\ExampleResources\Scripts\VRTK_ControllerInteract_ListenerExample.cs" />
+     <Compile Include="Assets\VRTK\LegacyExampleFiles\ExampleResources\Scripts\VRTK_ControllerPointerEvents_ListenerExample.cs" />
+     <Compile Include="Assets\VRTK\LegacyExampleFiles\ExampleResources\Scripts\VRTK_ControllerUIPointerEvents_ListenerExample.cs" />
+     <Compile Include="Assets\VRTK\LegacyExampleFiles\ExampleResources\Scripts\VRTK_RoomExtender_ControllerExample.cs" />
+     <Compile Include="Assets\VRTK\LegacyExampleFiles\ExampleResources\Scripts\Whirlygig.cs" />
+     <Compile Include="Assets\VRTK\LegacyExampleFiles\ExampleResources\Scripts\Zipline.cs" />
+     <Compile Include="Assets\VRTK\Prefabs\AvatarHands\VRTK_AvatarHandController.cs" />
+     <Compile Include="Assets\VRTK\Prefabs\ConsoleViewerCanvas\VRTK_ConsoleViewer.cs" />
+     <Compile Include="Assets\VRTK\Prefabs\ControllerRigidbodyActivator\VRTK_ControllerRigidbodyActivator.cs" />
+     <Compile Include="Assets\VRTK\Prefabs\ControllerTooltips\VRTK_ControllerTooltips.cs" />
+     <Compile Include="Assets\VRTK\Prefabs\DesktopCamera\VRTK_DesktopCamera.cs" />
+     <Compile Include="Assets\VRTK\Prefabs\DestinationPoint\VRTK_DestinationPoint.cs" />
+     <Compile Include="Assets\VRTK\Prefabs\FramesPerSecondCanvas\VRTK_FramesPerSecondViewer.cs" />
+     <Compile Include="Assets\VRTK\Prefabs\ObjectTooltip\VRTK_ObjectTooltip.cs" />
+     <Compile Include="Assets\VRTK\Prefabs\PanelMenu\VRTK_PanelMenuController.cs" />
+     <Compile Include="Assets\VRTK\Prefabs\PanelMenu\VRTK_PanelMenuItemController.cs" />
+     <Compile Include="Assets\VRTK\Prefabs\PointerDirectionIndicator\VRTK_PointerDirectionIndicator.cs" />
+     <Compile Include="Assets\VRTK\Prefabs\RadialMenu\RadialMenuButton\RadialButtonIcon.cs" />
+     <Compile Include="Assets\VRTK\Prefabs\RadialMenu\RadialMenuButton\UICircle.cs" />
+     <Compile Include="Assets\VRTK\Prefabs\RadialMenu\VRTK_IndependentRadialMenuController.cs" />
+     <Compile Include="Assets\VRTK\Prefabs\RadialMenu\VRTK_RadialMenu.cs" />
+     <Compile Include="Assets\VRTK\Prefabs\RadialMenu\VRTK_RadialMenuController.cs" />
+     <Compile Include="Assets\VRTK\Prefabs\SDKSetupSwitcher\VRTK_SDKSetupSwitcher.cs" />
+     <Compile Include="Assets\VRTK\Prefabs\SnapDropZone\VRTK_SnapDropZone.cs" />
+     <Compile Include="Assets\VRTK\Source\SDK\Base\SDK_Base.cs" />
+     <Compile Include="Assets\VRTK\Source\SDK\Base\SDK_BaseBoundaries.cs" />
+     <Compile Include="Assets\VRTK\Source\SDK\Base\SDK_BaseController.cs" />
+     <Compile Include="Assets\VRTK\Source\SDK\Base\SDK_BaseHeadset.cs" />
+     <Compile Include="Assets\VRTK\Source\SDK\Base\SDK_BaseSystem.cs" />
+     <Compile Include="Assets\VRTK\Source\SDK\Base\SDK_DescriptionAttribute.cs" />
+     <Compile Include="Assets\VRTK\Source\SDK\Base\SDK_ScriptingDefineSymbolPredicateAttribute.cs" />
+     <Compile Include="Assets\VRTK\Source\SDK\Daydream\DaydreamReach.cs" />
+     <Compile Include="Assets\VRTK\Source\SDK\Daydream\SDK_DaydreamBoundaries.cs" />
+     <Compile Include="Assets\VRTK\Source\SDK\Daydream\SDK_DaydreamController.cs" />
+     <Compile Include="Assets\VRTK\Source\SDK\Daydream\SDK_DaydreamDefines.cs" />
+     <Compile Include="Assets\VRTK\Source\SDK\Daydream\SDK_DaydreamHeadset.cs" />
+     <Compile Include="Assets\VRTK\Source\SDK\Daydream\SDK_DaydreamSystem.cs" />
+     <Compile Include="Assets\VRTK\Source\SDK\Fallback\SDK_FallbackBoundaries.cs" />
+     <Compile Include="Assets\VRTK\Source\SDK\Fallback\SDK_FallbackController.cs" />
+     <Compile Include="Assets\VRTK\Source\SDK\Fallback\SDK_FallbackHeadset.cs" />
+     <Compile Include="Assets\VRTK\Source\SDK\Fallback\SDK_FallbackSystem.cs" />
+     <Compile Include="Assets\VRTK\Source\SDK\HyperealVR\SDK_HyperealVRBoundaries.cs" />
+     <Compile Include="Assets\VRTK\Source\SDK\HyperealVR\SDK_HyperealVRController.cs" />
+     <Compile Include="Assets\VRTK\Source\SDK\HyperealVR\SDK_HyperealVRDefines.cs" />
+     <Compile Include="Assets\VRTK\Source\SDK\HyperealVR\SDK_HyperealVRHeadset.cs" />
+     <Compile Include="Assets\VRTK\Source\SDK\HyperealVR\SDK_HyperealVRSystem.cs" />
+     <Compile Include="Assets\VRTK\Source\SDK\Oculus\SDK_OculusBoundaries.cs" />
+     <Compile Include="Assets\VRTK\Source\SDK\Oculus\SDK_OculusController.cs" />
+     <Compile Include="Assets\VRTK\Source\SDK\Oculus\SDK_OculusDefines.cs" />
+     <Compile Include="Assets\VRTK\Source\SDK\Oculus\SDK_OculusHeadset.cs" />
+     <Compile Include="Assets\VRTK\Source\SDK\Oculus\SDK_OculusSystem.cs" />
+     <Compile Include="Assets\VRTK\Source\SDK\Pico\SDK_PicoBoundaries.cs" />
+     <Compile Include="Assets\VRTK\Source\SDK\Pico\SDK_PicoCameraRig.cs" />
+     <Compile Include="Assets\VRTK\Source\SDK\Pico\SDK_PicoController.cs" />
+     <Compile Include="Assets\VRTK\Source\SDK\Pico\SDK_PicoControllerTracker.cs" />
+     <Compile Include="Assets\VRTK\Source\SDK\Pico\SDK_PicoDefines.cs" />
+     <Compile Include="Assets\VRTK\Source\SDK\Pico\SDK_PicoHeadset.cs" />
+     <Compile Include="Assets\VRTK\Source\SDK\Pico\SDK_PicoHeadsetTracker.cs" />
+     <Compile Include="Assets\VRTK\Source\SDK\Pico\SDK_PicoSystem.cs" />
+     <Compile Include="Assets\VRTK\Source\SDK\Simulator\SDK_ControllerSim.cs" />
+     <Compile Include="Assets\VRTK\Source\SDK\Simulator\SDK_InputSimulator.cs" />
+     <Compile Include="Assets\VRTK\Source\SDK\Simulator\SDK_SimBoundaries.cs" />
+     <Compile Include="Assets\VRTK\Source\SDK\Simulator\SDK_SimController.cs" />
+     <Compile Include="Assets\VRTK\Source\SDK\Simulator\SDK_SimHeadset.cs" />
+     <Compile Include="Assets\VRTK\Source\SDK\Simulator\SDK_SimSystem.cs" />
+     <Compile Include="Assets\VRTK\Source\SDK\SteamVR\SDK_SteamVRBoundaries.cs" />
+     <Compile Include="Assets\VRTK\Source\SDK\SteamVR\SDK_SteamVRController.cs" />
+     <Compile Include="Assets\VRTK\Source\SDK\SteamVR\SDK_SteamVRDefines.cs" />
+     <Compile Include="Assets\VRTK\Source\SDK\SteamVR\SDK_SteamVRHeadset.cs" />
+     <Compile Include="Assets\VRTK\Source\SDK\SteamVR\SDK_SteamVRSystem.cs" />
+     <Compile Include="Assets\VRTK\Source\SDK\Unity\SDK_UnityBoundaries.cs" />
+     <Compile Include="Assets\VRTK\Source\SDK\Unity\SDK_UnityCameraRig.cs" />
+     <Compile Include="Assets\VRTK\Source\SDK\Unity\SDK_UnityController.cs" />
+     <Compile Include="Assets\VRTK\Source\SDK\Unity\SDK_UnityControllerTracker.cs" />
+     <Compile Include="Assets\VRTK\Source\SDK\Unity\SDK_UnityHeadset.cs" />
+     <Compile Include="Assets\VRTK\Source\SDK\Unity\SDK_UnityHeadsetTracker.cs" />
+     <Compile Include="Assets\VRTK\Source\SDK\Unity\SDK_UnitySystem.cs" />
+     <Compile Include="Assets\VRTK\Source\SDK\VRTK_SDK_Bridge.cs" />
+     <Compile Include="Assets\VRTK\Source\SDK\WindowsMR\Resources\InteractionSourceExtensions.cs" />
+     <Compile Include="Assets\VRTK\Source\SDK\WindowsMR\Resources\WindowsApiChecker.cs" />
+     <Compile Include="Assets\VRTK\Source\SDK\WindowsMR\Resources\WindowsMR_Camera.cs" />
+     <Compile Include="Assets\VRTK\Source\SDK\WindowsMR\Resources\WindowsMR_ControllerManager.cs" />
+     <Compile Include="Assets\VRTK\Source\SDK\WindowsMR\Resources\WindowsMR_TrackedObject.cs" />
+     <Compile Include="Assets\VRTK\Source\SDK\WindowsMR\SDK_WindowsMRBoundaries.cs" />
+     <Compile Include="Assets\VRTK\Source\SDK\WindowsMR\SDK_WindowsMRController.cs" />
+     <Compile Include="Assets\VRTK\Source\SDK\WindowsMR\SDK_WindowsMRDefines.cs" />
+     <Compile Include="Assets\VRTK\Source\SDK\WindowsMR\SDK_WindowsMRHeadset.cs" />
+     <Compile Include="Assets\VRTK\Source\SDK\WindowsMR\SDK_WindowsMRSystem.cs" />
+     <Compile Include="Assets\VRTK\Source\SDK\Ximmerse\SDK_XimmerseBoundaries.cs" />
+     <Compile Include="Assets\VRTK\Source\SDK\Ximmerse\SDK_XimmerseController.cs" />
+     <Compile Include="Assets\VRTK\Source\SDK\Ximmerse\SDK_XimmerseDefines.cs" />
+     <Compile Include="Assets\VRTK\Source\SDK\Ximmerse\SDK_XimmerseHeadset.cs" />
+     <Compile Include="Assets\VRTK\Source\SDK\Ximmerse\SDK_XimmerseSystem.cs" />
+     <Compile Include="Assets\VRTK\Source\Scripts\Controls\3D\Utilities\VRTK_ContentHandler.cs" />
+     <Compile Include="Assets\VRTK\Source\Scripts\Controls\3D\VRTK_Button.cs" />
+     <Compile Include="Assets\VRTK\Source\Scripts\Controls\3D\VRTK_Chest.cs" />
+     <Compile Include="Assets\VRTK\Source\Scripts\Controls\3D\VRTK_Control.cs" />
+     <Compile Include="Assets\VRTK\Source\Scripts\Controls\3D\VRTK_Door.cs" />
+     <Compile Include="Assets\VRTK\Source\Scripts\Controls\3D\VRTK_Drawer.cs" />
+     <Compile Include="Assets\VRTK\Source\Scripts\Controls\3D\VRTK_Knob.cs" />
+     <Compile Include="Assets\VRTK\Source\Scripts\Controls\3D\VRTK_Lever.cs" />
+     <Compile Include="Assets\VRTK\Source\Scripts\Controls\3D\VRTK_Slider.cs" />
+     <Compile Include="Assets\VRTK\Source\Scripts\Controls\3D\VRTK_SpringLever.cs" />
+     <Compile Include="Assets\VRTK\Source\Scripts\Controls\3D\VRTK_Wheel.cs" />
+     <Compile Include="Assets\VRTK\Source\Scripts\Interactions\Highlighters\VRTK_BaseHighlighter.cs" />
+     <Compile Include="Assets\VRTK\Source\Scripts\Interactions\Highlighters\VRTK_MaterialColorSwapHighlighter.cs" />
+     <Compile Include="Assets\VRTK\Source\Scripts\Interactions\Highlighters\VRTK_MaterialPropertyBlockColorSwapHighlighter.cs" />
+     <Compile Include="Assets\VRTK\Source\Scripts\Interactions\Highlighters\VRTK_OutlineObjectCopyHighlighter.cs" />
+     <Compile Include="Assets\VRTK\Source\Scripts\Interactions\Interactables\Controllables\Artificial\VRTK_ArtificialPusher.cs" />
+     <Compile Include="Assets\VRTK\Source\Scripts\Interactions\Interactables\Controllables\Artificial\VRTK_ArtificialRotator.cs" />
+     <Compile Include="Assets\VRTK\Source\Scripts\Interactions\Interactables\Controllables\Artificial\VRTK_ArtificialSlider.cs" />
+     <Compile Include="Assets\VRTK\Source\Scripts\Interactions\Interactables\Controllables\Physics\VRTK_BasePhysicsControllable.cs" />
+     <Compile Include="Assets\VRTK\Source\Scripts\Interactions\Interactables\Controllables\Physics\VRTK_PhysicsPusher.cs" />
+     <Compile Include="Assets\VRTK\Source\Scripts\Interactions\Interactables\Controllables\Physics\VRTK_PhysicsRotator.cs" />
+     <Compile Include="Assets\VRTK\Source\Scripts\Interactions\Interactables\Controllables\Physics\VRTK_PhysicsSlider.cs" />
+     <Compile Include="Assets\VRTK\Source\Scripts\Interactions\Interactables\Controllables\VRTK_BaseControllable.cs" />
+     <Compile Include="Assets\VRTK\Source\Scripts\Interactions\Interactables\GrabAttachMechanics\VRTK_BaseGrabAttach.cs" />
+     <Compile Include="Assets\VRTK\Source\Scripts\Interactions\Interactables\GrabAttachMechanics\VRTK_BaseJointGrabAttach.cs" />
+     <Compile Include="Assets\VRTK\Source\Scripts\Interactions\Interactables\GrabAttachMechanics\VRTK_ChildOfControllerGrabAttach.cs" />
+     <Compile Include="Assets\VRTK\Source\Scripts\Interactions\Interactables\GrabAttachMechanics\VRTK_ClimbableGrabAttach.cs" />
+     <Compile Include="Assets\VRTK\Source\Scripts\Interactions\Interactables\GrabAttachMechanics\VRTK_ControlAnimationGrabAttach.cs" />
+     <Compile Include="Assets\VRTK\Source\Scripts\Interactions\Interactables\GrabAttachMechanics\VRTK_CustomJointGrabAttach.cs" />
+     <Compile Include="Assets\VRTK\Source\Scripts\Interactions\Interactables\GrabAttachMechanics\VRTK_FixedJointGrabAttach.cs" />
+     <Compile Include="Assets\VRTK\Source\Scripts\Interactions\Interactables\GrabAttachMechanics\VRTK_MoveTransformGrabAttach.cs" />
+     <Compile Include="Assets\VRTK\Source\Scripts\Interactions\Interactables\GrabAttachMechanics\VRTK_RotateTransformGrabAttach.cs" />
+     <Compile Include="Assets\VRTK\Source\Scripts\Interactions\Interactables\GrabAttachMechanics\VRTK_RotatorTrackGrabAttach.cs" />
+     <Compile Include="Assets\VRTK\Source\Scripts\Interactions\Interactables\GrabAttachMechanics\VRTK_SpringJointGrabAttach.cs" />
+     <Compile Include="Assets\VRTK\Source\Scripts\Interactions\Interactables\GrabAttachMechanics\VRTK_TrackObjectGrabAttach.cs" />
+     <Compile Include="Assets\VRTK\Source\Scripts\Interactions\Interactables\SecondaryControllerGrabActions\VRTK_AxisScaleGrabAction.cs" />
+     <Compile Include="Assets\VRTK\Source\Scripts\Interactions\Interactables\SecondaryControllerGrabActions\VRTK_BaseGrabAction.cs" />
+     <Compile Include="Assets\VRTK\Source\Scripts\Interactions\Interactables\SecondaryControllerGrabActions\VRTK_ControlDirectionGrabAction.cs" />
+     <Compile Include="Assets\VRTK\Source\Scripts\Interactions\Interactables\SecondaryControllerGrabActions\VRTK_SwapControllerGrabAction.cs" />
+     <Compile Include="Assets\VRTK\Source\Scripts\Interactions\Interactables\VRTK_IgnoreInteractTouchColliders.cs" />
+     <Compile Include="Assets\VRTK\Source\Scripts\Interactions\Interactables\VRTK_InteractControllerAppearance.cs" />
+     <Compile Include="Assets\VRTK\Source\Scripts\Interactions\Interactables\VRTK_InteractHaptics.cs" />
+     <Compile Include="Assets\VRTK\Source\Scripts\Interactions\Interactables\VRTK_InteractObjectAppearance.cs" />
+     <Compile Include="Assets\VRTK\Source\Scripts\Interactions\Interactables\VRTK_InteractObjectHighlighter.cs" />
+     <Compile Include="Assets\VRTK\Source\Scripts\Interactions\Interactables\VRTK_InteractableListener.cs" />
+     <Compile Include="Assets\VRTK\Source\Scripts\Interactions\Interactables\VRTK_InteractableObject.cs" />
+     <Compile Include="Assets\VRTK\Source\Scripts\Interactions\Interactables\VRTK_ObjectTouchAutoInteract.cs" />
+     <Compile Include="Assets\VRTK\Source\Scripts\Interactions\Interactors\VRTK_ControllerEvents.cs" />
+     <Compile Include="Assets\VRTK\Source\Scripts\Interactions\Interactors\VRTK_ControllerHighlighter.cs" />
+     <Compile Include="Assets\VRTK\Source\Scripts\Interactions\Interactors\VRTK_ControllerTrackedCollider.cs" />
+     <Compile Include="Assets\VRTK\Source\Scripts\Interactions\Interactors\VRTK_InteractGrab.cs" />
+     <Compile Include="Assets\VRTK\Source\Scripts\Interactions\Interactors\VRTK_InteractNearTouch.cs" />
+     <Compile Include="Assets\VRTK\Source\Scripts\Interactions\Interactors\VRTK_InteractTouch.cs" />
+     <Compile Include="Assets\VRTK\Source\Scripts\Interactions\Interactors\VRTK_InteractUse.cs" />
+     <Compile Include="Assets\VRTK\Source\Scripts\Interactions\Interactors\VRTK_ObjectAutoGrab.cs" />
+     <Compile Include="Assets\VRTK\Source\Scripts\Interactions\VRTK_ControllerHaptics.cs" />
+     <Compile Include="Assets\VRTK\Source\Scripts\Interactions\VRTK_ObjectAppearance.cs" />
+     <Compile Include="Assets\VRTK\Source\Scripts\Internal\Attributes\MinMaxRangeAttribute.cs" />
+     <Compile Include="Assets\VRTK\Source\Scripts\Internal\Attributes\ObsoleteInspectorAttribute.cs" />
+     <Compile Include="Assets\VRTK\Source\Scripts\Internal\DataTypes\Limits2D.cs" />
+     <Compile Include="Assets\VRTK\Source\Scripts\Internal\DataTypes\Vector3State.cs" />
+     <Compile Include="Assets\VRTK\Source\Scripts\Internal\VRTK_CollisionTracker.cs" />
+     <Compile Include="Assets\VRTK\Source\Scripts\Internal\VRTK_ControllerReference.cs" />
+     <Compile Include="Assets\VRTK\Source\Scripts\Internal\VRTK_CurveGenerator.cs" />
+     <Compile Include="Assets\VRTK\Source\Scripts\Internal\VRTK_Defines.cs" />
+     <Compile Include="Assets\VRTK\Source\Scripts\Internal\VRTK_EventSystem.cs" />
+     <Compile Include="Assets\VRTK\Source\Scripts\Internal\VRTK_Logger.cs" />
+     <Compile Include="Assets\VRTK\Source\Scripts\Internal\VRTK_ObjectCache.cs" />
+     <Compile Include="Assets\VRTK\Source\Scripts\Internal\VRTK_PlayerObject.cs" />
+     <Compile Include="Assets\VRTK\Source\Scripts\Internal\VRTK_RoomExtender_PlayAreaGizmo.cs" />
+     <Compile Include="Assets\VRTK\Source\Scripts\Internal\VRTK_SDKControllerReady.cs" />
+     <Compile Include="Assets\VRTK\Source\Scripts\Internal\VRTK_ScreenFade.cs" />
+     <Compile Include="Assets\VRTK\Source\Scripts\Internal\VRTK_TrackedController.cs" />
+     <Compile Include="Assets\VRTK\Source\Scripts\Internal\VRTK_TrackedHeadset.cs" />
+     <Compile Include="Assets\VRTK\Source\Scripts\Internal\VRTK_TunnelEffect.cs" />
+     <Compile Include="Assets\VRTK\Source\Scripts\Internal\VRTK_UIGraphicRaycaster.cs" />
+     <Compile Include="Assets\VRTK\Source\Scripts\Internal\VRTK_VRInputModule.cs" />
+     <Compile Include="Assets\VRTK\Source\Scripts\Locomotion\ObjectControlActions\VRTK_BaseObjectControlAction.cs" />
+     <Compile Include="Assets\VRTK\Source\Scripts\Locomotion\ObjectControlActions\VRTK_RotateObjectControlAction.cs" />
+     <Compile Include="Assets\VRTK\Source\Scripts\Locomotion\ObjectControlActions\VRTK_SlideObjectControlAction.cs" />
+     <Compile Include="Assets\VRTK\Source\Scripts\Locomotion\ObjectControlActions\VRTK_SnapRotateObjectControlAction.cs" />
+     <Compile Include="Assets\VRTK\Source\Scripts\Locomotion\ObjectControlActions\VRTK_WarpObjectControlAction.cs" />
+     <Compile Include="Assets\VRTK\Source\Scripts\Locomotion\VRTK_BasicTeleport.cs" />
+     <Compile Include="Assets\VRTK\Source\Scripts\Locomotion\VRTK_ButtonControl.cs" />
+     <Compile Include="Assets\VRTK\Source\Scripts\Locomotion\VRTK_DashTeleport.cs" />
+     <Compile Include="Assets\VRTK\Source\Scripts\Locomotion\VRTK_DragWorld.cs" />
+     <Compile Include="Assets\VRTK\Source\Scripts\Locomotion\VRTK_HeightAdjustTeleport.cs" />
+     <Compile Include="Assets\VRTK\Source\Scripts\Locomotion\VRTK_MoveInPlace.cs" />
+     <Compile Include="Assets\VRTK\Source\Scripts\Locomotion\VRTK_ObjectControl.cs" />
+     <Compile Include="Assets\VRTK\Source\Scripts\Locomotion\VRTK_PlayerClimb.cs" />
+     <Compile Include="Assets\VRTK\Source\Scripts\Locomotion\VRTK_RoomExtender.cs" />
+     <Compile Include="Assets\VRTK\Source\Scripts\Locomotion\VRTK_SlingshotJump.cs" />
+     <Compile Include="Assets\VRTK\Source\Scripts\Locomotion\VRTK_StepMultiplier.cs" />
+     <Compile Include="Assets\VRTK\Source\Scripts\Locomotion\VRTK_TeleportDisableOnControllerObscured.cs" />
+     <Compile Include="Assets\VRTK\Source\Scripts\Locomotion\VRTK_TeleportDisableOnHeadsetCollision.cs" />
+     <Compile Include="Assets\VRTK\Source\Scripts\Locomotion\VRTK_TouchpadControl.cs" />
+     <Compile Include="Assets\VRTK\Source\Scripts\Locomotion\VRTK_TunnelOverlay.cs" />
+     <Compile Include="Assets\VRTK\Source\Scripts\Pointers\PointerRenderers\VRTK_BasePointerRenderer.cs" />
+     <Compile Include="Assets\VRTK\Source\Scripts\Pointers\PointerRenderers\VRTK_BezierPointerRenderer.cs" />
+     <Compile Include="Assets\VRTK\Source\Scripts\Pointers\PointerRenderers\VRTK_StraightPointerRenderer.cs" />
+     <Compile Include="Assets\VRTK\Source\Scripts\Pointers\VRTK_DestinationMarker.cs" />
+     <Compile Include="Assets\VRTK\Source\Scripts\Pointers\VRTK_PlayAreaCursor.cs" />
+     <Compile Include="Assets\VRTK\Source\Scripts\Pointers\VRTK_Pointer.cs" />
+     <Compile Include="Assets\VRTK\Source\Scripts\Presence\VRTK_BodyPhysics.cs" />
+     <Compile Include="Assets\VRTK\Source\Scripts\Presence\VRTK_HeadsetCollision.cs" />
+     <Compile Include="Assets\VRTK\Source\Scripts\Presence\VRTK_HeadsetCollisionFade.cs" />
+     <Compile Include="Assets\VRTK\Source\Scripts\Presence\VRTK_HeadsetControllerAware.cs" />
+     <Compile Include="Assets\VRTK\Source\Scripts\Presence\VRTK_HeadsetFade.cs" />
+     <Compile Include="Assets\VRTK\Source\Scripts\Presence\VRTK_HipTracking.cs" />
+     <Compile Include="Assets\VRTK\Source\Scripts\Presence\VRTK_PositionRewind.cs" />
+     <Compile Include="Assets\VRTK\Source\Scripts\UI\VRTK_UICanvas.cs" />
+     <Compile Include="Assets\VRTK\Source\Scripts\UI\VRTK_UIDraggableItem.cs" />
+     <Compile Include="Assets\VRTK\Source\Scripts\UI\VRTK_UIDropZone.cs" />
+     <Compile Include="Assets\VRTK\Source\Scripts\UI\VRTK_UIPointer.cs" />
+     <Compile Include="Assets\VRTK\Source\Scripts\Utilities\ControllerModelSettings\VRTK_ControllerElementHighlighters.cs" />
+     <Compile Include="Assets\VRTK\Source\Scripts\Utilities\ControllerModelSettings\VRTK_ControllerModelElementPaths.cs" />
+     <Compile Include="Assets\VRTK\Source\Scripts\Utilities\ObjectFollow\VRTK_ObjectFollow.cs" />
+     <Compile Include="Assets\VRTK\Source\Scripts\Utilities\ObjectFollow\VRTK_RigidbodyFollow.cs" />
+     <Compile Include="Assets\VRTK\Source\Scripts\Utilities\ObjectFollow\VRTK_TransformFollow.cs" />
+     <Compile Include="Assets\VRTK\Source\Scripts\Utilities\SDK\VRTK_SDKInfo.cs" />
+     <Compile Include="Assets\VRTK\Source\Scripts\Utilities\SDK\VRTK_SDKManager.cs" />
+     <Compile Include="Assets\VRTK\Source\Scripts\Utilities\SDK\VRTK_SDKSetup.cs" />
+     <Compile Include="Assets\VRTK\Source\Scripts\Utilities\UnityEvents\VRTK_BaseControllable_UnityEvents.cs" />
+     <Compile Include="Assets\VRTK\Source\Scripts\Utilities\UnityEvents\VRTK_BasicTeleport_UnityEvents.cs" />
+     <Compile Include="Assets\VRTK\Source\Scripts\Utilities\UnityEvents\VRTK_BodyPhysics_UnityEvents.cs" />
+     <Compile Include="Assets\VRTK\Source\Scripts\Utilities\UnityEvents\VRTK_Button_UnityEvents.cs" />
+     <Compile Include="Assets\VRTK\Source\Scripts\Utilities\UnityEvents\VRTK_ControlAnimationGrabAttach_UnityEvents.cs" />
+     <Compile Include="Assets\VRTK\Source\Scripts\Utilities\UnityEvents\VRTK_Control_UnityEvents.cs" />
+     <Compile Include="Assets\VRTK\Source\Scripts\Utilities\UnityEvents\VRTK_ControllerEvents_UnityEvents.cs" />
+     <Compile Include="Assets\VRTK\Source\Scripts\Utilities\UnityEvents\VRTK_ControllerRigidbodyActivator_UnityEvents.cs" />
+     <Compile Include="Assets\VRTK\Source\Scripts\Utilities\UnityEvents\VRTK_ControllerTooltips_UnityEvents.cs" />
+     <Compile Include="Assets\VRTK\Source\Scripts\Utilities\UnityEvents\VRTK_DashTeleport_UnityEvents.cs" />
+     <Compile Include="Assets\VRTK\Source\Scripts\Utilities\UnityEvents\VRTK_DestinationMarker_UnityEvents.cs" />
+     <Compile Include="Assets\VRTK\Source\Scripts\Utilities\UnityEvents\VRTK_DestinationPoint_UnityEvents.cs" />
+     <Compile Include="Assets\VRTK\Source\Scripts\Utilities\UnityEvents\VRTK_HeadsetCollision_UnityEvents.cs" />
+     <Compile Include="Assets\VRTK\Source\Scripts\Utilities\UnityEvents\VRTK_HeadsetControllerAware_UnityEvents.cs" />
+     <Compile Include="Assets\VRTK\Source\Scripts\Utilities\UnityEvents\VRTK_HeadsetFade_UnityEvents.cs" />
+     <Compile Include="Assets\VRTK\Source\Scripts\Utilities\UnityEvents\VRTK_InteractControllerAppearance_UnityEvents.cs" />
+     <Compile Include="Assets\VRTK\Source\Scripts\Utilities\UnityEvents\VRTK_InteractGrab_UnityEvents.cs" />
+     <Compile Include="Assets\VRTK\Source\Scripts\Utilities\UnityEvents\VRTK_InteractHaptics_UnityEvents.cs" />
+     <Compile Include="Assets\VRTK\Source\Scripts\Utilities\UnityEvents\VRTK_InteractNearTouch_UnityEvents.cs" />
+     <Compile Include="Assets\VRTK\Source\Scripts\Utilities\UnityEvents\VRTK_InteractObjectAppearance_UnityEvents.cs" />
+     <Compile Include="Assets\VRTK\Source\Scripts\Utilities\UnityEvents\VRTK_InteractObjectHighlighter_UnityEvents.cs" />
+     <Compile Include="Assets\VRTK\Source\Scripts\Utilities\UnityEvents\VRTK_InteractTouch_UnityEvents.cs" />
+     <Compile Include="Assets\VRTK\Source\Scripts\Utilities\UnityEvents\VRTK_InteractUse_UnityEvents.cs" />
+     <Compile Include="Assets\VRTK\Source\Scripts\Utilities\UnityEvents\VRTK_InteractableObject_UnityEvents.cs" />
+     <Compile Include="Assets\VRTK\Source\Scripts\Utilities\UnityEvents\VRTK_MoveTransformGrabAttach_UnityEvents.cs" />
+     <Compile Include="Assets\VRTK\Source\Scripts\Utilities\UnityEvents\VRTK_ObjectAutoGrab_UnityEvents.cs" />
+     <Compile Include="Assets\VRTK\Source\Scripts\Utilities\UnityEvents\VRTK_ObjectControl_UnityEvents.cs" />
+     <Compile Include="Assets\VRTK\Source\Scripts\Utilities\UnityEvents\VRTK_ObjectTooltip_UnityEvents.cs" />
+     <Compile Include="Assets\VRTK\Source\Scripts\Utilities\UnityEvents\VRTK_PlayAreaCursor_UnityEvents.cs" />
+     <Compile Include="Assets\VRTK\Source\Scripts\Utilities\UnityEvents\VRTK_PlayerClimb_UnityEvents.cs" />
+     <Compile Include="Assets\VRTK\Source\Scripts\Utilities\UnityEvents\VRTK_PointerDirectionIndicator_UnityEvents.cs" />
+     <Compile Include="Assets\VRTK\Source\Scripts\Utilities\UnityEvents\VRTK_Pointer_UnityEvents.cs" />
+     <Compile Include="Assets\VRTK\Source\Scripts\Utilities\UnityEvents\VRTK_PositionRewind_UnityEvents.cs" />
+     <Compile Include="Assets\VRTK\Source\Scripts\Utilities\UnityEvents\VRTK_RotateTransformGrabAttach_UnityEvents.cs" />
+     <Compile Include="Assets\VRTK\Source\Scripts\Utilities\UnityEvents\VRTK_SDKManager_UnityEvents.cs" />
+     <Compile Include="Assets\VRTK\Source\Scripts\Utilities\UnityEvents\VRTK_SDKSetup_UnityEvents.cs" />
+     <Compile Include="Assets\VRTK\Source\Scripts\Utilities\UnityEvents\VRTK_SlingshotJump_UnityEvents.cs" />
+     <Compile Include="Assets\VRTK\Source\Scripts\Utilities\UnityEvents\VRTK_SnapDropZone_UnityEvents.cs" />
+     <Compile Include="Assets\VRTK\Source\Scripts\Utilities\UnityEvents\VRTK_UIDraggableItem_UnityEvents.cs" />
+     <Compile Include="Assets\VRTK\Source\Scripts\Utilities\UnityEvents\VRTK_UIPointer_UnityEvents.cs" />
+     <Compile Include="Assets\VRTK\Source\Scripts\Utilities\UnityEvents\VRTK_UnityEvents.cs" />
+     <Compile Include="Assets\VRTK\Source\Scripts\Utilities\VRTK_AdaptiveQuality.cs" />
+     <Compile Include="Assets\VRTK\Source\Scripts\Utilities\VRTK_CustomRaycast.cs" />
+     <Compile Include="Assets\VRTK\Source\Scripts\Utilities\VRTK_DeviceFinder.cs" />
+     <Compile Include="Assets\VRTK\Source\Scripts\Utilities\VRTK_NavMeshData.cs" />
+     <Compile Include="Assets\VRTK\Source\Scripts\Utilities\VRTK_PolicyList.cs" />
+     <Compile Include="Assets\VRTK\Source\Scripts\Utilities\VRTK_SDKInputOverride.cs" />
+     <Compile Include="Assets\VRTK\Source\Scripts\Utilities\VRTK_SDKObjectAlias.cs" />
+     <Compile Include="Assets\VRTK\Source\Scripts\Utilities\VRTK_SDKObjectState.cs" />
+     <Compile Include="Assets\VRTK\Source\Scripts\Utilities\VRTK_SDKTransformModify.cs" />
+     <Compile Include="Assets\VRTK\Source\Scripts\Utilities\VRTK_SharedMethods.cs" />
+     <Compile Include="Assets\VRTK\Source\Scripts\Utilities\VRTK_Simulator.cs" />
+     <Compile Include="Assets\VRTK\Source\Scripts\Utilities\VRTK_VelocityEstimator.cs" />
+     <None Include="Assets\PicoMobileSDK\Pvr_UnitySDK\Resources\Pvr_EyeMask.shader" />
+     <None Include="Assets\PicoMobileSDK\Pvr_Controller\Shaders\UI_Overlay.shader" />
+     <None Include="Assets\PicoMobileSDK\Pvr_UnitySDK\Resources\Fade.shader" />
+     <None Include="Assets\PicoMobileSDK\Pvr_Controller\Shaders\Pvr_UnitySDKLaser.shader" />
+     <None Include="Assets\PicoMobileSDK\Pvr_UnitySDK\Scenes\Examples\Sphere\Resources\Undistortion.shader" />
+     <None Include="Assets\PicoMobileSDK\Pvr_UnitySDK\Resources\FillColor.shader" />
+     <None Include="Assets\VRTK\Documentation.txt" />
+     <None Include="Assets\VRTK\Source\Scripts\Internal\Shaders\AdaptiveQualityDebugVisualization.shader" />
+     <None Include="Assets\PicoMobileSDK\Pvr_UnitySDK\Resources\Materials\UnderlayHole.shader" />
+     <None Include="Assets\VRTK\Source\Scripts\Internal\Shaders\VRTK_TunnelEffect.shader" />
+     <None Include="Assets\VRTK\Source\Scripts\Internal\Shaders\VRTK_OutlineBasic.shader" />
+     <None Include="Assets\VRTK\Source\Scripts\Internal\Shaders\Unlit_TransparentColor.shader" />
+     <None Include="Assets\VRTK\Source\Scripts\Internal\Shaders\UIOverlay.shader" />
+     <None Include="Assets\VRTK\Source\Scripts\Internal\Shaders\TransparentFresnelBehind.shader" />
+     <None Include="Assets\PicoMobileSDK\Pvr_UnitySDK\Resources\Undistortion.shader" />
+ <Reference Include="UnityEngine">
+ <HintPath>E:/Program Files/unity/2019.4.29f1c2/Editor/Data/Managed/UnityEngine/UnityEngine.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.AIModule">
+ <HintPath>E:/Program Files/unity/2019.4.29f1c2/Editor/Data/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.ARModule">
+ <HintPath>E:/Program Files/unity/2019.4.29f1c2/Editor/Data/Managed/UnityEngine/UnityEngine.ARModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.AccessibilityModule">
+ <HintPath>E:/Program Files/unity/2019.4.29f1c2/Editor/Data/Managed/UnityEngine/UnityEngine.AccessibilityModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.AndroidJNIModule">
+ <HintPath>E:/Program Files/unity/2019.4.29f1c2/Editor/Data/Managed/UnityEngine/UnityEngine.AndroidJNIModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.AnimationModule">
+ <HintPath>E:/Program Files/unity/2019.4.29f1c2/Editor/Data/Managed/UnityEngine/UnityEngine.AnimationModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.AssetBundleModule">
+ <HintPath>E:/Program Files/unity/2019.4.29f1c2/Editor/Data/Managed/UnityEngine/UnityEngine.AssetBundleModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.AudioModule">
+ <HintPath>E:/Program Files/unity/2019.4.29f1c2/Editor/Data/Managed/UnityEngine/UnityEngine.AudioModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.ClothModule">
+ <HintPath>E:/Program Files/unity/2019.4.29f1c2/Editor/Data/Managed/UnityEngine/UnityEngine.ClothModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.CoreModule">
+ <HintPath>E:/Program Files/unity/2019.4.29f1c2/Editor/Data/Managed/UnityEngine/UnityEngine.CoreModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.CrashReportingModule">
+ <HintPath>E:/Program Files/unity/2019.4.29f1c2/Editor/Data/Managed/UnityEngine/UnityEngine.CrashReportingModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.DSPGraphModule">
+ <HintPath>E:/Program Files/unity/2019.4.29f1c2/Editor/Data/Managed/UnityEngine/UnityEngine.DSPGraphModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.DirectorModule">
+ <HintPath>E:/Program Files/unity/2019.4.29f1c2/Editor/Data/Managed/UnityEngine/UnityEngine.DirectorModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.GameCenterModule">
+ <HintPath>E:/Program Files/unity/2019.4.29f1c2/Editor/Data/Managed/UnityEngine/UnityEngine.GameCenterModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.GridModule">
+ <HintPath>E:/Program Files/unity/2019.4.29f1c2/Editor/Data/Managed/UnityEngine/UnityEngine.GridModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.HotReloadModule">
+ <HintPath>E:/Program Files/unity/2019.4.29f1c2/Editor/Data/Managed/UnityEngine/UnityEngine.HotReloadModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.IMGUIModule">
+ <HintPath>E:/Program Files/unity/2019.4.29f1c2/Editor/Data/Managed/UnityEngine/UnityEngine.IMGUIModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.ImageConversionModule">
+ <HintPath>E:/Program Files/unity/2019.4.29f1c2/Editor/Data/Managed/UnityEngine/UnityEngine.ImageConversionModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.InputModule">
+ <HintPath>E:/Program Files/unity/2019.4.29f1c2/Editor/Data/Managed/UnityEngine/UnityEngine.InputModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.InputLegacyModule">
+ <HintPath>E:/Program Files/unity/2019.4.29f1c2/Editor/Data/Managed/UnityEngine/UnityEngine.InputLegacyModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.JSONSerializeModule">
+ <HintPath>E:/Program Files/unity/2019.4.29f1c2/Editor/Data/Managed/UnityEngine/UnityEngine.JSONSerializeModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.LocalizationModule">
+ <HintPath>E:/Program Files/unity/2019.4.29f1c2/Editor/Data/Managed/UnityEngine/UnityEngine.LocalizationModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.ParticleSystemModule">
+ <HintPath>E:/Program Files/unity/2019.4.29f1c2/Editor/Data/Managed/UnityEngine/UnityEngine.ParticleSystemModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.PerformanceReportingModule">
+ <HintPath>E:/Program Files/unity/2019.4.29f1c2/Editor/Data/Managed/UnityEngine/UnityEngine.PerformanceReportingModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.PhysicsModule">
+ <HintPath>E:/Program Files/unity/2019.4.29f1c2/Editor/Data/Managed/UnityEngine/UnityEngine.PhysicsModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.Physics2DModule">
+ <HintPath>E:/Program Files/unity/2019.4.29f1c2/Editor/Data/Managed/UnityEngine/UnityEngine.Physics2DModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.ProfilerModule">
+ <HintPath>E:/Program Files/unity/2019.4.29f1c2/Editor/Data/Managed/UnityEngine/UnityEngine.ProfilerModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.ScreenCaptureModule">
+ <HintPath>E:/Program Files/unity/2019.4.29f1c2/Editor/Data/Managed/UnityEngine/UnityEngine.ScreenCaptureModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.SharedInternalsModule">
+ <HintPath>E:/Program Files/unity/2019.4.29f1c2/Editor/Data/Managed/UnityEngine/UnityEngine.SharedInternalsModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.SpriteMaskModule">
+ <HintPath>E:/Program Files/unity/2019.4.29f1c2/Editor/Data/Managed/UnityEngine/UnityEngine.SpriteMaskModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.SpriteShapeModule">
+ <HintPath>E:/Program Files/unity/2019.4.29f1c2/Editor/Data/Managed/UnityEngine/UnityEngine.SpriteShapeModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.StreamingModule">
+ <HintPath>E:/Program Files/unity/2019.4.29f1c2/Editor/Data/Managed/UnityEngine/UnityEngine.StreamingModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.SubstanceModule">
+ <HintPath>E:/Program Files/unity/2019.4.29f1c2/Editor/Data/Managed/UnityEngine/UnityEngine.SubstanceModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.SubsystemsModule">
+ <HintPath>E:/Program Files/unity/2019.4.29f1c2/Editor/Data/Managed/UnityEngine/UnityEngine.SubsystemsModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.TLSModule">
+ <HintPath>E:/Program Files/unity/2019.4.29f1c2/Editor/Data/Managed/UnityEngine/UnityEngine.TLSModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.TerrainModule">
+ <HintPath>E:/Program Files/unity/2019.4.29f1c2/Editor/Data/Managed/UnityEngine/UnityEngine.TerrainModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.TerrainPhysicsModule">
+ <HintPath>E:/Program Files/unity/2019.4.29f1c2/Editor/Data/Managed/UnityEngine/UnityEngine.TerrainPhysicsModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.TextCoreModule">
+ <HintPath>E:/Program Files/unity/2019.4.29f1c2/Editor/Data/Managed/UnityEngine/UnityEngine.TextCoreModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.TextRenderingModule">
+ <HintPath>E:/Program Files/unity/2019.4.29f1c2/Editor/Data/Managed/UnityEngine/UnityEngine.TextRenderingModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.TilemapModule">
+ <HintPath>E:/Program Files/unity/2019.4.29f1c2/Editor/Data/Managed/UnityEngine/UnityEngine.TilemapModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.UIModule">
+ <HintPath>E:/Program Files/unity/2019.4.29f1c2/Editor/Data/Managed/UnityEngine/UnityEngine.UIModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.UIElementsModule">
+ <HintPath>E:/Program Files/unity/2019.4.29f1c2/Editor/Data/Managed/UnityEngine/UnityEngine.UIElementsModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.UNETModule">
+ <HintPath>E:/Program Files/unity/2019.4.29f1c2/Editor/Data/Managed/UnityEngine/UnityEngine.UNETModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.UmbraModule">
+ <HintPath>E:/Program Files/unity/2019.4.29f1c2/Editor/Data/Managed/UnityEngine/UnityEngine.UmbraModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.UnityAnalyticsModule">
+ <HintPath>E:/Program Files/unity/2019.4.29f1c2/Editor/Data/Managed/UnityEngine/UnityEngine.UnityAnalyticsModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.UnityConnectModule">
+ <HintPath>E:/Program Files/unity/2019.4.29f1c2/Editor/Data/Managed/UnityEngine/UnityEngine.UnityConnectModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.UnityTestProtocolModule">
+ <HintPath>E:/Program Files/unity/2019.4.29f1c2/Editor/Data/Managed/UnityEngine/UnityEngine.UnityTestProtocolModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.UnityWebRequestModule">
+ <HintPath>E:/Program Files/unity/2019.4.29f1c2/Editor/Data/Managed/UnityEngine/UnityEngine.UnityWebRequestModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.UnityWebRequestAssetBundleModule">
+ <HintPath>E:/Program Files/unity/2019.4.29f1c2/Editor/Data/Managed/UnityEngine/UnityEngine.UnityWebRequestAssetBundleModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.UnityWebRequestAudioModule">
+ <HintPath>E:/Program Files/unity/2019.4.29f1c2/Editor/Data/Managed/UnityEngine/UnityEngine.UnityWebRequestAudioModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.UnityWebRequestTextureModule">
+ <HintPath>E:/Program Files/unity/2019.4.29f1c2/Editor/Data/Managed/UnityEngine/UnityEngine.UnityWebRequestTextureModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.UnityWebRequestWWWModule">
+ <HintPath>E:/Program Files/unity/2019.4.29f1c2/Editor/Data/Managed/UnityEngine/UnityEngine.UnityWebRequestWWWModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.VFXModule">
+ <HintPath>E:/Program Files/unity/2019.4.29f1c2/Editor/Data/Managed/UnityEngine/UnityEngine.VFXModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.VRModule">
+ <HintPath>E:/Program Files/unity/2019.4.29f1c2/Editor/Data/Managed/UnityEngine/UnityEngine.VRModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.VehiclesModule">
+ <HintPath>E:/Program Files/unity/2019.4.29f1c2/Editor/Data/Managed/UnityEngine/UnityEngine.VehiclesModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.VideoModule">
+ <HintPath>E:/Program Files/unity/2019.4.29f1c2/Editor/Data/Managed/UnityEngine/UnityEngine.VideoModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.WindModule">
+ <HintPath>E:/Program Files/unity/2019.4.29f1c2/Editor/Data/Managed/UnityEngine/UnityEngine.WindModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.XRModule">
+ <HintPath>E:/Program Files/unity/2019.4.29f1c2/Editor/Data/Managed/UnityEngine/UnityEngine.XRModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEditor">
+ <HintPath>E:/Program Files/unity/2019.4.29f1c2/Editor/Data/Managed/UnityEditor.dll</HintPath>
+ </Reference>
+ <Reference Include="LitJson">
+ <HintPath>E:/Work Program/Unity/VRTK-Support-master/vrtk_pico/Assets/Plugins/LitJson.dll</HintPath>
+ </Reference>
+ <Reference Include="netstandard">
+ <HintPath>E:/Program Files/unity/2019.4.29f1c2/Editor/Data/NetStandard/ref/2.0.0/netstandard.dll</HintPath>
+ </Reference>
+ <Reference Include="Microsoft.Win32.Primitives">
+ <HintPath>E:/Program Files/unity/2019.4.29f1c2/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/Microsoft.Win32.Primitives.dll</HintPath>
+ </Reference>
+ <Reference Include="System.AppContext">
+ <HintPath>E:/Program Files/unity/2019.4.29f1c2/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.AppContext.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Collections.Concurrent">
+ <HintPath>E:/Program Files/unity/2019.4.29f1c2/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Collections.Concurrent.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Collections">
+ <HintPath>E:/Program Files/unity/2019.4.29f1c2/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Collections.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Collections.NonGeneric">
+ <HintPath>E:/Program Files/unity/2019.4.29f1c2/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Collections.NonGeneric.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Collections.Specialized">
+ <HintPath>E:/Program Files/unity/2019.4.29f1c2/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Collections.Specialized.dll</HintPath>
+ </Reference>
+ <Reference Include="System.ComponentModel">
+ <HintPath>E:/Program Files/unity/2019.4.29f1c2/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.ComponentModel.dll</HintPath>
+ </Reference>
+ <Reference Include="System.ComponentModel.EventBasedAsync">
+ <HintPath>E:/Program Files/unity/2019.4.29f1c2/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.ComponentModel.EventBasedAsync.dll</HintPath>
+ </Reference>
+ <Reference Include="System.ComponentModel.Primitives">
+ <HintPath>E:/Program Files/unity/2019.4.29f1c2/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.ComponentModel.Primitives.dll</HintPath>
+ </Reference>
+ <Reference Include="System.ComponentModel.TypeConverter">
+ <HintPath>E:/Program Files/unity/2019.4.29f1c2/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.ComponentModel.TypeConverter.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Console">
+ <HintPath>E:/Program Files/unity/2019.4.29f1c2/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Console.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Data.Common">
+ <HintPath>E:/Program Files/unity/2019.4.29f1c2/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Data.Common.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Diagnostics.Contracts">
+ <HintPath>E:/Program Files/unity/2019.4.29f1c2/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Diagnostics.Contracts.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Diagnostics.Debug">
+ <HintPath>E:/Program Files/unity/2019.4.29f1c2/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Diagnostics.Debug.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Diagnostics.FileVersionInfo">
+ <HintPath>E:/Program Files/unity/2019.4.29f1c2/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Diagnostics.FileVersionInfo.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Diagnostics.Process">
+ <HintPath>E:/Program Files/unity/2019.4.29f1c2/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Diagnostics.Process.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Diagnostics.StackTrace">
+ <HintPath>E:/Program Files/unity/2019.4.29f1c2/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Diagnostics.StackTrace.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Diagnostics.TextWriterTraceListener">
+ <HintPath>E:/Program Files/unity/2019.4.29f1c2/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Diagnostics.TextWriterTraceListener.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Diagnostics.Tools">
+ <HintPath>E:/Program Files/unity/2019.4.29f1c2/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Diagnostics.Tools.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Diagnostics.TraceSource">
+ <HintPath>E:/Program Files/unity/2019.4.29f1c2/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Diagnostics.TraceSource.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Diagnostics.Tracing">
+ <HintPath>E:/Program Files/unity/2019.4.29f1c2/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Diagnostics.Tracing.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Drawing.Primitives">
+ <HintPath>E:/Program Files/unity/2019.4.29f1c2/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Drawing.Primitives.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Dynamic.Runtime">
+ <HintPath>E:/Program Files/unity/2019.4.29f1c2/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Dynamic.Runtime.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Globalization.Calendars">
+ <HintPath>E:/Program Files/unity/2019.4.29f1c2/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Globalization.Calendars.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Globalization">
+ <HintPath>E:/Program Files/unity/2019.4.29f1c2/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Globalization.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Globalization.Extensions">
+ <HintPath>E:/Program Files/unity/2019.4.29f1c2/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Globalization.Extensions.dll</HintPath>
+ </Reference>
+ <Reference Include="System.IO.Compression">
+ <HintPath>E:/Program Files/unity/2019.4.29f1c2/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.IO.Compression.dll</HintPath>
+ </Reference>
+ <Reference Include="System.IO.Compression.ZipFile">
+ <HintPath>E:/Program Files/unity/2019.4.29f1c2/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.IO.Compression.ZipFile.dll</HintPath>
+ </Reference>
+ <Reference Include="System.IO">
+ <HintPath>E:/Program Files/unity/2019.4.29f1c2/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.IO.dll</HintPath>
+ </Reference>
+ <Reference Include="System.IO.FileSystem">
+ <HintPath>E:/Program Files/unity/2019.4.29f1c2/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.IO.FileSystem.dll</HintPath>
+ </Reference>
+ <Reference Include="System.IO.FileSystem.DriveInfo">
+ <HintPath>E:/Program Files/unity/2019.4.29f1c2/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.IO.FileSystem.DriveInfo.dll</HintPath>
+ </Reference>
+ <Reference Include="System.IO.FileSystem.Primitives">
+ <HintPath>E:/Program Files/unity/2019.4.29f1c2/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.IO.FileSystem.Primitives.dll</HintPath>
+ </Reference>
+ <Reference Include="System.IO.FileSystem.Watcher">
+ <HintPath>E:/Program Files/unity/2019.4.29f1c2/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.IO.FileSystem.Watcher.dll</HintPath>
+ </Reference>
+ <Reference Include="System.IO.IsolatedStorage">
+ <HintPath>E:/Program Files/unity/2019.4.29f1c2/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.IO.IsolatedStorage.dll</HintPath>
+ </Reference>
+ <Reference Include="System.IO.MemoryMappedFiles">
+ <HintPath>E:/Program Files/unity/2019.4.29f1c2/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.IO.MemoryMappedFiles.dll</HintPath>
+ </Reference>
+ <Reference Include="System.IO.Pipes">
+ <HintPath>E:/Program Files/unity/2019.4.29f1c2/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.IO.Pipes.dll</HintPath>
+ </Reference>
+ <Reference Include="System.IO.UnmanagedMemoryStream">
+ <HintPath>E:/Program Files/unity/2019.4.29f1c2/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.IO.UnmanagedMemoryStream.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Linq">
+ <HintPath>E:/Program Files/unity/2019.4.29f1c2/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Linq.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Linq.Expressions">
+ <HintPath>E:/Program Files/unity/2019.4.29f1c2/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Linq.Expressions.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Linq.Parallel">
+ <HintPath>E:/Program Files/unity/2019.4.29f1c2/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Linq.Parallel.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Linq.Queryable">
+ <HintPath>E:/Program Files/unity/2019.4.29f1c2/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Linq.Queryable.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Net.Http">
+ <HintPath>E:/Program Files/unity/2019.4.29f1c2/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Net.Http.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Net.NameResolution">
+ <HintPath>E:/Program Files/unity/2019.4.29f1c2/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Net.NameResolution.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Net.NetworkInformation">
+ <HintPath>E:/Program Files/unity/2019.4.29f1c2/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Net.NetworkInformation.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Net.Ping">
+ <HintPath>E:/Program Files/unity/2019.4.29f1c2/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Net.Ping.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Net.Primitives">
+ <HintPath>E:/Program Files/unity/2019.4.29f1c2/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Net.Primitives.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Net.Requests">
+ <HintPath>E:/Program Files/unity/2019.4.29f1c2/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Net.Requests.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Net.Security">
+ <HintPath>E:/Program Files/unity/2019.4.29f1c2/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Net.Security.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Net.Sockets">
+ <HintPath>E:/Program Files/unity/2019.4.29f1c2/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Net.Sockets.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Net.WebHeaderCollection">
+ <HintPath>E:/Program Files/unity/2019.4.29f1c2/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Net.WebHeaderCollection.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Net.WebSockets.Client">
+ <HintPath>E:/Program Files/unity/2019.4.29f1c2/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Net.WebSockets.Client.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Net.WebSockets">
+ <HintPath>E:/Program Files/unity/2019.4.29f1c2/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Net.WebSockets.dll</HintPath>
+ </Reference>
+ <Reference Include="System.ObjectModel">
+ <HintPath>E:/Program Files/unity/2019.4.29f1c2/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.ObjectModel.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Reflection">
+ <HintPath>E:/Program Files/unity/2019.4.29f1c2/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Reflection.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Reflection.Extensions">
+ <HintPath>E:/Program Files/unity/2019.4.29f1c2/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Reflection.Extensions.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Reflection.Primitives">
+ <HintPath>E:/Program Files/unity/2019.4.29f1c2/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Reflection.Primitives.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Resources.Reader">
+ <HintPath>E:/Program Files/unity/2019.4.29f1c2/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Resources.Reader.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Resources.ResourceManager">
+ <HintPath>E:/Program Files/unity/2019.4.29f1c2/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Resources.ResourceManager.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Resources.Writer">
+ <HintPath>E:/Program Files/unity/2019.4.29f1c2/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Resources.Writer.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Runtime.CompilerServices.VisualC">
+ <HintPath>E:/Program Files/unity/2019.4.29f1c2/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Runtime.CompilerServices.VisualC.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Runtime">
+ <HintPath>E:/Program Files/unity/2019.4.29f1c2/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Runtime.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Runtime.Extensions">
+ <HintPath>E:/Program Files/unity/2019.4.29f1c2/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Runtime.Extensions.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Runtime.Handles">
+ <HintPath>E:/Program Files/unity/2019.4.29f1c2/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Runtime.Handles.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Runtime.InteropServices">
+ <HintPath>E:/Program Files/unity/2019.4.29f1c2/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Runtime.InteropServices.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Runtime.InteropServices.RuntimeInformation">
+ <HintPath>E:/Program Files/unity/2019.4.29f1c2/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Runtime.InteropServices.RuntimeInformation.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Runtime.Numerics">
+ <HintPath>E:/Program Files/unity/2019.4.29f1c2/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Runtime.Numerics.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Runtime.Serialization.Formatters">
+ <HintPath>E:/Program Files/unity/2019.4.29f1c2/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Runtime.Serialization.Formatters.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Runtime.Serialization.Json">
+ <HintPath>E:/Program Files/unity/2019.4.29f1c2/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Runtime.Serialization.Json.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Runtime.Serialization.Primitives">
+ <HintPath>E:/Program Files/unity/2019.4.29f1c2/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Runtime.Serialization.Primitives.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Runtime.Serialization.Xml">
+ <HintPath>E:/Program Files/unity/2019.4.29f1c2/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Runtime.Serialization.Xml.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Security.Claims">
+ <HintPath>E:/Program Files/unity/2019.4.29f1c2/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Security.Claims.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Security.Cryptography.Algorithms">
+ <HintPath>E:/Program Files/unity/2019.4.29f1c2/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Security.Cryptography.Algorithms.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Security.Cryptography.Csp">
+ <HintPath>E:/Program Files/unity/2019.4.29f1c2/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Security.Cryptography.Csp.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Security.Cryptography.Encoding">
+ <HintPath>E:/Program Files/unity/2019.4.29f1c2/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Security.Cryptography.Encoding.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Security.Cryptography.Primitives">
+ <HintPath>E:/Program Files/unity/2019.4.29f1c2/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Security.Cryptography.Primitives.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Security.Cryptography.X509Certificates">
+ <HintPath>E:/Program Files/unity/2019.4.29f1c2/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Security.Cryptography.X509Certificates.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Security.Principal">
+ <HintPath>E:/Program Files/unity/2019.4.29f1c2/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Security.Principal.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Security.SecureString">
+ <HintPath>E:/Program Files/unity/2019.4.29f1c2/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Security.SecureString.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Text.Encoding">
+ <HintPath>E:/Program Files/unity/2019.4.29f1c2/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Text.Encoding.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Text.Encoding.Extensions">
+ <HintPath>E:/Program Files/unity/2019.4.29f1c2/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Text.Encoding.Extensions.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Text.RegularExpressions">
+ <HintPath>E:/Program Files/unity/2019.4.29f1c2/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Text.RegularExpressions.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Threading">
+ <HintPath>E:/Program Files/unity/2019.4.29f1c2/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Threading.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Threading.Overlapped">
+ <HintPath>E:/Program Files/unity/2019.4.29f1c2/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Threading.Overlapped.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Threading.Tasks">
+ <HintPath>E:/Program Files/unity/2019.4.29f1c2/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Threading.Tasks.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Threading.Tasks.Parallel">
+ <HintPath>E:/Program Files/unity/2019.4.29f1c2/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Threading.Tasks.Parallel.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Threading.Thread">
+ <HintPath>E:/Program Files/unity/2019.4.29f1c2/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Threading.Thread.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Threading.ThreadPool">
+ <HintPath>E:/Program Files/unity/2019.4.29f1c2/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Threading.ThreadPool.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Threading.Timer">
+ <HintPath>E:/Program Files/unity/2019.4.29f1c2/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Threading.Timer.dll</HintPath>
+ </Reference>
+ <Reference Include="System.ValueTuple">
+ <HintPath>E:/Program Files/unity/2019.4.29f1c2/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.ValueTuple.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Xml.ReaderWriter">
+ <HintPath>E:/Program Files/unity/2019.4.29f1c2/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Xml.ReaderWriter.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Xml.XDocument">
+ <HintPath>E:/Program Files/unity/2019.4.29f1c2/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Xml.XDocument.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Xml.XmlDocument">
+ <HintPath>E:/Program Files/unity/2019.4.29f1c2/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Xml.XmlDocument.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Xml.XmlSerializer">
+ <HintPath>E:/Program Files/unity/2019.4.29f1c2/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Xml.XmlSerializer.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Xml.XPath">
+ <HintPath>E:/Program Files/unity/2019.4.29f1c2/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Xml.XPath.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Xml.XPath.XDocument">
+ <HintPath>E:/Program Files/unity/2019.4.29f1c2/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Xml.XPath.XDocument.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Numerics.Vectors">
+ <HintPath>E:/Program Files/unity/2019.4.29f1c2/Editor/Data/NetStandard/Extensions/2.0.0/System.Numerics.Vectors.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Runtime.InteropServices.WindowsRuntime">
+ <HintPath>E:/Program Files/unity/2019.4.29f1c2/Editor/Data/NetStandard/Extensions/2.0.0/System.Runtime.InteropServices.WindowsRuntime.dll</HintPath>
+ </Reference>
+ <Reference Include="mscorlib">
+ <HintPath>E:/Program Files/unity/2019.4.29f1c2/Editor/Data/NetStandard/compat/2.0.0/shims/netfx/mscorlib.dll</HintPath>
+ </Reference>
+ <Reference Include="System.ComponentModel.Composition">
+ <HintPath>E:/Program Files/unity/2019.4.29f1c2/Editor/Data/NetStandard/compat/2.0.0/shims/netfx/System.ComponentModel.Composition.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Core">
+ <HintPath>E:/Program Files/unity/2019.4.29f1c2/Editor/Data/NetStandard/compat/2.0.0/shims/netfx/System.Core.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Data">
+ <HintPath>E:/Program Files/unity/2019.4.29f1c2/Editor/Data/NetStandard/compat/2.0.0/shims/netfx/System.Data.dll</HintPath>
+ </Reference>
+ <Reference Include="System">
+ <HintPath>E:/Program Files/unity/2019.4.29f1c2/Editor/Data/NetStandard/compat/2.0.0/shims/netfx/System.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Drawing">
+ <HintPath>E:/Program Files/unity/2019.4.29f1c2/Editor/Data/NetStandard/compat/2.0.0/shims/netfx/System.Drawing.dll</HintPath>
+ </Reference>
+ <Reference Include="System.IO.Compression.FileSystem">
+ <HintPath>E:/Program Files/unity/2019.4.29f1c2/Editor/Data/NetStandard/compat/2.0.0/shims/netfx/System.IO.Compression.FileSystem.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Net">
+ <HintPath>E:/Program Files/unity/2019.4.29f1c2/Editor/Data/NetStandard/compat/2.0.0/shims/netfx/System.Net.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Numerics">
+ <HintPath>E:/Program Files/unity/2019.4.29f1c2/Editor/Data/NetStandard/compat/2.0.0/shims/netfx/System.Numerics.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Runtime.Serialization">
+ <HintPath>E:/Program Files/unity/2019.4.29f1c2/Editor/Data/NetStandard/compat/2.0.0/shims/netfx/System.Runtime.Serialization.dll</HintPath>
+ </Reference>
+ <Reference Include="System.ServiceModel.Web">
+ <HintPath>E:/Program Files/unity/2019.4.29f1c2/Editor/Data/NetStandard/compat/2.0.0/shims/netfx/System.ServiceModel.Web.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Transactions">
+ <HintPath>E:/Program Files/unity/2019.4.29f1c2/Editor/Data/NetStandard/compat/2.0.0/shims/netfx/System.Transactions.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Web">
+ <HintPath>E:/Program Files/unity/2019.4.29f1c2/Editor/Data/NetStandard/compat/2.0.0/shims/netfx/System.Web.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Windows">
+ <HintPath>E:/Program Files/unity/2019.4.29f1c2/Editor/Data/NetStandard/compat/2.0.0/shims/netfx/System.Windows.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Xml">
+ <HintPath>E:/Program Files/unity/2019.4.29f1c2/Editor/Data/NetStandard/compat/2.0.0/shims/netfx/System.Xml.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Xml.Linq">
+ <HintPath>E:/Program Files/unity/2019.4.29f1c2/Editor/Data/NetStandard/compat/2.0.0/shims/netfx/System.Xml.Linq.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Xml.Serialization">
+ <HintPath>E:/Program Files/unity/2019.4.29f1c2/Editor/Data/NetStandard/compat/2.0.0/shims/netfx/System.Xml.Serialization.dll</HintPath>
+ </Reference>
+ <Reference Include="Unity.Timeline.Editor">
+ <HintPath>E:/Work Program/Unity/VRTK-Support-master/vrtk_pico/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
+ </Reference>
+ <Reference Include="Unity.VSCode.Editor">
+ <HintPath>E:/Work Program/Unity/VRTK-Support-master/vrtk_pico/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
+ </Reference>
+ <Reference Include="Unity.TextMeshPro.Editor">
+ <HintPath>E:/Work Program/Unity/VRTK-Support-master/vrtk_pico/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.UI">
+ <HintPath>E:/Work Program/Unity/VRTK-Support-master/vrtk_pico/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
+ </Reference>
+ <Reference Include="Unity.Timeline">
+ <HintPath>E:/Work Program/Unity/VRTK-Support-master/vrtk_pico/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
+ </Reference>
+ <Reference Include="Unity.CollabProxy.Editor">
+ <HintPath>E:/Work Program/Unity/VRTK-Support-master/vrtk_pico/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
+ </Reference>
+ <Reference Include="Unity.Rider.Editor">
+ <HintPath>E:/Work Program/Unity/VRTK-Support-master/vrtk_pico/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
+ </Reference>
+ <Reference Include="Unity.XR.WindowsMR.Editor">
+ <HintPath>E:/Work Program/Unity/VRTK-Support-master/vrtk_pico/Library/ScriptAssemblies/Unity.XR.WindowsMR.Editor.dll</HintPath>
+ </Reference>
+ <Reference Include="Unity.VisualStudio.Editor">
+ <HintPath>E:/Work Program/Unity/VRTK-Support-master/vrtk_pico/Library/ScriptAssemblies/Unity.VisualStudio.Editor.dll</HintPath>
+ </Reference>
+ <Reference Include="Unity.TextMeshPro">
+ <HintPath>E:/Work Program/Unity/VRTK-Support-master/vrtk_pico/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
+ </Reference>
+ <Reference Include="Unity.PlasticSCM.Editor">
+ <HintPath>E:/Work Program/Unity/VRTK-Support-master/vrtk_pico/Library/ScriptAssemblies/Unity.PlasticSCM.Editor.dll</HintPath>
+ </Reference>
+ <Reference Include="Unity.XR.WindowsMR">
+ <HintPath>E:/Work Program/Unity/VRTK-Support-master/vrtk_pico/Library/ScriptAssemblies/Unity.XR.WindowsMR.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEditor.UI">
+ <HintPath>E:/Work Program/Unity/VRTK-Support-master/vrtk_pico/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
+ </Reference>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
